@@ -1,0 +1,17 @@
+/* ECPE 174 - Adv. Digital Design 
+	Lab #  : 
+	Author : Kelvin Flores 
+	Date : 
+	Due :  
+	
+*/
+
+module addGen(		input logic clock,
+							input logic button,
+							output logic );
+
+
+	
+endmodule
+						  
+						  

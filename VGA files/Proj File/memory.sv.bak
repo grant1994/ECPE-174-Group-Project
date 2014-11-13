@@ -1,0 +1,38 @@
+  /* ECPE 174 - Adv. Digital Design 
+	Lab # 7 : ALU
+	Author : Kelvin Flores 
+	Date : 10/17/2014
+	Due : 10/17/2014
+	
+*/
+
+/*
+		Memory module 
+*/
+
+
+module memory( input logic WE,RE,clock,
+					input logic [5:0] wAddr,
+					input logic [5:0] rAddr,
+					input logic [14:0] dataIn, 
+					output logic [14:0] dataOut) ;
+	int i;
+	logic [14:0] ram[63:0];
+	
+
+	always_ff@(posedge clock)
+	begin
+		if(WE)
+		begin 
+			ram[wAddr] <= dataIn;
+		end
+		
+		if(RE)
+		begin 
+			dataOut <= ram[rAddr];
+		end
+	end
+	
+	
+endmodule
+

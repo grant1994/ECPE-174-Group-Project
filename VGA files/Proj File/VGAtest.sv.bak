@@ -1,0 +1,24 @@
+/* ECPE 174 - Adv. Digital Design 
+	Lab #  : 
+	Author : Kelvin Flores 
+	Date : 
+	Due :  
+	
+*/
+
+module VGA (	input logic clock,
+					output logic RED,GREEN,BLUE,HSync,VSync);
+	
+	logic [10:0] horReg;
+	logic [9:0]  verReg;
+	logic horSync;
+	logic VerSync;
+	
+	assign horMax = (horReg == 1039);
+	assign VerMax = (verReg == 665);
+		
+
+	
+endmodule
+						  
+						  
