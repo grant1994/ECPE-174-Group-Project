@@ -26,11 +26,12 @@ module VGAtest (	input logic clock,
 	assign b = ~horReg[0];
 	
 	assign horMax = (horReg == 799);
-	assign verMax = (verReg == 525);
+	assign verMax = (verReg == 524);
 
+	clockdiv cd(.iclk(clock),.oclk(clockOut));
 	
 	/*Refreshing the frame*/
-	always_ff @(posedge clock) 
+	always_ff @(posedge clockOut) 
 	begin
 		if (horMax) 
 		begin
@@ -46,33 +47,33 @@ module VGAtest (	input logic clock,
 
 	end
 
-	always_ff @(posedge clock) 
+	always_ff @(posedge clockOut) 
 	begin
-    /* Generating the horizontal sync signal */
-    if (horReg < 95)
-        horSync <= 1;
-    else
-        horSync <= 0;
+		/* Generating the horizontal sync signal */
+		if (horReg == 656)
+			horSync <= 1;
+		else if(horReg == 752)	
+			horSync <= 0;
 
-    /* Generating the vertical sync signal */
-    if (verReg < 1)
-        verSync <= 1;
-    else
-        verSync <= 0;
+		/* Generating the vertical sync signal */
+		if (verReg == 489)
+			verSync <= 1;
+		else if (verReg == 491)	
+			verSync <= 0;
 
 	end
-	
+	/*
 	always_ff @(posedge a)
 	begin 	
 		if(horReg == 50)
 			readPtr <= 0;
 		else
 			readPtr <= readPtr + 1;
-	end
+	end*/
 	
 	//SDRAM
 	/*memory ram(			
-							.clock(clock),
+							.clockOut(clockOut),
 							.rAddr(readPtr),
 							.dataOut(dataOut));	*/
 	
