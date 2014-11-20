@@ -6,13 +6,12 @@
 	
 */
 
-/*320x240*/
+/*640x480*/
 
 module VGAtest (	input logic clock,
 					output logic RED,GREEN,BLUE,VGA_HSync,VGA_VSync);
 	
-	//parameter WIDTH_SIZE = 320;
-	//parameter HEIGHT_SIZE = 240;
+	
 	
 	logic [10:0] horReg;
 	logic [9:0]  verReg;
@@ -20,6 +19,7 @@ module VGAtest (	input logic clock,
 	logic verSync;
 	logic [16:0] readPtr;	
 	logic[2:0] dataOut;
+	logic updateFrame;
 	logic a,b;
 	
 	assign a = horReg[0]; 
@@ -62,33 +62,37 @@ module VGAtest (	input logic clock,
 			verSync <= 0;
 
 	end
-	/*
-	always_ff @(posedge a)
-	begin 	
-		if(horReg == 50)
-			readPtr <= 0;
-		else
-			readPtr <= readPtr + 1;
-	end*/
 	
+	always_ff @(posedge clockOut)
+	begin 	
+		if(horReg == 192 && verReg == 120)
+			readPtr <= readPtr + 1;
+		else if(horReg == 449 && verReg == 361)
+			readPtr <= 0;
+	end
+	
+	always_ff@(posedge clockOut) updateFrame <= (horMax && verMax)
 	//SDRAM
-	/*memory ram(			
-							.clockOut(clockOut),
+	memory ram(			
+							.clock(clock),
 							.rAddr(readPtr),
-							.dataOut(dataOut));	*/
+							.dataOut(dataOut));	
 	
 	/*assign RED = dataOut[0];
 	assign GREEN = dataOut[1];
 	assign BLUE = dataOut [2];*/
 	
+	//horizontal axis-> 192-448
+	//vertical axis - 120-360
+	
 	always_comb
 	begin
 		
-		if(horReg > 300 && horReg  < 320 && verReg > 200 && verReg < 220)
+		if(horReg >= 192 && horReg  <= 448 && verReg >= 120 && verReg <= 360)
 		begin 
-			RED 	<= 1;
-			GREEN <= 1;
-			BLUE  <= 1;
+			RED 	<= dataOut[0];
+			GREEN <= dataOut[1];
+			BLUE  <= dataOut[2];
 		end	
 		else
 		begin 
@@ -98,6 +102,7 @@ module VGAtest (	input logic clock,
 		end	
 		
 	end
+	
 	
 
 	assign VGA_HSync = ~horSync;
