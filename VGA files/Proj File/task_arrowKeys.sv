@@ -42,3 +42,11 @@
 		
 	endtask
 	
+	task changeState(int x);
+		#5;
+		@(posedge clock)
+		inputState <= x;
+		#5;
+	endtask
+	
+	
