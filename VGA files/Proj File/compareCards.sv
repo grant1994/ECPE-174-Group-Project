@@ -14,7 +14,7 @@
   
 */
 
-module compareCards (	input logic clock,A,
+module compareCards (	input logic clock,A,inputState,
 								input logic[5:0] mem6x6,
 								output logic GO);
 	//
