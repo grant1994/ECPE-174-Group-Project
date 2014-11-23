@@ -1,0 +1,9 @@
+
+%red = 9 -> 001
+%green = A -> 010
+%yellow = B -> 011
+%blue = C -> 100
+%purple = D -> 101
+%cyan = E -> 110
+%white = F -> 111
+%black = 0 -> 000
