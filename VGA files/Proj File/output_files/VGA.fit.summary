@@ -1,16 +1,16 @@
-Fitter Status : Successful - Sun Nov 09 21:09:44 2014
-Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Web Edition
+Fitter Status : Successful - Sat Nov 29 15:19:09 2014
+Quartus II 32-bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : VGA
-Top-level Entity Name : memory
+Top-level Entity Name : compareCards
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 56 / 22,320 ( < 1 % )
-    Total combinational functions : 56 / 22,320 ( < 1 % )
-    Dedicated logic registers : 4 / 22,320 ( < 1 % )
-Total registers : 4
-Total pins : 43 / 154 ( 28 % )
+Total logic elements : 85 / 22,320 ( < 1 % )
+    Total combinational functions : 80 / 22,320 ( < 1 % )
+    Dedicated logic registers : 54 / 22,320 ( < 1 % )
+Total registers : 54
+Total pins : 52 / 154 ( 34 % )
 Total virtual pins : 0
-Total memory bits : 393,216 / 608,256 ( 65 % )
+Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )

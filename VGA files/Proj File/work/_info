@@ -1,0 +1,432 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\joey\Desktop\174Project\ECPE-174-Group-Project\VGA files\Proj File
+varrowKeys
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 IFF3NdYd^iAj;PoI4Z1IfA1
+Z3 V0jFg6z>S2<mZAfUf87]nH0
+S1
+Z4 dC:\Users\joey\Desktop\174Project\ECPE-174-Group-Project\VGA files\Proj File
+Z5 w1416975422
+Z6 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv
+Z7 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv
+L0 9
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 o-work work -O0
+Z10 narrow@keys
+Z11 !s100 bOMk=Ff9YP_he?jT51feI1
+Z12 !s105 arrowKeys_sv_unit
+Z13 !s108 1417301740.699000
+Z14 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv|
+Z15 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vbox
+R1
+Z16 II6imh7U`DbIa9G@niUoOS2
+Z17 VIhlG2@QY89]8PV2gY`SP>1
+S1
+R4
+R5
+Z18 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/box.sv
+Z19 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/box.sv
+L0 15
+R8
+r1
+31
+R9
+Z20 !s100 [DOFLgQfF7NfFK>0<d8K[3
+Z21 !s105 box_sv_unit
+Z22 !s108 1417301740.840000
+Z23 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/box.sv|
+Z24 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/box.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcircle
+R1
+Z25 I:IOcjBJ]CEoU:1RmJRaHV2
+Z26 VHgB8LnGgN_X`SCo55XmG31
+S1
+R4
+R5
+Z27 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/circle.sv
+Z28 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/circle.sv
+L0 15
+R8
+r1
+31
+R9
+Z29 !s100 f7n8Q9UIlC?YT2RU<EGFU3
+Z30 !s105 circle_sv_unit
+Z31 !s108 1417301741.011000
+Z32 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/circle.sv|
+Z33 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/circle.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vclockdiv
+R1
+Z34 I7Qnb;A5zGE^zY]<X^<O:o2
+Z35 V6=90NV7:Yoh^7^YHU9egR1
+S1
+R4
+Z36 w1416523559
+Z37 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv
+Z38 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv
+L0 12
+R8
+r1
+31
+R9
+Z39 !s100 mB4_eJhz0WODK3bDKPf1m2
+Z40 !s105 clockdiv_sv_unit
+Z41 !s108 1417301741.167000
+Z42 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv|
+Z43 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcompareCards
+R1
+Z44 !s100 _R>4g5EkkCJPFXmRi@M>c2
+Z45 IFTSQaQg>bQEF<<lmIS1>J2
+Z46 VIS`3j9fWJ?<bGmPLZLC`93
+Z47 !s105 compareCards_sv_unit
+S1
+R4
+Z48 w1417303134
+Z49 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv
+Z50 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv
+L0 14
+R8
+r1
+31
+Z51 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv|
+Z52 o-sv -work work -O0
+Z53 ncompare@cards
+Z54 !s108 1417303307.862000
+Z55 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vdraw
+R1
+Z56 Il69JNHIF1[1=FCY?<4kZX2
+Z57 VUg[fXaS4RNB<cY_A`nBa31
+S1
+R4
+R5
+Z58 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/draw.sv
+Z59 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/draw.sv
+L0 9
+R8
+r1
+31
+R9
+Z60 !s100 ElVz@;iM`]H34eGNQKTQH1
+Z61 !s105 draw_sv_unit
+Z62 !s108 1417301741.542000
+Z63 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/draw.sv|
+Z64 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/draw.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vdualPortMem
+R1
+Z65 I1Ff774MhC5T=YfDX^:S7Q1
+Z66 VBWdD2CW[RmkE6h1P2hSTC0
+S1
+R4
+R5
+Z67 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv
+Z68 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv
+L0 14
+R8
+r1
+31
+R9
+Z69 ndual@port@mem
+Z70 !s100 cd5_U[^PcmbfSi?`o^Tf<1
+Z71 !s105 dualPortMem_sv_unit
+Z72 !s108 1417301741.666000
+Z73 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv|
+Z74 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vfifoControl
+R1
+Z75 IaJMb4MF@5QfF;KZTd;5Z;0
+Z76 V`OE<aIFD4?zn]d7fK9EmL2
+S1
+R4
+Z77 w1415917578
+Z78 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoControl.sv
+Z79 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoControl.sv
+L0 12
+R8
+r1
+31
+R9
+Z80 nfifo@control
+Z81 !s100 ndTc8O4jPhefG?M;@SKfF0
+Z82 !s105 fifoControl_sv_unit
+Z83 !s108 1417301741.822000
+Z84 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoControl.sv|
+Z85 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoControl.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vfifoMemory
+R1
+Z86 I[Bjgl5jjZiYQ;72=KENWz1
+Z87 VVWj4D]BfN7doUMXNXa5VU3
+S1
+R4
+R77
+Z88 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoMemory.sv
+Z89 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoMemory.sv
+L0 13
+R8
+r1
+31
+R9
+Z90 nfifo@memory
+Z91 !s100 ToV?jUd65AGCYQK:`ognY2
+Z92 !s105 fifoMemory_sv_unit
+Z93 !s108 1417301741.963000
+Z94 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoMemory.sv|
+Z95 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoMemory.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vflipflop
+R1
+Z96 IeoInSz;[m<aCela6GfgH10
+Z97 V7DgM[inJJ49j][QghiL3o0
+S1
+R4
+R5
+Z98 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/flipflop.sv
+Z99 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/flipflop.sv
+L0 5
+R8
+r1
+31
+R9
+Z100 !s100 FEo<_7g0;ViQ:Nn4eP[Q=1
+Z101 !s105 flipflop_sv_unit
+Z102 !s108 1417301742.119000
+Z103 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/flipflop.sv|
+Z104 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/flipflop.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vfsm
+R1
+Z105 IkbY0zOc7nAXzhBMb534[A0
+Z106 V`^d<ZO<k5S`GYXj557fHc1
+S1
+R4
+R5
+Z107 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv
+Z108 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv
+L0 5
+R8
+r1
+31
+R9
+Z109 !s100 Z2Dl4aiB:Q^>9ZlRD]=^d2
+Z110 !s105 fsm_sv_unit
+Z111 !s108 1417301742.290000
+Z112 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv|
+Z113 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vmem64
+R1
+!i10b 1
+Z114 !s100 <7;>dGA4nLWn<VLGOJV3b2
+Z115 I@nWXiSS1a8laa]FMVm7@o3
+Z116 VYdL73K@`4?kLDdUO=h;0;1
+Z117 !s105 mem64_sv_unit
+S1
+R4
+R5
+Z118 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv
+Z119 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv
+L0 15
+R8
+r1
+!s85 0
+31
+!s108 1417303308.158000
+!s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv|
+Z120 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv|
+!s101 -O0
+R52
+vmemory
+R1
+Z121 ILHoN28`<AhLZoDJ7:[9960
+Z122 VY4oiLHznFUC]im2H5=T[^1
+S1
+R4
+Z123 w1415917580
+Z124 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/memory.sv
+Z125 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/memory.sv
+L0 14
+R8
+r1
+31
+R9
+Z126 !s100 ni?^=;<ERIhX59>Bfi;FV1
+Z127 !s105 memory_sv_unit
+Z128 !s108 1417301742.587000
+Z129 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/memory.sv|
+Z130 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/memory.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vmixed_width_true_dual_port_ram
+R1
+Z131 Ik6fJ]EMX7k816R1m5Ik>A3
+Z132 VYSnI?UlbomNd[B]?Q@H@f0
+S1
+R4
+Z133 w1415917582
+Z134 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mixed_width_true_dual_port_ram.sv
+Z135 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mixed_width_true_dual_port_ram.sv
+L0 15
+R8
+r1
+31
+R9
+Z136 !s100 KkbdlZkVPC_QjA`YWdZ]L2
+Z137 !s105 mixed_width_true_dual_port_ram_sv_unit
+Z138 !s108 1417301742.758000
+Z139 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mixed_width_true_dual_port_ram.sv|
+Z140 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mixed_width_true_dual_port_ram.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vTB_draw
+R1
+Z141 Ie:Xe0g2bWbz?9B0WK=^z]0
+Z142 VZc]:Ce5CP93`WXCz8_PP:3
+S1
+R4
+R5
+Z143 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_draw.sv
+Z144 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_draw.sv
+L0 10
+R8
+r1
+31
+R9
+Z145 n@t@b_draw
+Z146 !s100 zaSQ^dnkQK_oDWY3h@2?O1
+Z147 !s105 TB_draw_sv_unit
+Z148 !s108 1417301743.320000
+Z149 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_draw.sv|
+Z150 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_draw.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vTB_mem64
+R1
+Z151 !s100 hJ:?88KYVnazi=gf[zjNW3
+Z152 IocHU`IJQAHhThbkY8@O:`0
+Z153 VYk:zZW8;5[VXX>=M;J8L_1
+Z154 !s105 TB_mem64_sv_unit
+S1
+R4
+R5
+Z155 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv
+Z156 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv
+L0 10
+R8
+r1
+31
+R52
+Z157 n@t@b_mem64
+Z158 !s108 1417302305.912000
+Z159 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv|
+Z160 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vtestCompare
+R1
+Z161 IbWXM@kN]T^KJ3SN;]dj^41
+Z162 V0m>TK;I:6cYol<a6lN=LN0
+Z163 !s105 testCompare_sv_unit
+S1
+R4
+Z164 w1417303302
+Z165 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv
+Z166 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv
+L0 10
+R8
+r1
+31
+Z167 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv|
+R52
+Z168 ntest@compare
+!i10b 1
+Z169 !s100 b[eTeH_Go[S6><oFgkKgO0
+!s85 0
+Z170 !s108 1417303308.018000
+Z171 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv|
+!s101 -O0
+vtimeCalc
+R1
+Z172 IE72Q9mcF9hDOe6<PbF1=71
+Z173 VBbg3[3=W:3WAXoI>20[DL2
+S1
+R4
+R5
+Z174 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/timeCalc.sv
+Z175 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/timeCalc.sv
+L0 5
+R8
+r1
+31
+R9
+Z176 ntime@calc
+Z177 !s100 ZPkUKN4E:<mX0<kokQZ4E2
+Z178 !s105 timeCalc_sv_unit
+Z179 !s108 1417301743.819000
+Z180 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/timeCalc.sv|
+Z181 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/timeCalc.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vtopfsm
+R1
+Z182 IWhLQ;UP5hhA>VYMDSm4DK3
+Z183 VPW1HV4;bY9d>S5N_]5YP=3
+S1
+R4
+R5
+Z184 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/topfsm.sv
+Z185 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/topfsm.sv
+L0 5
+R8
+r1
+31
+R9
+Z186 !s100 CA;a7G1eeZ8V[>@F]0@EY1
+Z187 !s105 topfsm_sv_unit
+Z188 !s108 1417301743.991000
+Z189 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/topfsm.sv|
+Z190 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/topfsm.sv|
+!i10b 1
+!s85 0
+!s101 -O0
