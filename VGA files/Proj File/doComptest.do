@@ -9,4 +9,4 @@ add wave *
 view structure
 view signals
 
-run 4000 ns
+run 10000 ns

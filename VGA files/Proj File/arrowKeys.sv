@@ -7,7 +7,8 @@
 */
 
 module arrowKeys (  input logic clock,A,
-						  input logic[3:0] keys,inputState,
+						  input logic[3:0] keys,
+						  input logic[2:0] inputState,
 						  output logic [5:0] mem6x6,
 						  output logic [1:0] level);
 	

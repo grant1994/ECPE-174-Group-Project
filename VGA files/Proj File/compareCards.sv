@@ -4,7 +4,7 @@
 */
 
 /*compare 2 cards - always read the input address from the memory and compare it
-  if all cards are paired then return GO(game over) = 1 , otherwise return G) = 0.
+  if all cards are paired then return GO(game over) = 1 , otherwise return G0 = 0.
   
   //If button A is pressed the data from memory is saved. If two cards are selected then
   //compare the value of the saved data.
@@ -12,7 +12,8 @@
 */
 
 module compareCards(
-	input logic clock,A,inputState,
+	input logic clock,A,
+	input logic[2:0] inputState,
 	input logic[5:0] mem6x6,
 	output reg[4:0] data1,data2,
 	output integer pairsFound,
@@ -21,6 +22,8 @@ module compareCards(
 	reg[4:0] dataOut;
 	mem64 mr64(.clock(clock),.rAddr(mem6x6),.dataOut(dataOut));	
 	reg[5:0] cardmem1;
+	reg[5:0] cardmem2;
+	logic cardOneTwo = 1'b0;
 	//integer pairsFound=0; // This int is used to keep track of cards we have compared
 	
 	//We want the game to play, initialize GO=0 to GO play the game!
@@ -33,27 +36,43 @@ module compareCards(
 	//flip flop assigning card values (data1/data2)/memory locations(cardmem1/cardmem2)
 	always_ff@(posedge clock)
 	begin
-		//if our state is 0, we will know we are choosing the first card
-		if(A && inputState==0)
+		if(inputState==2)
 		begin
-			cardmem1<=mem6x6;
-			data1<=dataOut;
-		end	
-		//if our state is 1, we will know we are choosing the second card
-		if(A && inputState==1)
-		begin
-			if(cardmem1!=mem6x6)
+			//if cardOneTwo is 0, we will know we are choosing the first card
+			if(A && cardOneTwo==0)
 			begin
-				data2<=dataOut;
-				if(dataOut==data1)
-				begin
-					pairsFound<=pairsFound+1;
-					data1<=5'b0;
-				end
-			end
-		end
+				cardmem1<=mem6x6;
+				data1<=dataOut;
+				cardOneTwo<=1;
+			end	
+		end else
+			cardOneTwo<=0;
 	end
 	
+	//This flip flop should be able to get the 2nd card's value and test to card 1 value 
+	always_ff@(posedge clock)
+	begin
+		if(inputState==2)
+		begin
+			//issue!: this card is not read until the button is pressed twice, issue with cardOneTwo value latency?
+			if(A && cardOneTwo==1)
+			begin
+				cardmem2<=mem6x6;
+				if(cardmem1!=cardmem2)
+				begin
+					cardOneTwo<=0;
+					data2<=dataOut;
+					if(data2==data1)
+					begin
+						pairsFound<=pairsFound+1;
+						data1<=5'b0;
+					end
+				end else
+					cardOneTwo=1;
+			end
+		end else
+			cardOneTwo<=0;
+	end
 	
 	//flip flop logic for seeing if game is over
 	always_ff@(posedge clock)
