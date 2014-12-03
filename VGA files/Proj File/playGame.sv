@@ -27,7 +27,9 @@ compareCards compMod(.clock(clock),.A(syncA),.inputState(state),.mem6x6(mem6x6),
 draw drawMod(.clock(clock),.A(syncA),.keys(keys),.inputState(state),.rgb(rgb));	
 //might use ssegement here
 
-ssegment segMod1(.seg1(seg1),.seg2(seg2),.data_in(mem6x6));
+//This information displayed visually through LED grid
+//ssegment segMod1(.seg1(seg1),.seg2(seg2),.data_in(mem6x6));
+
 ssegment segMod2(.seg1(seg3),.seg2(seg4),.data_in(cardData1));
 ssegment segMod3(.seg1(seg5),.seg2(seg6),.data_in(cardData2));
 

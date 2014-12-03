@@ -17,19 +17,24 @@ module testCompare();
 	logic GO;
 	logic card;
 	integer pairsFound;
+	logic[5:0] cardmem1;
+	logic[5:0] cardmem2;
 	
 	compareCards compMod(.clock(clock),.A(A),.inputState(inputState),.mem6x6(mem6x6),.GO(GO),.pairsFound(pairsFound),.data1(data1),.data2(data2),.cardOneTwo(card));
 	always #50 clock=~clock;
 	
+	assign cardmem1 = compMod.cardmem1;
+	assign cardmem2 = compMod.cardmem2;
+	
 	task pushButton1();
-		#100 A=1;
 		mem6x6=$urandom_range(1,36);
+		#100 A=1;
 		#100 A=0;
 	endtask 
 	
 	task pushButton2();
-		#100 A=1;
 		mem6x6=$urandom_range(0,36);
+		#100 A=1;
 		#100 A=0;
 	endtask 
 	
@@ -37,25 +42,25 @@ module testCompare();
 	begin
 		$monitor("Pair %d found at time: %t",pairsFound,$time);
 		//Targeted Test set data in to 01111
-		#100 A=1;
 		mem6x6=0;
+		#100 A=1;
 		#100 A=0;
 		// set 2nd card to 01111 at mem6x6=19
-		#100 A=1;
 		mem6x6=18;
+		#100 A=1;
 		#100 A=0;
 		
 		//test for choosing same memory spots
-		#100 A=1;
 		mem6x6=5;
+		#100 A=1;
 		#100 A=0;
 		
-		#100 A=1;
 		mem6x6=5;
+		#100 A=1;
 		#100 A=0;
 		
 		//undirected test
-		repeat(500)
+		repeat(800)
 		begin
 			pushButton1();
 			pushButton2();

@@ -56,7 +56,7 @@ module compareCards(
 				begin
 					cardOneTwo<=0;
 					data2<=dataOut;
-				end else
+				end else 
 					cardOneTwo<=1;
 			end
 		end else
@@ -66,28 +66,21 @@ module compareCards(
 	//flip flop logic for seeing if game is over
 	always_ff@(posedge clock)
 	begin
-		if(data1==data2 && foundPair)
+		if(data1==data2 && foundPair && !cardOneTwo)
+		begin
 			pairsFound<=pairsFound+1;
+			foundPair<=0;
+		end
+		if(data1!=data2)
+			foundPair<=1;
 			
 		if(pairsFound==18)
 			GO<=1;
 	end
-	
-	//keep track of whether or not we found a pair
-	always_comb 
-	begin
-		foundPair=1;
-		if(data1!=data2)
-			foundPair=1;
-		else
-			foundPair=0;
-	end
-	
+
 	//keep track of memory location
-	always_comb
+	always_ff@(negedge clock)
 	begin
-		cardmem1<=0;
-		cardmem2<=0;
 		if(A)
 			if(cardOneTwo)
 				cardmem2<=mem6x6;

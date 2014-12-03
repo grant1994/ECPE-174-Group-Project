@@ -94,23 +94,23 @@ Z43 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-17
 !s101 -O0
 vcompareCards
 R1
-Z44 IQSK1L>2m<MDBi>0o<U8[E2
-Z45 VT87j5hBah29k3dW5Daz6K1
-Z46 !s105 compareCards_sv_unit
+Z44 !s100 <:0bo_Hd?GeiacZjM37d73
+Z45 IRCVM][zom8Om@AU_6i1MW0
+Z46 VT87j5hBah29k3dW5Daz6K1
+Z47 !s105 compareCards_sv_unit
 S1
 R4
-Z47 w1417566442
-Z48 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv
-Z49 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv
+Z48 w1417647548
+Z49 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv
+Z50 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv
 L0 14
 R8
 r1
 31
-Z50 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv|
-Z51 o-sv -work work -O0
-Z52 ncompare@cards
-Z53 !s100 A1Djna>4_cTmiXP`RW1ZX3
-Z54 !s108 1417566447.540000
+Z51 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv|
+Z52 o-sv -work work -O0
+Z53 ncompare@cards
+Z54 !s108 1417647675.560000
 Z55 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv|
 !i10b 1
 !s85 0
@@ -267,11 +267,11 @@ R8
 r1
 !s85 0
 31
-!s108 1417566447.907000
+!s108 1417647675.898000
 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv|
 Z121 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv|
 !s101 -O0
-R51
+R52
 vmemory
 R1
 Z122 ILHoN28`<AhLZoDJ7:[9960
@@ -355,7 +355,7 @@ R8
 r1
 31
 Z158 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv|
-R51
+R52
 Z159 n@t@b_mem64
 Z160 !s108 1417545946.242000
 Z161 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv|
@@ -364,25 +364,25 @@ Z161 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Pro
 !s101 -O0
 vtestCompare
 R1
-Z162 !s100 :9iSj:f7=LI<7nom1`Pb[2
-Z163 IE;YQ[[Kf9T`fHGen`CRV`2
-Z164 V0m>TK;I:6cYol<a6lN=LN0
-Z165 !s105 testCompare_sv_unit
+Z162 IB255oVQ>mCiMB>MW=`hIR3
+Z163 V0m>TK;I:6cYol<a6lN=LN0
+Z164 !s105 testCompare_sv_unit
 S1
 R4
-Z166 w1417566110
-Z167 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv
-Z168 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv
+Z165 w1417647673
+Z166 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv
+Z167 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv
 L0 11
 R8
 r1
 31
-Z169 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv|
-R51
-Z170 ntest@compare
+Z168 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv|
+R52
+Z169 ntest@compare
 !i10b 1
+Z170 !s100 7XMfmV?lC?VL92eiPl@?h1
 !s85 0
-Z171 !s108 1417566447.718000
+Z171 !s108 1417647675.759000
 Z172 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv|
 !s101 -O0
 vtimeCalc

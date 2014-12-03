@@ -4,9 +4,9 @@ vlog -sv -work work [pwd]/mem64.sv
 
 vsim testCompare
 
-add wave *
+add wave -unsigned * 
 
 view structure
 view signals
 
-run 10000 ns
+run 700000 ns

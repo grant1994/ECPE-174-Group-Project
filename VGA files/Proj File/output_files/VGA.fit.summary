@@ -1,16 +1,16 @@
-Fitter Status : Successful - Tue Dec 02 20:30:55 2014
+Fitter Status : Successful - Wed Dec 03 14:51:54 2014
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : VGA
 Top-level Entity Name : playGame
 Family : Cyclone IV E
 Device : EP4CE30F29C7
 Timing Models : Final
-Total logic elements : 122 / 28,848 ( < 1 % )
-    Total combinational functions : 115 / 28,848 ( < 1 % )
-    Dedicated logic registers : 37 / 28,848 ( < 1 % )
-Total registers : 37
+Total logic elements : 173 / 28,848 ( < 1 % )
+    Total combinational functions : 168 / 28,848 ( < 1 % )
+    Dedicated logic registers : 83 / 28,848 ( < 1 % )
+Total registers : 83
 Total pins : 51 / 533 ( 10 % )
 Total virtual pins : 0
-Total memory bits : 24,582 / 608,256 ( 4 % )
+Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
