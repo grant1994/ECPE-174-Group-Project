@@ -9,15 +9,15 @@
 /*
 		Memory module 
 */
-//256x240
+//111x135
 
-module dualPortMem( 	input logic WE_A,WE_B,clock,RE_B,
-							input logic [16:0] addr_A,addr_B,
+module cards6x6( 	input logic WE_A,WE_B,clock,RE_B,
+							input logic [13:0] addr_A,addr_B,
 							input logic [2:0] dataIn_A,dataIn_B, 
 							output logic [2:0] dataOut_A,dataOut_B);
 	
-	logic [2:0] ram[131071:0];
-	initial $readmemb("box.txt",ram);
+	logic [2:0] ram[16383:0];
+	initial $readmemb("cards6x6.txt",ram);
 	
 	// PORT A
 	always_ff@(posedge clock)
@@ -38,7 +38,7 @@ module dualPortMem( 	input logic WE_A,WE_B,clock,RE_B,
 			ram[addr_B] <= dataIn_B;
 		end
 		
-		if(RE_B)
+		//if(RE_B)
 			dataOut_B <= ram[addr_B];
 	end
 
