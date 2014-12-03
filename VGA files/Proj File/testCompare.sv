@@ -15,9 +15,10 @@ module testCompare();
 	logic[5:0] mem6x6=0;
 	logic [4:0] data1,data2;
 	logic GO;
+	logic card;
 	integer pairsFound;
 	
-	compareCards compMod(.clock(clock),.A(A),.inputState(inputState),.mem6x6(mem6x6),.GO(GO),.pairsFound(pairsFound),.data1(data1),.data2(data2));
+	compareCards compMod(.clock(clock),.A(A),.inputState(inputState),.mem6x6(mem6x6),.GO(GO),.pairsFound(pairsFound),.data1(data1),.data2(data2),.cardOneTwo(card));
 	always #50 clock=~clock;
 	
 	task pushButton1();
@@ -44,20 +45,6 @@ module testCompare();
 		mem6x6=18;
 		#100 A=0;
 		
-		#100 A=1;
-		mem6x6=18;
-		#100 A=0;
-		/*
-		inputState=0;
-		//Targeted Test set data in to 01111
-		#100 A=1;
-		mem6x6=0;
-		#100 A=0;
-		// set 2nd card to 01111 at mem6x6=19
-		#100 A=1;
-		mem6x6=18;
-		#100 A=0;
-		inputState=2;
 		//test for choosing same memory spots
 		#100 A=1;
 		mem6x6=5;
@@ -73,6 +60,6 @@ module testCompare();
 			pushButton1();
 			pushButton2();
 		end
-		*/
+		
 	end
 endmodule 
