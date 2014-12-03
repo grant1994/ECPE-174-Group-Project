@@ -1,8 +1,8 @@
-vlog -sv -work work [pwd]/XXXX.sv
-vlog -sv -work work [pwd]/XXXX.sv
-vlog -sv -work work [pwd]/XXXX.sv
-vlog -sv -work work [pwd]/XXXX.sv
-vsim XXXX
+vlog -sv -work work [pwd]/compareCards.sv
+vlog -sv -work work [pwd]/testCompare.sv
+vlog -sv -work work [pwd]/mem64.sv
+
+vsim testCompare
 
 add wave *
 

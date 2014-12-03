@@ -1,1 +1,2 @@
-Warning (10268): Verilog HDL information at VGAtest.sv(79): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at compareCards.sv(42): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at compareCards.sv(68): always construct contains both blocking and non-blocking assignments

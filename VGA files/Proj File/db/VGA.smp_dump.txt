@@ -1,0 +1,7 @@
+
+State Machine - |playGame|fsm:fsmMod|presentState
+Name presentState.gameover presentState.rungame presentState.menu presentState.idle 
+presentState.idle 0 0 0 0 
+presentState.menu 0 0 1 1 
+presentState.rungame 0 1 0 1 
+presentState.gameover 1 0 0 1 

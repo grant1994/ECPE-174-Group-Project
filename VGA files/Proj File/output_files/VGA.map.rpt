@@ -1,6 +1,6 @@
 Analysis & Synthesis report for VGA
-Sat Nov 29 15:18:58 2014
-Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Tue Dec 02 20:30:42 2014
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
@@ -13,11 +13,34 @@ Quartus II 32-bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Port Connectivity Checks: "mem64:mr64"
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  8. Analysis & Synthesis RAM Summary
+  9. State Machine - |playGame|fsm:fsmMod|presentState
+ 10. Registers Removed During Synthesis
+ 11. Removed Registers Triggering Further Register Optimizations
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Registers Packed Into Inferred Megafunctions
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Source assignments for draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated
+ 17. Source assignments for draw:drawMod|circle:circle_1|altsyncram:ram_rtl_0|altsyncram_id61:auto_generated
+ 18. Parameter Settings for User Entity Instance: arrowKeys:arrowMod
+ 19. Parameter Settings for User Entity Instance: draw:drawMod
+ 20. Parameter Settings for User Entity Instance: ssegment:segMod1
+ 21. Parameter Settings for User Entity Instance: ssegment:segMod2
+ 22. Parameter Settings for User Entity Instance: ssegment:segMod3
+ 23. Parameter Settings for Inferred Entity Instance: draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0
+ 24. Parameter Settings for Inferred Entity Instance: draw:drawMod|circle:circle_1|altsyncram:ram_rtl_0
+ 25. altsyncram Parameter Settings by Entity Instance
+ 26. Port Connectivity Checks: "ssegment:segMod3"
+ 27. Port Connectivity Checks: "ssegment:segMod2"
+ 28. Port Connectivity Checks: "draw:drawMod|dualPortMem:dpm"
+ 29. Port Connectivity Checks: "draw:drawMod|circle:circle_1"
+ 30. Port Connectivity Checks: "draw:drawMod"
+ 31. Port Connectivity Checks: "compareCards:compMod|mem64:mr64"
+ 32. Port Connectivity Checks: "compareCards:compMod"
+ 33. Port Connectivity Checks: "arrowKeys:arrowMod"
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
 
 
 
@@ -43,18 +66,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Nov 29 15:18:58 2014      ;
-; Quartus II 32-bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 02 20:30:42 2014      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; VGA                                        ;
-; Top-level Entity Name              ; compareCards                               ;
+; Top-level Entity Name              ; playGame                                   ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 91                                         ;
-;     Total combinational functions  ; 80                                         ;
-;     Dedicated logic registers      ; 54                                         ;
-; Total registers                    ; 54                                         ;
-; Total pins                         ; 52                                         ;
+; Total logic elements               ; 124                                        ;
+;     Total combinational functions  ; 114                                        ;
+;     Dedicated logic registers      ; 37                                         ;
+; Total registers                    ; 37                                         ;
+; Total pins                         ; 51                                         ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 0                                          ;
+; Total memory bits                  ; 24,582                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
 ; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
@@ -65,8 +88,8 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP4CE22F17C6       ;                    ;
-; Top-level entity name                                                      ; compareCards       ; VGA                ;
+; Device                                                                     ; EP4CE30F29C7       ;                    ;
+; Top-level entity name                                                      ; playGame           ; VGA                ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -164,15 +187,38 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
-; mem64.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv        ;         ;
-; compareCards.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv ;         ;
-; puzzle1.txt                      ; yes             ; Auto-Found File              ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/puzzle1.txt     ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                    ;
++-------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path    ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                    ; Library ;
++-------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
+; arrowKeys.sv                        ; yes             ; User SystemVerilog HDL File                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv                        ;         ;
+; draw.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/draw.sv                             ;         ;
+; mem64.sv                            ; yes             ; User SystemVerilog HDL File                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv                            ;         ;
+; compareCards.sv                     ; yes             ; User SystemVerilog HDL File                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv                     ;         ;
+; playGame.sv                         ; yes             ; User SystemVerilog HDL File                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/playGame.sv                         ;         ;
+; synch.v                             ; yes             ; User Verilog HDL File                                 ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/synch.v                             ;         ;
+; ssegment.v                          ; yes             ; User Verilog HDL File                                 ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/ssegment.v                          ;         ;
+; puzzle1.txt                         ; yes             ; Auto-Found File                                       ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/puzzle1.txt                         ;         ;
+; fsm.sv                              ; yes             ; Auto-Found SystemVerilog HDL File                     ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv                              ;         ;
+; circle.sv                           ; yes             ; Auto-Found SystemVerilog HDL File                     ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/circle.sv                           ;         ;
+; circles.txt                         ; yes             ; Auto-Found File                                       ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/circles.txt                         ;         ;
+; dualportmem.sv                      ; yes             ; Auto-Found SystemVerilog HDL File                     ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/dualportmem.sv                      ;         ;
+; altsyncram.tdf                      ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf                                                   ;         ;
+; stratix_ram_block.inc               ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                            ;         ;
+; lpm_mux.inc                         ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc                                                      ;         ;
+; lpm_decode.inc                      ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc                                                   ;         ;
+; aglobal131.inc                      ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                                                   ;         ;
+; a_rdenreg.inc                       ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                    ;         ;
+; altrom.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                                                       ;         ;
+; altram.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/altram.inc                                                       ;         ;
+; altdpram.inc                        ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                                                     ;         ;
+; db/altsyncram_29h1.tdf              ; yes             ; Auto-Generated Megafunction                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/altsyncram_29h1.tdf              ;         ;
+; db/decode_bua.tdf                   ; yes             ; Auto-Generated Megafunction                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/decode_bua.tdf                   ;         ;
+; db/mux_oob.tdf                      ; yes             ; Auto-Generated Megafunction                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/mux_oob.tdf                      ;         ;
+; db/altsyncram_id61.tdf              ; yes             ; Auto-Generated Megafunction                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/altsyncram_id61.tdf              ;         ;
+; db/VGA.ram0_circle_e6e899d7.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/VGA.ram0_circle_e6e899d7.hdl.mif ;         ;
++-------------------------------------+-----------------+-------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -180,40 +226,102 @@ applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 91          ;
+; Estimated Total logic elements              ; 124         ;
 ;                                             ;             ;
-; Total combinational functions               ; 80          ;
+; Total combinational functions               ; 114         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 43          ;
-;     -- 3 input functions                    ; 5           ;
-;     -- <=2 input functions                  ; 32          ;
+;     -- 4 input functions                    ; 54          ;
+;     -- 3 input functions                    ; 11          ;
+;     -- <=2 input functions                  ; 49          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 50          ;
-;     -- arithmetic mode                      ; 30          ;
+;     -- normal mode                          ; 80          ;
+;     -- arithmetic mode                      ; 34          ;
 ;                                             ;             ;
-; Total registers                             ; 54          ;
-;     -- Dedicated logic registers            ; 54          ;
+; Total registers                             ; 37          ;
+;     -- Dedicated logic registers            ; 37          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 52          ;
+; I/O pins                                    ; 51          ;
+; Total memory bits                           ; 24582       ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 54          ;
-; Total fan-out                               ; 500         ;
-; Average fan-out                             ; 2.10        ;
+; Maximum fan-out                             ; 43          ;
+; Total fan-out                               ; 536         ;
+; Average fan-out                             ; 2.07        ;
 +---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                              ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
-; |compareCards              ; 80 (60)           ; 54 (49)      ; 0           ; 0            ; 0       ; 0         ; 52   ; 0            ; |compareCards            ; work         ;
-;    |mem64:mr64|            ; 20 (20)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |compareCards|mem64:mr64 ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                     ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                           ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------+--------------+
+; |playGame                                    ; 114 (1)           ; 37 (0)       ; 24582       ; 0            ; 0       ; 0         ; 51   ; 0            ; |playGame                                                                                                     ; work         ;
+;    |arrowKeys:arrowMod|                      ; 57 (57)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|arrowKeys:arrowMod                                                                                  ; work         ;
+;    |draw:drawMod|                            ; 27 (26)           ; 17 (17)      ; 24582       ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:drawMod                                                                                        ; work         ;
+;       |circle:circle_1|                      ; 0 (0)             ; 0 (0)        ; 6           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:drawMod|circle:circle_1                                                                        ; work         ;
+;          |altsyncram:ram_rtl_0|              ; 0 (0)             ; 0 (0)        ; 6           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:drawMod|circle:circle_1|altsyncram:ram_rtl_0                                                   ; work         ;
+;             |altsyncram_id61:auto_generated| ; 0 (0)             ; 0 (0)        ; 6           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:drawMod|circle:circle_1|altsyncram:ram_rtl_0|altsyncram_id61:auto_generated                    ; work         ;
+;       |dualPortMem:dpm|                      ; 1 (0)             ; 0 (0)        ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:drawMod|dualPortMem:dpm                                                                        ; work         ;
+;          |altsyncram:ram_rtl_0|              ; 1 (0)             ; 0 (0)        ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0                                                   ; work         ;
+;             |altsyncram_29h1:auto_generated| ; 1 (0)             ; 0 (0)        ; 24576       ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated                    ; work         ;
+;                |decode_bua:decode2|          ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|decode_bua:decode2 ; work         ;
+;    |fsm:fsmMod|                              ; 2 (2)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|fsm:fsmMod                                                                                          ; work         ;
+;    |ssegment:segMod1|                        ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|ssegment:segMod1                                                                                    ; work         ;
+;    |synch:syncMod|                           ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|synch:syncMod                                                                                       ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                 ;
++---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-------------------------------------+
+; Name                                                                                        ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                 ;
++---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-------------------------------------+
+; draw:drawMod|circle:circle_1|altsyncram:ram_rtl_0|altsyncram_id61:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 512          ; 3            ; --           ; --           ; 1536   ; db/VGA.ram0_circle_e6e899d7.hdl.mif ;
+; draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 131072       ; 3            ; 131072       ; 3            ; 393216 ; None                                ;
++---------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-------------------------------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------+
+; State Machine - |playGame|fsm:fsmMod|presentState                                                            ;
++-----------------------+-----------------------+----------------------+-------------------+-------------------+
+; Name                  ; presentState.gameover ; presentState.rungame ; presentState.menu ; presentState.idle ;
++-----------------------+-----------------------+----------------------+-------------------+-------------------+
+; presentState.idle     ; 0                     ; 0                    ; 0                 ; 0                 ;
+; presentState.menu     ; 0                     ; 0                    ; 1                 ; 1                 ;
+; presentState.rungame  ; 0                     ; 1                    ; 0                 ; 1                 ;
+; presentState.gameover ; 1                     ; 0                    ; 0                 ; 1                 ;
++-----------------------+-----------------------+----------------------+-------------------+-------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                    ;
++------------------------------------------------------------------------------------------------------+------------------------------------------------+
+; Register name                                                                                        ; Reason for Removal                             ;
++------------------------------------------------------------------------------------------------------+------------------------------------------------+
+; compareCards:compMod|pairsFound[0..2,4..31]                                                          ; Merged with compareCards:compMod|pairsFound[3] ;
+; compareCards:compMod|pairsFound[3]                                                                   ; Stuck at GND due to stuck port data_in         ;
+; compareCards:compMod|GO                                                                              ; Stuck at GND due to stuck port clock_enable    ;
+; fsm:fsmMod|presentState~2                                                                            ; Lost fanout                                    ;
+; fsm:fsmMod|presentState~3                                                                            ; Lost fanout                                    ;
+; fsm:fsmMod|presentState~4                                                                            ; Lost fanout                                    ;
+; fsm:fsmMod|presentState.gameover                                                                     ; Stuck at GND due to stuck port data_in         ;
+; draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|address_reg_b[0..3] ; Stuck at GND due to stuck port data_in         ;
+; Total Number of Removed Registers = 41                                                               ;                                                ;
++------------------------------------------------------------------------------------------------------+------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                             ;
++------------------------------------+---------------------------+----------------------------------------+
+; Register name                      ; Reason for Removal        ; Registers Removed due to This Register ;
++------------------------------------+---------------------------+----------------------------------------+
+; compareCards:compMod|pairsFound[3] ; Stuck at GND              ; compareCards:compMod|GO                ;
+;                                    ; due to stuck port data_in ;                                        ;
++------------------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -221,27 +329,327 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 54    ;
+; Total registers                              ; 37    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 47    ;
+; Number of registers using Clock Enable       ; 2     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |compareCards|data1[0]~reg0 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; synch:syncMod|int_a                    ; 1       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                                 ;
++----------------------------------------------+----------------------------------------+------+
+; Register Name                                ; Megafunction                           ; Type ;
++----------------------------------------------+----------------------------------------+------+
+; draw:drawMod|dualPortMem:dpm|dataOut_B[0..2] ; draw:drawMod|dualPortMem:dpm|ram_rtl_0 ; RAM  ;
+; draw:drawMod|circle:circle_1|dataOut[0..2]   ; draw:drawMod|circle:circle_1|ram_rtl_0 ; RAM  ;
++----------------------------------------------+----------------------------------------+------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 21:1               ; 5 bits    ; 70 LEs        ; 20 LEs               ; 50 LEs                 ; No         ; |playGame|arrowKeys:arrowMod|mem6x6[5] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Source assignments for draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                        ;
++---------------------------------+--------------------+------+-------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                         ;
++---------------------------------+--------------------+------+-------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Source assignments for draw:drawMod|circle:circle_1|altsyncram:ram_rtl_0|altsyncram_id61:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                        ;
++---------------------------------+--------------------+------+-------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                         ;
++---------------------------------+--------------------+------+-------------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arrowKeys:arrowMod ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; MAXCOL         ; 6     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: draw:drawMod ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; MAX_COL        ; 256   ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ssegment:segMod1 ;
++----------------+---------+------------------------------------+
+; Parameter Name ; Value   ; Type                               ;
++----------------+---------+------------------------------------+
+; s0             ; 0000001 ; Unsigned Binary                    ;
+; s1             ; 1001111 ; Unsigned Binary                    ;
+; s2             ; 0010010 ; Unsigned Binary                    ;
+; s3             ; 0000110 ; Unsigned Binary                    ;
+; s4             ; 1001100 ; Unsigned Binary                    ;
+; s5             ; 0100100 ; Unsigned Binary                    ;
+; s6             ; 0100000 ; Unsigned Binary                    ;
+; s7             ; 0001111 ; Unsigned Binary                    ;
+; s8             ; 0000000 ; Unsigned Binary                    ;
+; s9             ; 0000100 ; Unsigned Binary                    ;
++----------------+---------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ssegment:segMod2 ;
++----------------+---------+------------------------------------+
+; Parameter Name ; Value   ; Type                               ;
++----------------+---------+------------------------------------+
+; s0             ; 0000001 ; Unsigned Binary                    ;
+; s1             ; 1001111 ; Unsigned Binary                    ;
+; s2             ; 0010010 ; Unsigned Binary                    ;
+; s3             ; 0000110 ; Unsigned Binary                    ;
+; s4             ; 1001100 ; Unsigned Binary                    ;
+; s5             ; 0100100 ; Unsigned Binary                    ;
+; s6             ; 0100000 ; Unsigned Binary                    ;
+; s7             ; 0001111 ; Unsigned Binary                    ;
+; s8             ; 0000000 ; Unsigned Binary                    ;
+; s9             ; 0000100 ; Unsigned Binary                    ;
++----------------+---------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ssegment:segMod3 ;
++----------------+---------+------------------------------------+
+; Parameter Name ; Value   ; Type                               ;
++----------------+---------+------------------------------------+
+; s0             ; 0000001 ; Unsigned Binary                    ;
+; s1             ; 1001111 ; Unsigned Binary                    ;
+; s2             ; 0010010 ; Unsigned Binary                    ;
+; s3             ; 0000110 ; Unsigned Binary                    ;
+; s4             ; 1001100 ; Unsigned Binary                    ;
+; s5             ; 0100100 ; Unsigned Binary                    ;
+; s6             ; 0100000 ; Unsigned Binary                    ;
+; s7             ; 0001111 ; Unsigned Binary                    ;
+; s8             ; 0000000 ; Unsigned Binary                    ;
+; s9             ; 0000100 ; Unsigned Binary                    ;
++----------------+---------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0 ;
++------------------------------------+----------------------+----------------------------------------+
+; Parameter Name                     ; Value                ; Type                                   ;
++------------------------------------+----------------------+----------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                         ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                ;
+; WIDTH_A                            ; 3                    ; Untyped                                ;
+; WIDTHAD_A                          ; 17                   ; Untyped                                ;
+; NUMWORDS_A                         ; 131072               ; Untyped                                ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                ;
+; WIDTH_B                            ; 3                    ; Untyped                                ;
+; WIDTHAD_B                          ; 17                   ; Untyped                                ;
+; NUMWORDS_B                         ; 131072               ; Untyped                                ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                                ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped                                ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                                ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                                ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                                ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                ;
+; CBXI_PARAMETER                     ; altsyncram_29h1      ; Untyped                                ;
++------------------------------------+----------------------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: draw:drawMod|circle:circle_1|altsyncram:ram_rtl_0 ;
++------------------------------------+-------------------------------------+-------------------------+
+; Parameter Name                     ; Value                               ; Type                    ;
++------------------------------------+-------------------------------------+-------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                   ; Untyped                 ;
+; AUTO_CARRY_CHAINS                  ; ON                                  ; AUTO_CARRY              ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                 ; IGNORE_CARRY            ;
+; AUTO_CASCADE_CHAINS                ; ON                                  ; AUTO_CASCADE            ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                 ; IGNORE_CASCADE          ;
+; WIDTH_BYTEENA                      ; 1                                   ; Untyped                 ;
+; OPERATION_MODE                     ; ROM                                 ; Untyped                 ;
+; WIDTH_A                            ; 3                                   ; Untyped                 ;
+; WIDTHAD_A                          ; 9                                   ; Untyped                 ;
+; NUMWORDS_A                         ; 512                                 ; Untyped                 ;
+; OUTDATA_REG_A                      ; UNREGISTERED                        ; Untyped                 ;
+; ADDRESS_ACLR_A                     ; NONE                                ; Untyped                 ;
+; OUTDATA_ACLR_A                     ; NONE                                ; Untyped                 ;
+; WRCONTROL_ACLR_A                   ; NONE                                ; Untyped                 ;
+; INDATA_ACLR_A                      ; NONE                                ; Untyped                 ;
+; BYTEENA_ACLR_A                     ; NONE                                ; Untyped                 ;
+; WIDTH_B                            ; 1                                   ; Untyped                 ;
+; WIDTHAD_B                          ; 1                                   ; Untyped                 ;
+; NUMWORDS_B                         ; 1                                   ; Untyped                 ;
+; INDATA_REG_B                       ; CLOCK1                              ; Untyped                 ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                              ; Untyped                 ;
+; RDCONTROL_REG_B                    ; CLOCK1                              ; Untyped                 ;
+; ADDRESS_REG_B                      ; CLOCK1                              ; Untyped                 ;
+; OUTDATA_REG_B                      ; UNREGISTERED                        ; Untyped                 ;
+; BYTEENA_REG_B                      ; CLOCK1                              ; Untyped                 ;
+; INDATA_ACLR_B                      ; NONE                                ; Untyped                 ;
+; WRCONTROL_ACLR_B                   ; NONE                                ; Untyped                 ;
+; ADDRESS_ACLR_B                     ; NONE                                ; Untyped                 ;
+; OUTDATA_ACLR_B                     ; NONE                                ; Untyped                 ;
+; RDCONTROL_ACLR_B                   ; NONE                                ; Untyped                 ;
+; BYTEENA_ACLR_B                     ; NONE                                ; Untyped                 ;
+; WIDTH_BYTEENA_A                    ; 1                                   ; Untyped                 ;
+; WIDTH_BYTEENA_B                    ; 1                                   ; Untyped                 ;
+; RAM_BLOCK_TYPE                     ; AUTO                                ; Untyped                 ;
+; BYTE_SIZE                          ; 8                                   ; Untyped                 ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                           ; Untyped                 ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                ; Untyped                 ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                ; Untyped                 ;
+; INIT_FILE                          ; db/VGA.ram0_circle_e6e899d7.hdl.mif ; Untyped                 ;
+; INIT_FILE_LAYOUT                   ; PORT_A                              ; Untyped                 ;
+; MAXIMUM_DEPTH                      ; 0                                   ; Untyped                 ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                              ; Untyped                 ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                              ; Untyped                 ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                              ; Untyped                 ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                              ; Untyped                 ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                     ; Untyped                 ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                     ; Untyped                 ;
+; ENABLE_ECC                         ; FALSE                               ; Untyped                 ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                               ; Untyped                 ;
+; WIDTH_ECCSTATUS                    ; 3                                   ; Untyped                 ;
+; DEVICE_FAMILY                      ; Cyclone IV E                        ; Untyped                 ;
+; CBXI_PARAMETER                     ; altsyncram_id61                     ; Untyped                 ;
++------------------------------------+-------------------------------------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                              ;
++-------------------------------------------+---------------------------------------------------+
+; Name                                      ; Value                                             ;
++-------------------------------------------+---------------------------------------------------+
+; Number of entity instances                ; 2                                                 ;
+; Entity Instance                           ; draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0 ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                         ;
+;     -- WIDTH_A                            ; 3                                                 ;
+;     -- NUMWORDS_A                         ; 131072                                            ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
+;     -- WIDTH_B                            ; 3                                                 ;
+;     -- NUMWORDS_B                         ; 131072                                            ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                            ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                              ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                          ;
+; Entity Instance                           ; draw:drawMod|circle:circle_1|altsyncram:ram_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                                               ;
+;     -- WIDTH_A                            ; 3                                                 ;
+;     -- NUMWORDS_A                         ; 512                                               ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                      ;
+;     -- WIDTH_B                            ; 1                                                 ;
+;     -- NUMWORDS_B                         ; 1                                                 ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                            ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                      ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                              ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                         ;
++-------------------------------------------+---------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ssegment:segMod3"                                                                                                                                 ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                         ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; data_in ; Input ; Warning  ; Input port expression (5 bits) is smaller than the input port (6 bits) it drives.  Extra input bit(s) "data_in[5..5]" will be connected to GND. ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ssegment:segMod2"                                                                                                                                 ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                         ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+; data_in ; Input ; Warning  ; Input port expression (5 bits) is smaller than the input port (6 bits) it drives.  Extra input bit(s) "data_in[5..5]" will be connected to GND. ;
++---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "draw:drawMod|dualPortMem:dpm"                                                                                                                                                           ;
++-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; WE_A      ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; WE_A[-1]  ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; WE_B      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.                                       ;
+; addr_B    ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.                                       ;
+; dataIn_B  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.                                       ;
+; dataOut_A ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++-----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mem64:mr64"                                                                                                                                   ;
+; Port Connectivity Checks: "draw:drawMod|circle:circle_1"                                                                                                                 ;
 +--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
 +--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
@@ -252,12 +660,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "draw:drawMod"                                                                                                                                           ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                            ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; inputState ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "inputState[3..3]" will be connected to GND. ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compareCards:compMod|mem64:mr64"                                                                                                              ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; WE     ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; RE     ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; wAddr  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; dataIn ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compareCards:compMod"                                                                                          ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                  ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; data1      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; data2      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; cardOneTwo ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
+; pairsFound ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arrowKeys:arrowMod"                                                                  ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; level ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -265,33 +715,216 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit Analysis & Synthesis
+Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sat Nov 29 15:18:56 2014
+    Info: Processing started: Tue Dec 02 20:30:39 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file arrowkeys.sv
+    Info (12023): Found entity 1: arrowKeys
+Info (12021): Found 1 design units, including 1 entities, in source file draw.sv
+    Info (12023): Found entity 1: draw
 Info (12021): Found 1 design units, including 1 entities, in source file mem64.sv
     Info (12023): Found entity 1: mem64
 Info (12021): Found 1 design units, including 1 entities, in source file comparecards.sv
     Info (12023): Found entity 1: compareCards
 Info (12021): Found 1 design units, including 1 entities, in source file testcompare.sv
     Info (12023): Found entity 1: testCompare
-Info (12127): Elaborating entity "compareCards" for the top level hierarchy
-Info (12128): Elaborating entity "mem64" for hierarchy "mem64:mr64"
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "mem64:mr64|ram" is uninferred due to inappropriate RAM size
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12021): Found 1 design units, including 1 entities, in source file playgametest.sv
+    Info (12023): Found entity 1: playGameTets
+Info (12021): Found 1 design units, including 1 entities, in source file playgame.sv
+    Info (12023): Found entity 1: playGame
+Info (12021): Found 1 design units, including 1 entities, in source file synch.v
+    Info (12023): Found entity 1: synch
+Info (12021): Found 1 design units, including 1 entities, in source file ssegment.v
+    Info (12023): Found entity 1: ssegment
+Info (12127): Elaborating entity "playGame" for the top level hierarchy
+Info (12128): Elaborating entity "synch" for hierarchy "synch:syncMod"
+Warning (12125): Using design file fsm.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: fsm
+Info (12128): Elaborating entity "fsm" for hierarchy "fsm:fsmMod"
+Info (12128): Elaborating entity "arrowKeys" for hierarchy "arrowKeys:arrowMod"
+Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(61): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(68): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(75): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(82): truncated value with size 32 to match size of target (6)
+Info (10264): Verilog HDL Case Statement information at arrowKeys.sv(55): all case item expressions in this case statement are onehot
+Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(102): truncated value with size 32 to match size of target (2)
+Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(106): truncated value with size 32 to match size of target (2)
+Info (10264): Verilog HDL Case Statement information at arrowKeys.sv(99): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "compareCards" for hierarchy "compareCards:compMod"
+Info (12128): Elaborating entity "mem64" for hierarchy "compareCards:compMod|mem64:mr64"
+Info (12128): Elaborating entity "draw" for hierarchy "draw:drawMod"
+Warning (10230): Verilog HDL assignment warning at draw.sv(42): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at draw.sv(43): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at draw.sv(66): truncated value with size 32 to match size of target (8)
+Warning (12125): Using design file circle.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: circle
+Info (12128): Elaborating entity "circle" for hierarchy "draw:drawMod|circle:circle_1"
+Warning (10850): Verilog HDL warning at circle.sv(22): number of words (320) in memory file does not match the number of elements in the address range [0:511]
+Warning (12125): Using design file dualportmem.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: dualPortMem
+Info (12128): Elaborating entity "dualPortMem" for hierarchy "draw:drawMod|dualPortMem:dpm"
+Info (12128): Elaborating entity "ssegment" for hierarchy "ssegment:segMod1"
+Info (19000): Inferred 2 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "draw:drawMod|dualPortMem:dpm|ram_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 3
+        Info (286033): Parameter WIDTHAD_A set to 17
+        Info (286033): Parameter NUMWORDS_A set to 131072
+        Info (286033): Parameter WIDTH_B set to 3
+        Info (286033): Parameter WIDTHAD_B set to 17
+        Info (286033): Parameter NUMWORDS_B set to 131072
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "draw:drawMod|circle:circle_1|ram_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 3
+        Info (286033): Parameter WIDTHAD_A set to 9
+        Info (286033): Parameter NUMWORDS_A set to 512
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/VGA.ram0_circle_e6e899d7.hdl.mif
+Info (12130): Elaborated megafunction instantiation "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0"
+Info (12133): Instantiated megafunction "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "3"
+    Info (12134): Parameter "WIDTHAD_A" = "17"
+    Info (12134): Parameter "NUMWORDS_A" = "131072"
+    Info (12134): Parameter "WIDTH_B" = "3"
+    Info (12134): Parameter "WIDTHAD_B" = "17"
+    Info (12134): Parameter "NUMWORDS_B" = "131072"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_29h1.tdf
+    Info (12023): Found entity 1: altsyncram_29h1
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_bua.tdf
+    Info (12023): Found entity 1: decode_bua
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_oob.tdf
+    Info (12023): Found entity 1: mux_oob
+Info (12130): Elaborated megafunction instantiation "draw:drawMod|circle:circle_1|altsyncram:ram_rtl_0"
+Info (12133): Instantiated megafunction "draw:drawMod|circle:circle_1|altsyncram:ram_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "3"
+    Info (12134): Parameter "WIDTHAD_A" = "9"
+    Info (12134): Parameter "NUMWORDS_A" = "512"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/VGA.ram0_circle_e6e899d7.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_id61.tdf
+    Info (12023): Found entity 1: altsyncram_id61
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/VGA.ram0_circle_e6e899d7.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/VGA.ram0_circle_e6e899d7.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a3"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a4"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a5"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a6"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a7"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a8"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a9"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a10"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a11"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a12"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a13"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a14"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a15"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a16"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a17"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a18"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a19"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a20"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a21"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a22"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a23"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a24"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a25"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a26"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a27"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a28"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a29"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a30"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a31"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a32"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a33"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a34"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a35"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a36"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a37"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a38"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a39"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a40"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a41"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a42"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a43"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a44"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a45"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a46"
+        Warning (14320): Synthesized away node "draw:drawMod|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_29h1:auto_generated|ram_block1a47"
+Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "seg2[5]" is stuck at GND
+    Warning (13410): Pin "seg3[0]" is stuck at VCC
+    Warning (13410): Pin "seg3[1]" is stuck at GND
+    Warning (13410): Pin "seg3[2]" is stuck at GND
+    Warning (13410): Pin "seg3[3]" is stuck at GND
+    Warning (13410): Pin "seg3[4]" is stuck at GND
+    Warning (13410): Pin "seg3[5]" is stuck at GND
+    Warning (13410): Pin "seg3[6]" is stuck at GND
+    Warning (13410): Pin "seg4[0]" is stuck at VCC
+    Warning (13410): Pin "seg4[1]" is stuck at GND
+    Warning (13410): Pin "seg4[2]" is stuck at GND
+    Warning (13410): Pin "seg4[3]" is stuck at GND
+    Warning (13410): Pin "seg4[4]" is stuck at GND
+    Warning (13410): Pin "seg4[5]" is stuck at GND
+    Warning (13410): Pin "seg4[6]" is stuck at GND
+    Warning (13410): Pin "seg5[0]" is stuck at VCC
+    Warning (13410): Pin "seg5[1]" is stuck at GND
+    Warning (13410): Pin "seg5[2]" is stuck at GND
+    Warning (13410): Pin "seg5[3]" is stuck at GND
+    Warning (13410): Pin "seg5[4]" is stuck at GND
+    Warning (13410): Pin "seg5[5]" is stuck at GND
+    Warning (13410): Pin "seg5[6]" is stuck at GND
+    Warning (13410): Pin "seg6[0]" is stuck at VCC
+    Warning (13410): Pin "seg6[1]" is stuck at GND
+    Warning (13410): Pin "seg6[2]" is stuck at GND
+    Warning (13410): Pin "seg6[3]" is stuck at GND
+    Warning (13410): Pin "seg6[4]" is stuck at GND
+    Warning (13410): Pin "seg6[5]" is stuck at GND
+    Warning (13410): Pin "seg6[6]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Info (17036): Removed 8 MSB VCC or GND address nodes from RAM block "draw:drawMod|circle:circle_1|altsyncram:ram_rtl_0|altsyncram_id61:auto_generated|ALTSYNCRAM"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 143 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 91 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 400 megabytes
-    Info: Processing ended: Sat Nov 29 15:18:59 2014
+Info (21057): Implemented 187 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 45 output pins
+    Info (21061): Implemented 130 logic cells
+    Info (21064): Implemented 6 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 93 warnings
+    Info: Peak virtual memory: 535 megabytes
+    Info: Processing ended: Tue Dec 02 20:30:42 2014
     Info: Elapsed time: 00:00:03
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:03
 
 
