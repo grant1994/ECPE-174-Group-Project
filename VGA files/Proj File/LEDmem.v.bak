@@ -1,0 +1,37 @@
+//Joseph Grant
+//10/16/2014
+
+//LEDmem: dual channel memory, yay.
+
+module LEDmem
+(
+	input logic weA, weB, clock,
+	input logic [5:0] addr_A,addr_B,
+	input logic dataA_in, dataB_in,
+	output logic dataA_out ,dataB_out);
+	
+	reg [1:0] mem[35:0];
+	initial $readmemb("cards6x6.txt",ram);
+	
+	// PORT A
+	always_ff@(posedge clock)
+	begin
+		if(weA)
+		begin 
+			mem[addr_A] <= dataA_in;
+		end	
+		dataA_out <= mem[addr_A];
+	end
+	
+	// PORT B
+	always_ff@(posedge clock)
+	begin
+		if(weB)
+		begin 
+			mem[addr_B] <= dataB_in;
+		end
+			dataB_out <= mem[addr_B];
+	end
+
+endmodule
+

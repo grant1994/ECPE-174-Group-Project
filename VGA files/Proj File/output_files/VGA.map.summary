@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Wed Dec 03 14:51:40 2014
+Analysis & Synthesis Status : Successful - Thu Dec 04 00:33:08 2014
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : VGA
 Top-level Entity Name : playGame
 Family : Cyclone IV E
-Total logic elements : 194
-    Total combinational functions : 168
-    Dedicated logic registers : 83
-Total registers : 83
-Total pins : 51
+Total logic elements : 486
+    Total combinational functions : 448
+    Dedicated logic registers : 243
+Total registers : 243
+Total pins : 92
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 442,368
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

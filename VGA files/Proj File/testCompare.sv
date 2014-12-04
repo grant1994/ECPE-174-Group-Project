@@ -27,13 +27,13 @@ module testCompare();
 	assign cardmem2 = compMod.cardmem2;
 	
 	task pushButton1();
-		mem6x6=$urandom_range(1,36);
+		mem6x6=$urandom_range(0,35);
 		#100 A=1;
 		#100 A=0;
 	endtask 
 	
 	task pushButton2();
-		mem6x6=$urandom_range(0,36);
+		mem6x6=$urandom_range(0,35);
 		#100 A=1;
 		#100 A=0;
 	endtask 

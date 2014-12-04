@@ -18,7 +18,8 @@ module compareCards(
 	output reg[4:0] data1,data2,
 	output logic cardOneTwo=1'b0,
 	output integer pairsFound,
-	output logic GO
+	output logic GO,
+	output reg [5:0] card1Loc, card2Loc, selectedCard
 );
 	reg[4:0] dataOut;
 	mem64 mr64(.clock(clock),.rAddr(mem6x6),.dataOut(dataOut));	
@@ -69,6 +70,8 @@ module compareCards(
 		if(data1==data2 && foundPair && !cardOneTwo)
 		begin
 			pairsFound<=pairsFound+1;
+			card1Loc<=cardmem1;
+			card2Loc<=cardmem2;
 			foundPair<=0;
 		end
 		if(data1!=data2)
@@ -82,9 +85,12 @@ module compareCards(
 	always_ff@(negedge clock)
 	begin
 		if(A)
-			if(cardOneTwo)
+			if(cardOneTwo) begin
 				cardmem2<=mem6x6;
-			else
+				selectedCard<=cardmem1;
+			end else begin
 				cardmem1<=mem6x6;
+				selectedCard<=6'b111111;
+			end
 	end
 endmodule

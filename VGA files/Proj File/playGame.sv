@@ -5,12 +5,14 @@
 how to playgame?
 module connecting compareCards-FSM-arrowKeys-draw-synchronizer
 ********************************************************/
+
 module playGame
 (
 	input logic clock,A,
 	input logic [3:0] keys,
 	output logic [2:0] rgb,
 	output wire [6:0] seg1, seg2, seg3, seg4, seg5, seg6,
+	output logic LEDs[35:0],
 	output logic VGA_R,VGA_G,VGA_B,VGA_HSync,VGA_VSync
 );
 
@@ -20,12 +22,20 @@ wire GO;
 wire [5:0] mem6x6;
 wire [1:0] level;
 wire [4:0] cardData1, cardData2;
+wire [5:0] card1Loc, card2Loc, selectedCard;
 
 synch syncMod(.a(A),.clk(clock),.rise_a(syncA));
 fsm fsmMod(.clk(clock),.GO(GO),.startButton(syncA),.outputState(state));
-arrowKeys arrowMod(.clock(clock),.A(syncA),.keys(keys),.inputState(state),.mem6x6(mem6x6),.level(level));	
-compareCards compMod(.clock(clock),.A(syncA),.inputState(state),.mem6x6(mem6x6),.GO(GO));	
+arrowKeys arrowMod(.clock(clock),.A(syncA),.keys(keys),.inputState(state),.mem6x6(mem6x6),.level(level));
+	
+compareCards compMod(.clock(clock),.A(syncA),.inputState(state),.mem6x6(mem6x6),.GO(GO),.card1Loc(card1Loc)
+,.card2Loc(card2Loc),.selectedCard(selectedCard));	
+
 draw drawMod(.clock(clock),.A(syncA),.keys(keys),.inputState(state),.rgb(rgb));	
+
+gridLED ledMod(.clock(clock),.mem6x6(mem6x6),.card1(card1Loc), 
+.card2(card2Loc), .selectedCard(selectedCard),.LEDs(LEDs));
+
 //might use ssegement here
 
 //This information displayed visually through LED grid

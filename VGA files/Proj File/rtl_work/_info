@@ -1,0 +1,51 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\joey\Desktop\174Project\ECPE-174-Group-Project\VGA files\Proj File
+vgridLED
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 !s100 ^bggMeGH@8K=NI1TL3[Pc1
+Z3 IKUP<baj;;5W@IzdRn:on]0
+Z4 V<Y=272]UhVRTV12FWh<IT0
+Z5 !s105 gridLED_sv_unit
+S1
+Z6 dC:\Users\joey\Desktop\174Project\ECPE-174-Group-Project\VGA files\Proj File
+Z7 w1417681504
+Z8 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv
+Z9 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv
+L0 6
+Z10 OV;L;10.1d;51
+r1
+31
+Z11 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv|
+Z12 o-sv -work work -O0
+Z13 ngrid@l@e@d
+!i10b 1
+!s85 0
+!s108 1417681974.003000
+Z14 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv|
+!s101 -O0
+vtestGrid
+R1
+!i10b 1
+!s100 53G3j<Qm>GNNL8i2;G4lL2
+IEj`[6fe0iz=EB5D2d[C]M0
+Z15 ViFgWDm=WSmYb[4B[=@e;81
+Z16 !s105 testGrid_sv_unit
+S1
+R6
+w1417681970
+Z17 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testGrid.sv
+Z18 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testGrid.sv
+L0 7
+R10
+r1
+!s85 0
+31
+!s108 1417681974.153000
+!s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testGrid.sv|
+Z19 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testGrid.sv|
+!s101 -O0
+R12
+Z20 ntest@grid
