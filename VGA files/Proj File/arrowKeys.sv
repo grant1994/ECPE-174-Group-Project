@@ -18,26 +18,38 @@ module arrowKeys (  input logic clock,A,
 	logic[5:0] currentMem,nextMem;
 	logic[3:0] keys1,keys2;
 	logic[1:0] lvl; // level temporary value
-	logic en;	
+	logic en,pressOnce;	
 	/*assign keys0[0] = up;
 	assign keys0[1] = down;
 	assign keys0[2] = left;
 	assign keys0[3] = right;*/
 	
-	assign mem6x6 = nextMem;
+	assign mem6x6 = currentMem;
 	
 	initial
 	begin
 		currentMem <= 0;
+		pressOnce <= 0;
 	end
 	
 	always_ff @(posedge clock)
 	begin 
 		keys1 <= keys;
 		keys2 <= keys1;
-		currentMem <= nextMem;
+		
+		//currentMem <= nextMem;
+		
+		if(|keys2)
+			pressOnce <= 1;
+		else
+			pressOnce <= 0;
+		
+		if(!pressOnce && |keys2 )
+		begin 
+			currentMem <= nextMem;
+		end
 	end
-	
+
 	always_ff @(posedge clock)
 	begin 
 		if(A && en)

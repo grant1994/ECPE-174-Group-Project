@@ -47,7 +47,7 @@ module testGrid();
 		testMem();
 		
 		if(LEDs[card1] && LEDs[card2])
-			$display("WOW, we actually remembered something!");
+			$display("%0dns, WOW, we actually remembered something!",$time);
 		else
 			$display("Where am I?");
 			

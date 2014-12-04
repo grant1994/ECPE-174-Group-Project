@@ -1,0 +1,25 @@
+/* ECPE 174 - Adv. Digital Design 
+	Lab #  : 
+	Author : Kelvin Flores 
+	Date : 
+	Due :  
+	
+*/
+
+`timescale 1ns/1ns
+module TB_arrowKeys();
+  
+	logic clock = 1'b0;
+
+	always #5 clock <= ~clock;
+	
+	
+	
+  initial
+  begin
+
+     
+  end
+
+  
+endmodule

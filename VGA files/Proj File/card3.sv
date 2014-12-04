@@ -28,8 +28,8 @@ module card3( input logic WE,RE,clock,
 		begin 
 			ram[wAddr] <= dataIn;
 		end
-		
-		dataOut <= ram[rAddr];
+		if(RE)
+			dataOut <= ram[rAddr];
 		
 	end
 

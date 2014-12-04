@@ -9,7 +9,7 @@ vlog -sv -work work [pwd]/testGrid.sv
 
 vsim testGrid
 
-add wave * 
+add wave -unsigned * 
 
 view structure
 view signals

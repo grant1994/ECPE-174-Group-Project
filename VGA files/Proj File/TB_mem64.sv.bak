@@ -1,0 +1,32 @@
+ /* ECPE 174 - Adv. Digital Design 
+	Lab #  : 
+	Author : Kelvin Flores 
+	Date : 
+	Due :  
+	
+*/
+
+`timescale 1ns/1ns
+module TB_mem64();
+  
+	logic clock = 1'b0;
+
+	logic [5:0] rAddr <= 0;
+	logic [4:0] dataOut;
+	
+	always #5 clock <= ~clock;
+	
+	mem64(.rAddr(rAddr),.dataOut(dataOut));
+	
+	initial
+	begin
+		 for(int i = 0; i < 64 ; i++) 
+			readAddress();
+	end
+
+	task readAddress();
+		@(posedege);
+		readAddr <= readAddr + 1;
+	endtask;
+  
+endmodule

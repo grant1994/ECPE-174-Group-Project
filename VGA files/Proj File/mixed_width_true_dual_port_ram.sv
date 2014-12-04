@@ -14,13 +14,13 @@
 
 module mixed_width_true_dual_port_ram
 	#(parameter int
-		DATA_WIDTH1 = 4,
-		ADDRESS_WIDTH1 = 16,
-		ADDRESS_WIDTH2 = 16)
+		DATA_WIDTH1 = 3,
+		ADDRESS_WIDTH1 = 17,
+		ADDRESS_WIDTH2 = 17)
 (
 		input [ADDRESS_WIDTH1-1:0] addr1,
 		input [ADDRESS_WIDTH2-1:0] addr2,
-		input [DATA_WIDTH1 -1:0] data_in1, 
+		input [DATA_WIDTH1      -1:0] data_in1, 
 		input [DATA_WIDTH1*(1<<(ADDRESS_WIDTH1 - ADDRESS_WIDTH2))-1:0] data_in2, 
 		input we1, we2, clk,
 		output reg [DATA_WIDTH1-1      :0] data_out1,

@@ -1,0 +1,47 @@
+ /* ECPE 174 - Adv. Digital Design 
+	Lab #  : 
+	Author : Kelvin Flores 
+	Date : 
+	Due :  
+	
+*/
+
+`timescale 1ns/1ns
+module TB_dpm();
+  
+	logic clock = 1'b0;
+
+	logic [5:0] rAddr;
+	logic [4:0] dataOut;
+	
+	always #5 clock <= ~clock;
+	
+	 
+ dualPortMem dpm( 	.WE_A(en),
+							.clock(clock2),
+							.addr_A(dpm_addr_A),
+							.dataIn_A(circle_out),
+							.addr_B(dpm_addr_B),
+							.dataOut_A(rgb2));
+	
+	initial
+	begin
+		$monitor("%b",dataOut);
+		@(posedge clock)
+		rAddr <= 0;
+	
+		 for(int i = 0; i < 64 ; i++) 
+		 begin 
+			readAddress();
+		 end
+		 
+		 $stop;
+	end
+
+	task readAddress();
+		#10;
+		@(posedge clock)
+		rAddr <= rAddr + 1;	
+	endtask
+  
+endmodule

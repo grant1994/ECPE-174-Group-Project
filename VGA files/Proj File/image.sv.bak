@@ -1,0 +1,23 @@
+/* ECPE 174 - Adv. Digital Design 
+	Lab #  : 
+	Author : Kelvin Flores 
+	Date : 
+	Due :  
+	
+*/
+
+module image 		 (input logic clock,
+						  input logic[13:0] addr,
+						  output logic[2:0] rgb );
+
+	logic [20:0] update;
+						  
+	card1 cr1	 (    .clock(clock),
+							.RE(update[1]),
+							.rAddr(sc_addr),
+							.dataOut(sc_out));								
+ 						  
+	
+endmodule
+						  
+						  

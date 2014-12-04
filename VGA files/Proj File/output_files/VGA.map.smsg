@@ -1,3 +1,3 @@
 Info (10281): Verilog HDL Declaration information at playGame.sv(11): object "A" differs only in case from object "a" in the same scope
-Info (10281): Verilog HDL Declaration information at playGame.sv(48): object "B" differs only in case from object "b" in the same scope
-Warning (10268): Verilog HDL information at gridLED.sv(27): always construct contains both blocking and non-blocking assignments
+Info (10281): Verilog HDL Declaration information at playGame.sv(50): object "B" differs only in case from object "b" in the same scope
+Warning (10268): Verilog HDL information at draw.sv(118): always construct contains both blocking and non-blocking assignments

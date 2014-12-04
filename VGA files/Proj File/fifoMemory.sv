@@ -10,31 +10,17 @@
 		fifo memory - memory with fifo control
 */
 
-module fifoMemory ( input logic clock,reset,
-						  input logic button,RW, 
-						  input logic [2:0] opIn,
-						  input logic [5:0] A,B,
+module fifoMemory ( input logic clock,
+						  input logic [2:0] dataIn_RGB,
 						  output logic F,E,
-						  output logic syncB, // signal for test bench
-						  output logic [5:0] Ao,Bo,
-						  output logic [2:0] opOut);
+						  output logic [2:0] dataOut_RGB);
 	logic WE,RE;
 	logic [5:0] wAddr,rAddr;
-	logic[14:0] dataIn;					  
-	logic [14:0] dataOut;			
 	
-	assign dataIn [14:12] = opIn;
-	assign dataIn [11:6] = A;
-	assign dataIn [5:0] = B;
-	
-	assign opOut = dataOut[14:12];
-	assign Ao = dataOut[11:6];
-	assign Bo = dataOut[5:0];
-	
+
 	
 				
 	fifoControl fc(	.clock(clock),
-							.reset(reset),
 							.button(button),
 							.RW(RW),
 							.WE(WE),

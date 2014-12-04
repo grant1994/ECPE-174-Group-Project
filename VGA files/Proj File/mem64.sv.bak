@@ -12,18 +12,36 @@
 */
 
 
-module mem64( input logic WE,RE,clock,
-					input logic [5:0] wAddr,rAddr,
-					input logic [4:0] dataIn,
-					output logic [4:0] dataOut) ;
+module memory( input logic WE,RE,clock,
+					input logic [16:0] wAddr,
+					input logic [16:0] rAddr,
+					input logic [2:0] dataIn, 
+					output logic [2:0] dataOut) ;
 					
 	//int foo = 100;
-
+	int xTotPix = 256;
+	int yTotPix = 239;
+	
+	int xPos = 0;
+	int yPos = 0;
 	
 	
-	logic [4:0] ram[63:0];
-	
-	initial $readmemb("puzzle1.txt",ram);
+	logic [2:0] ram[131071:0];
+	//initial $readmemh("mem1.mif",ram);
+	/*initial
+	begin 
+		for(int i = 0; i < 65535; i++)
+		begin 
+			if(i >= (xTotPix*yPos + 1) && i <= (xTotPix*yPos + 10))
+				ram[i] = 3'b010;
+			else	
+				ram[i] = 3'b000;
+			
+			if(i!=0)	
+				if(!(i%256)) yPos++;	
+		end
+			
+	end*/
 	
 
 	always_ff@(posedge clock)
@@ -32,9 +50,10 @@ module mem64( input logic WE,RE,clock,
 		begin 
 			ram[wAddr] <= dataIn;
 		end
-		
-		dataOut <= ram[rAddr];
-		
+		if(RE)
+		begin
+			dataOut <= ram[rAddr];
+		end
 	end
 
 endmodule

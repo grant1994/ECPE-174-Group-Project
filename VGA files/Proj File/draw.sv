@@ -8,6 +8,7 @@
 
 module draw	(	input logic clock,clock2,A,
 					input logic[3:0] keys,inputState,
+					input logic [5:0] mem6x6,
 					input logic[10:0] horReg,
 					input logic[9:0] verReg,
 					output logic[2:0] rgb);
@@ -20,13 +21,20 @@ module draw	(	input logic clock,clock2,A,
  parameter START_POS_Y = 45; // first card vertical start position 
  
  
+ //Variables
+ logic cd6x6_update,selected_update,last,enable;
+ //update memory variable
  
- logic dpm_en,cd6x6_en,foo,dpm_re,cd6x6_re,update,bar;
- logic[2:0] circle_out,usc_out,cd6x6_image;
+ logic dpm_en,cd6x6_en,foo,dpm_re,cd6x6_re,bar,WE;
+ logic [20:0] update;
+ //output variables
+ logic[2:0] circle_out,usc_out,cd6x6_image,sc_out,image;
+ 
+ 
  logic[16:0] dpm_addr_A,dpm_addr_B;
  logic[13:0] cd6x6_addr_A,cd6x6_addr_B;
  logic[7:0] mem_col,mem_row;//,start_pos_X,start_pos_Y;
- logic[8:0]	rAddr,wAddr;
+ logic[8:0]	rAddr,wAddr,sc_addr;
  logic[2:0] counter;
  
  initial
@@ -38,29 +46,36 @@ module draw	(	input logic clock,clock2,A,
 	mem_row <= 0;
 	dpm_en <= 1;
 	foo <= 1;
-	update <= 1;
+	cd6x6_update <= 1;
+	selected_update <= 1;
 	counter  <= 1;
 	cd6x6_en <= 1;
-	
+	cd6x6_re <= 1;
 	//start_pos_X <= 65;
 	//start_pos_Y <= 45;
- end	
+	update <= 21'b11;
+	sc_addr <= 0;
+	enable <= 1;
+ end
  
- dualPortMem dpm( 	.WE_A(dpm_en),
+ 
+ 
+
+ 
+ dualPortMem dpm( 	.WE_A(WE),
 							.RE_B(dpm_re),
 							.clock(clock),
 							.addr_A(dpm_addr_A),
-							.dataIn_A(cd6x6_image),
+							.dataIn_A(image),
 							.addr_B(dpm_addr_B),
 							.dataOut_B(rgb));
+							
+ image im(.clock(clock),.mem6x6(mem6x6),.A(A),.keys(keys),.EN(enable),.RE(WE),.col(mem_col),.row(mem_row),.image(image));
  
- cards6x6 cd6x6	  (.WE_A(cd6x6_en),
-							.RE_B(cd6x6_re),
-							.clock(clock),
-							.addr_A(cd6x6_addr_A),
-							//.dataIn_A(),
-							.addr_B(cd6x6_addr_B),
-							.dataOut_B(cd6x6_image));
+	//##################			update			##################
+	//always_ff @(negedge update[0])update <= update << 1;
+	
+ 
  
  
 	always_ff @(posedge clock)
@@ -77,19 +92,10 @@ module draw	(	input logic clock,clock2,A,
 			mem_row <= 0;
 			mem_col <= 0;
 			rAddr <= 0;
-			//foo <= 1;
+			enable <= 0;
 		end
 		
-		if(cd6x6_addr_B == 14984)
-		begin 
-			cd6x6_addr_B <= 0;
-			//foo <= 0;
-		end
-		
-		
-			
-		
-		
+
 		/*###calculation: (col >= (target_column_range_initial - 1) && col < (target_column_range_final - 1) 
 									&& row >= (target_row_range_initial - 1) && row < (target_row_range_final - 1))*/
 		
@@ -101,42 +107,20 @@ module draw	(	input logic clock,clock2,A,
 		
 		
 		//////////////////////////////////////////////////////////////////////////////////////
-		
-		if(mem_col >= 55   && mem_col < 166 && mem_row >= 53 && mem_row < 188 && foo)
-		begin 
-			cd6x6_addr_B <= cd6x6_addr_B + 1;
-			dpm_en <= 1;
-		end
-		else dpm_en <= 0;	
-		
-		/*if(mem_col >= START_POS_X  && mem_col < START_POS_X + C_LENGTH && mem_row >= START_POS_Y && mem_row < START_POS_Y + C_HEIGHT && foo)
-		begin 
-			rAddr <= rAddr + 1;
-			en <= 1;
-		end
-		else en <= 0;	
-		*/
-		
-		
-		if(rAddr == 319)
-		begin 
-			rAddr <= 0;
-			//en <= 0;
-			//foo  <= 0;
-		end	
+	
 		
 	end
 	
-	always_comb
-	begin 
-		dpm_addr_B <= (verReg - 135)*256 + (horReg - 192);	
-	end
+	
+	
+	
  
 	always_ff @(posedge clock)
 	begin 
 		if(horReg >= 192 && horReg  < 448 && verReg >= 135 && verReg < 375)
 			dpm_re <= 1;
 		else dpm_re <= 0;	
+		dpm_addr_B = (verReg - 135)*256 + (horReg - 192);	
 	end
 
 	

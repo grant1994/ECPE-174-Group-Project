@@ -2,477 +2,592 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\joey\Desktop\174Project\ECPE-174-Group-Project\VGA files\Proj File
+Z0 dC:\Users\Kelvin\Documents\Github\174-repository\ECPE-174-Group-Project\VGA files\Proj File
 varrowKeys
 Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
-Z2 IFF3NdYd^iAj;PoI4Z1IfA1
-Z3 V0jFg6z>S2<mZAfUf87]nH0
+Z2 !s100 _FjgZRm<99BfR]X;3YzKP2
+Z3 Ib4mji`ab:a2hfo]lh39Un2
+Z4 VkI>P^8:532mLkzGM]V6X?3
+Z5 !s105 arrowKeys_sv_unit
 S1
-Z4 dC:\Users\joey\Desktop\174Project\ECPE-174-Group-Project\VGA files\Proj File
-Z5 w1416975422
-Z6 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv
-Z7 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv
+Z6 dC:\Users\Kelvin\Documents\gitimworking\174-repository\ECPE-174-Group-Project\VGA files\Proj File
+Z7 w1417705263
+Z8 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv
+Z9 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv
 L0 9
-Z8 OV;L;10.1d;51
+Z10 OV;L;10.1e;51
 r1
 31
-Z9 o-work work -O0
-Z10 narrow@keys
-Z11 !s100 bOMk=Ff9YP_he?jT51feI1
-Z12 !s105 arrowKeys_sv_unit
-Z13 !s108 1417301740.699000
-Z14 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv|
-Z15 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv|
+Z12 o-sv -work work -O0
+Z13 narrow@keys
+Z14 !s108 1417708302.224000
+Z15 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv|
 !i10b 1
 !s85 0
 !s101 -O0
-vbox
+vcard1
 R1
-Z16 II6imh7U`DbIa9G@niUoOS2
-Z17 VIhlG2@QY89]8PV2gY`SP>1
+Z16 !s100 ?g]<lkTjd=5L=jVhZ]<8T3
+Z17 IV2Xg]DzZPC@PGnPYOIbgo2
+Z18 VD>0DKAg]8`g]69o?_O9HI1
+Z19 !s105 card1_sv_unit
 S1
-R4
-R5
-Z18 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/box.sv
-Z19 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/box.sv
+R6
+Z20 w1417679911
+Z21 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card1.sv
+Z22 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card1.sv
 L0 15
-R8
+R10
 r1
 31
-R9
-Z20 !s100 [DOFLgQfF7NfFK>0<d8K[3
-Z21 !s105 box_sv_unit
-Z22 !s108 1417301740.840000
-Z23 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/box.sv|
-Z24 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/box.sv|
+Z23 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card1.sv|
+R12
+Z24 !s108 1417708300.900000
+Z25 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card1.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcard2
+R1
+Z26 !s100 ZbFNl4a8QNznF=N;nA`h[0
+Z27 I9F;HD2kMG1OYc6kIHKiL43
+Z28 V;LI@9nBCgN[D^;1OocR9Q2
+Z29 !s105 card2_sv_unit
+S1
+R6
+Z30 w1417679904
+Z31 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card2.sv
+Z32 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card2.sv
+L0 15
+R10
+r1
+31
+Z33 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card2.sv|
+R12
+Z34 !s108 1417708301.026000
+Z35 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card2.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcard3
+R1
+Z36 !s100 OC0GmSmBWzgaSMg?Ee:5n1
+Z37 ICgnT?3JO4cFcRSAO=O]731
+Z38 Vg`748cmf=K0`XTE^8QH;E0
+Z39 !s105 card3_sv_unit
+S1
+R6
+Z40 w1417679916
+Z41 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card3.sv
+Z42 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card3.sv
+L0 15
+R10
+r1
+31
+Z43 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card3.sv|
+R12
+Z44 !s108 1417703709.665000
+Z45 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card3.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcards6x6
+R1
+Z46 !s100 5fY;1nRBRUFBQzmHElz_N2
+Z47 I_Gkm:=OMS4SFH>UemTf=01
+Z48 VJjl9Q6@E>?0UTQYz3@Ao_1
+Z49 !s105 cards6x6_sv_unit
+S1
+R6
+Z50 w1417673009
+Z51 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/cards6x6.sv
+Z52 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/cards6x6.sv
+L0 14
+R10
+r1
+31
+Z53 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/cards6x6.sv|
+R12
+Z54 !s108 1417708301.169000
+Z55 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/cards6x6.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vcircle
 R1
-Z25 I:IOcjBJ]CEoU:1RmJRaHV2
-Z26 VHgB8LnGgN_X`SCo55XmG31
+Z56 InW8?0l1`WU;_F@KT5`]<?1
+Z57 VHgB8LnGgN_X`SCo55XmG31
+Z58 !s105 circle_sv_unit
 S1
-R4
-R5
-Z27 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/circle.sv
-Z28 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/circle.sv
+Z59 dC:\Users\Kelvin\Documents\Github\174-repository\ECPE-174-Group-Project\VGA files\Proj File
+Z60 w1417331304
+Z61 8C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/circle.sv
+Z62 FC:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/circle.sv
 L0 15
-R8
+R10
 r1
 31
-R9
-Z29 !s100 f7n8Q9UIlC?YT2RU<EGFU3
-Z30 !s105 circle_sv_unit
-Z31 !s108 1417301741.011000
-Z32 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/circle.sv|
-Z33 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/circle.sv|
+Z63 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/circle.sv|
+R12
+Z64 !s100 HVoH>WRLcEQ9A>7:PI`ao0
+Z65 !s108 1417332209.292000
+Z66 !s107 C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/circle.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vclockdiv
 R1
-Z34 I7Qnb;A5zGE^zY]<X^<O:o2
-Z35 V6=90NV7:Yoh^7^YHU9egR1
+Z67 !s100 c9LACaOeZ3Jj5JkI23i5d1
+Z68 I18TG6;E=QYP5HF;amFoLi3
+Z69 V6=90NV7:Yoh^7^YHU9egR1
+Z70 !s105 clockdiv_sv_unit
 S1
-R4
-Z36 w1416523559
-Z37 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv
-Z38 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv
+R6
+Z71 w1416036626
+Z72 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv
+Z73 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv
 L0 12
-R8
+R10
 r1
 31
-R9
-Z39 !s100 mB4_eJhz0WODK3bDKPf1m2
-Z40 !s105 clockdiv_sv_unit
-Z41 !s108 1417301741.167000
-Z42 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv|
-Z43 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv|
+Z74 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv|
+R12
+Z75 !s108 1417708301.803000
+Z76 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vcompareCards
 R1
-Z44 !s100 <:0bo_Hd?GeiacZjM37d73
-Z45 IRCVM][zom8Om@AU_6i1MW0
-Z46 VT87j5hBah29k3dW5Daz6K1
-Z47 !s105 compareCards_sv_unit
+Z77 !s100 JaSTZhLVQcfWdSM>K7l;83
+Z78 IbXJLbK46fmXjag3?NO5^T1
+Z79 Vg_OMQ8G>;BTOAMIW25AS@1
+Z80 !s105 compareCards_sv_unit
 S1
-R4
-Z48 w1417647548
-Z49 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv
-Z50 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv
+R6
+Z81 w1417684746
+Z82 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv
+Z83 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv
 L0 14
-R8
+R10
 r1
 31
-Z51 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv|
-Z52 o-sv -work work -O0
-Z53 ncompare@cards
-Z54 !s108 1417647675.560000
-Z55 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv|
+Z84 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv|
+R12
+Z85 ncompare@cards
+Z86 !s108 1417708302.701000
+Z87 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vdraw
 R1
-Z56 Il69JNHIF1[1=FCY?<4kZX2
-Z57 VUg[fXaS4RNB<cY_A`nBa31
+Z88 !s100 R:=U3gVS3fP3_D2Y;SYQ51
+Z89 IOdJdl:TlD0S<Qd_=7NMmA3
+Z90 VaOZOz`Z3JZd20Kdj`XmCR2
+Z91 !s105 draw_sv_unit
 S1
-R4
-R5
-Z58 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/draw.sv
-Z59 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/draw.sv
+R6
+Z92 w1417703433
+Z93 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/draw.sv
+Z94 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/draw.sv
 L0 9
-R8
+R10
 r1
 31
-R9
-Z60 !s100 ElVz@;iM`]H34eGNQKTQH1
-Z61 !s105 draw_sv_unit
-Z62 !s108 1417301741.542000
-Z63 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/draw.sv|
-Z64 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/draw.sv|
+Z95 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/draw.sv|
+R12
+Z96 !s108 1417708302.329000
+Z97 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/draw.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vdualPortMem
 R1
-Z65 I1Ff774MhC5T=YfDX^:S7Q1
-Z66 VBWdD2CW[RmkE6h1P2hSTC0
+Z98 !s100 nVnj=NJ<NB6@N5z_Q[hF72
+Z99 IA3<EgZkiKH^JS7l`]ha<@2
+Z100 V7`e41eKY>Z6GBAJ>IWWMO3
+Z101 !s105 dualPortMem_sv_unit
 S1
-R4
-R5
-Z67 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv
-Z68 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv
+R6
+Z102 w1417382026
+Z103 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv
+Z104 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv
 L0 14
-R8
+R10
 r1
 31
-R9
-Z69 ndual@port@mem
-Z70 !s100 cd5_U[^PcmbfSi?`o^Tf<1
-Z71 !s105 dualPortMem_sv_unit
-Z72 !s108 1417301741.666000
-Z73 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv|
-Z74 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv|
-!i10b 1
-!s85 0
-!s101 -O0
-vfifoControl
-R1
-Z75 IaJMb4MF@5QfF;KZTd;5Z;0
-Z76 V`OE<aIFD4?zn]d7fK9EmL2
-S1
-R4
-Z77 w1415917578
-Z78 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoControl.sv
-Z79 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoControl.sv
-L0 12
-R8
-r1
-31
-R9
-Z80 nfifo@control
-Z81 !s100 ndTc8O4jPhefG?M;@SKfF0
-Z82 !s105 fifoControl_sv_unit
-Z83 !s108 1417301741.822000
-Z84 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoControl.sv|
-Z85 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoControl.sv|
-!i10b 1
-!s85 0
-!s101 -O0
-vfifoMemory
-R1
-Z86 I[Bjgl5jjZiYQ;72=KENWz1
-Z87 VVWj4D]BfN7doUMXNXa5VU3
-S1
-R4
-R77
-Z88 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoMemory.sv
-Z89 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoMemory.sv
-L0 13
-R8
-r1
-31
-R9
-Z90 nfifo@memory
-Z91 !s100 ToV?jUd65AGCYQK:`ognY2
-Z92 !s105 fifoMemory_sv_unit
-Z93 !s108 1417301741.963000
-Z94 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoMemory.sv|
-Z95 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fifoMemory.sv|
-!i10b 1
-!s85 0
-!s101 -O0
-vflipflop
-R1
-Z96 IeoInSz;[m<aCela6GfgH10
-Z97 V7DgM[inJJ49j][QghiL3o0
-S1
-R4
-R5
-Z98 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/flipflop.sv
-Z99 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/flipflop.sv
-L0 5
-R8
-r1
-31
-R9
-Z100 !s100 FEo<_7g0;ViQ:Nn4eP[Q=1
-Z101 !s105 flipflop_sv_unit
-Z102 !s108 1417301742.119000
-Z103 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/flipflop.sv|
-Z104 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/flipflop.sv|
+Z105 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv|
+R12
+Z106 ndual@port@mem
+Z107 !s108 1417708301.689000
+Z108 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vfsm
 R1
-Z105 IkbY0zOc7nAXzhBMb534[A0
-Z106 V`^d<ZO<k5S`GYXj557fHc1
+Z109 !s100 DY50feY;73z<[H:2?;HYS0
+Z110 IJ2m<m20jb8CN3KohVk2?Y2
+Z111 V`^d<ZO<k5S`GYXj557fHc1
+Z112 !s105 fsm_sv_unit
 S1
-R4
-R5
-Z107 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv
-Z108 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv
+R6
+Z113 w1417684747
+Z114 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv
+Z115 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv
 L0 5
-R8
+R10
 r1
 31
-R9
-Z109 !s100 Z2Dl4aiB:Q^>9ZlRD]=^d2
-Z110 !s105 fsm_sv_unit
-Z111 !s108 1417301742.290000
-Z112 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv|
-Z113 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv|
+Z116 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv|
+R12
+Z117 !s108 1417708302.446000
+Z118 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vgridLED
 R1
-Z114 IKUP<baj;;5W@IzdRn:on]0
-Z115 V<Y=272]UhVRTV12FWh<IT0
-Z116 !s105 gridLED_sv_unit
+Z119 !s100 D;bX00z:TfZ0o6S5?_hig1
+Z120 IKG@iUGZDM1BIc0b]H1S6D3
+Z121 V<Y=272]UhVRTV12FWh<IT0
+Z122 !s105 gridLED_sv_unit
 S1
-R4
-Z117 w1417681504
-Z118 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv
-Z119 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv
+R6
+Z123 w1417705439
+Z124 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv
+Z125 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv
 L0 6
-R8
+R10
 r1
 31
-Z120 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv|
-R52
-Z121 ngrid@l@e@d
+Z126 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv|
+R12
+Z127 ngrid@l@e@d
+Z128 !s108 1417708302.817000
+Z129 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv|
 !i10b 1
-Z122 !s100 ^bggMeGH@8K=NI1TL3[Pc1
 !s85 0
-Z123 !s108 1417681630.202000
-Z124 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv|
+!s101 -O0
+vhvsync_generator
+R1
+Z130 !s100 d<X?KkoC83KhG?RQ^AEmC0
+Z131 InBJo9NHRT8<kf;e7<nI@L1
+Z132 V5;Tg0ND1H0i^h?>M^CK4P0
+Z133 !s105 hvsync_generator_v_unit
+S1
+R6
+Z134 w1417381452
+Z135 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/hvsync_generator.v
+Z136 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/hvsync_generator.v
+L0 1
+R10
+r1
+31
+Z137 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/hvsync_generator.v|
+R12
+Z138 !s108 1417708302.020000
+Z139 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/hvsync_generator.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vimage
+R1
+Z140 !s100 gTV:cZi5jNhDWhI6_8oJ?1
+Z141 I8z7A3X:4_SNdml>aLJ2^81
+Z142 V8Z=7[5CXVRHYg4WFQ^0R<2
+Z143 !s105 image_sv_unit
+S1
+R6
+Z144 w1417689707
+Z145 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/image.sv
+Z146 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/image.sv
+L0 9
+R10
+r1
+31
+Z147 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/image.sv|
+R12
+Z148 !s108 1417708301.577000
+Z149 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/image.sv|
+!i10b 1
+!s85 0
 !s101 -O0
 vmem64
 R1
-Z125 !s100 <7;>dGA4nLWn<VLGOJV3b2
-Z126 I@nWXiSS1a8laa]FMVm7@o3
-Z127 VYdL73K@`4?kLDdUO=h;0;1
-Z128 !s105 mem64_sv_unit
+Z150 If05Eid[>i:?2Gn^[dj7X?3
+Z151 VYdL73K@`4?kLDdUO=h;0;1
+Z152 !s105 mem64_sv_unit
 S1
-R4
-Z129 w1417546573
-Z130 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv
-Z131 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv
+R59
+Z153 w1416770401
+Z154 8C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv
+Z155 FC:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv
 L0 15
-R8
+R10
 r1
 31
-Z132 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv|
-R52
-Z133 !s108 1417647675.898000
-Z134 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv|
+Z156 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv|
+R12
+Z157 !s100 =Dm:04kO2jaX5bHiMY:oS1
+Z158 !s108 1416771777.046000
+Z159 !s107 C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv|
 !i10b 1
 !s85 0
 !s101 -O0
-vmemory
+vplayGame
 R1
-Z135 ILHoN28`<AhLZoDJ7:[9960
-Z136 VY4oiLHznFUC]im2H5=T[^1
+Z160 !s100 VY5Z9h=WzBUBYbYh:@BkO1
+Z161 IF@:Xldf?dZTYIOI:4URj<1
+Z162 VYI6aLBEb9AaMb6k0`lk4L0
+Z163 !s105 playGame_sv_unit
 S1
-R4
-Z137 w1415917580
-Z138 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/memory.sv
-Z139 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/memory.sv
-L0 14
-R8
+R6
+Z164 w1417706230
+Z165 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/playGame.sv
+Z166 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/playGame.sv
+L0 9
+R10
 r1
 31
-R9
-Z140 !s100 ni?^=;<ERIhX59>Bfi;FV1
-Z141 !s105 memory_sv_unit
-Z142 !s108 1417301742.587000
-Z143 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/memory.sv|
-Z144 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/memory.sv|
+Z167 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/playGame.sv|
+R12
+Z168 nplay@game
+!i10b 1
+!s85 0
+Z169 !s108 1417708302.912000
+Z170 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/playGame.sv|
+!s101 -O0
+vselectedcard
+R1
+Z171 !s100 EXe5<RieR:f3UQHRTl_BB1
+Z172 IcJ_I_5P2eAG`CNf4_7B3P3
+Z173 Vfk6AX4QMB<T_iQXlm@i7N1
+Z174 !s105 selectedcard_sv_unit
+S1
+R6
+Z175 w1417674574
+Z176 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/selectedcard.sv
+Z177 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/selectedcard.sv
+L0 15
+R10
+r1
+31
+Z178 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/selectedcard.sv|
+R12
+Z179 !s108 1417708301.453000
+Z180 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/selectedcard.sv|
 !i10b 1
 !s85 0
 !s101 -O0
-vmixed_width_true_dual_port_ram
+vssegment
 R1
-Z145 Ik6fJ]EMX7k816R1m5Ik>A3
-Z146 VYSnI?UlbomNd[B]?Q@H@f0
+Z181 !s100 h>b:kbhj>:^Rl_Y``<;zf0
+Z182 Ib0YD4ZOBWR7IAG;>_]SgH3
+Z183 VXLM8RlcMYWN[OUX7bOhR80
+Z184 !s105 ssegment_v_unit
 S1
-R4
-Z147 w1415917582
-Z148 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mixed_width_true_dual_port_ram.sv
-Z149 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mixed_width_true_dual_port_ram.sv
-L0 15
-R8
+R6
+R113
+Z185 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/ssegment.v
+Z186 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/ssegment.v
+L0 1
+R10
 r1
 31
-R9
-Z150 !s100 KkbdlZkVPC_QjA`YWdZ]L2
-Z151 !s105 mixed_width_true_dual_port_ram_sv_unit
-Z152 !s108 1417301742.758000
-Z153 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mixed_width_true_dual_port_ram.sv|
-Z154 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mixed_width_true_dual_port_ram.sv|
+Z187 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/ssegment.v|
+R12
+Z188 !s108 1417708302.123000
+Z189 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/ssegment.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsynch
+R1
+Z190 !s100 Xim_B=gj[7l^dG]b57O0d1
+Z191 I5`A[OBk`^H?V?F6c_g`U03
+Z192 VQ@RYofn_I5GT24g4FTgNJ1
+Z193 !s105 synch_v_unit
+S1
+R6
+R113
+Z194 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/synch.v
+Z195 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/synch.v
+L0 4
+R10
+r1
+31
+Z196 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/synch.v|
+R12
+Z197 !s108 1417708301.915000
+Z198 !s107 C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/synch.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vTB_arrowKeys
+R1
+Z199 Ilgc2Do<Z@@]1B@29l:d_T2
+Z200 VlYmB1QR<fz`:33A[^RlRJ0
+Z201 !s105 TB_arrowKeys_sv_unit
+S1
+R6
+Z202 w1417686482
+Z203 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_arrowKeys.sv
+Z204 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_arrowKeys.sv
+Z205 Ftask_arrowKeys.sv
+Z206 Ftask_buttonA.sv
+L0 10
+R10
+r1
+31
+R12
+Z207 n@t@b_arrow@keys
+Z208 !s100 0O>HzH0^aB;FZaLjbdY^41
+Z209 !s108 1417686485.839000
+Z210 !s107 task_buttonA.sv|task_arrowKeys.sv|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_arrowKeys.sv|
+Z211 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_arrowKeys.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vTB_dpm
+R1
+Z212 IdOYfV;>oemY@eZ7D]8=aF2
+Z213 VXm8D1X_cdG36znlkcUz@V3
+Z214 !s105 TB_dpm_sv_unit
+S1
+R59
+Z215 w1416770235
+Z216 8C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_dpm.sv
+Z217 FC:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_dpm.sv
+L0 10
+R10
+r1
+31
+Z218 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_dpm.sv|
+R12
+Z219 n@t@b_dpm
+Z220 !s100 K[e;6ml>>GZYUWaiZ2<963
+Z221 !s108 1416772175.564000
+Z222 !s107 C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_dpm.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vTB_draw
 R1
-Z155 Ie:Xe0g2bWbz?9B0WK=^z]0
-Z156 VZc]:Ce5CP93`WXCz8_PP:3
+Z223 !s100 acX70z7iAW7^_jn7Xk_P90
+Z224 IZECH:a73C^i;n^R@FM_Gj1
+Z225 VZc]:Ce5CP93`WXCz8_PP:3
+Z226 !s105 TB_draw_sv_unit
 S1
-R4
-R5
-Z157 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_draw.sv
-Z158 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_draw.sv
+R59
+Z227 w1416772384
+Z228 8C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_draw.sv
+Z229 FC:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_draw.sv
 L0 10
-R8
+R10
 r1
 31
-R9
-Z159 n@t@b_draw
-Z160 !s100 zaSQ^dnkQK_oDWY3h@2?O1
-Z161 !s105 TB_draw_sv_unit
-Z162 !s108 1417301743.320000
-Z163 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_draw.sv|
-Z164 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_draw.sv|
+Z230 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_draw.sv|
+R12
+Z231 n@t@b_draw
+Z232 !s108 1417332209.144000
+Z233 !s107 C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_draw.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vTB_mem512
+R1
+Z234 !s100 K6=TBQ9dZoDF4E7R=T5^C2
+Z235 I]bTOzgQBT[KmgnkbR:7eI1
+Z236 V?PU;[ciU==khiJo0A=XSW2
+Z237 !s105 TB_mem512_sv_unit
+S1
+R59
+Z238 w1416771204
+Z239 8C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_mem512.sv
+Z240 FC:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_mem512.sv
+L0 10
+R10
+r1
+31
+Z241 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_mem512.sv|
+R12
+Z242 n@t@b_mem512
+Z243 !s108 1416772131.999000
+Z244 !s107 C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_mem512.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vTB_mem64
 R1
-Z165 !s100 hJ:?88KYVnazi=gf[zjNW3
-Z166 IocHU`IJQAHhThbkY8@O:`0
-Z167 VYk:zZW8;5[VXX>=M;J8L_1
-Z168 !s105 TB_mem64_sv_unit
+Z245 !s100 oc_NDUM3DGHKQzOF2C?lZ2
+Z246 IjZ<;2=FdQU:TPZ328122O1
+Z247 VYk:zZW8;5[VXX>=M;J8L_1
+Z248 !s105 TB_mem64_sv_unit
 S1
-R4
-R5
-Z169 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv
-Z170 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv
+R59
+Z249 w1416648648
+Z250 8C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv
+Z251 FC:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv
 L0 10
-R8
+R10
 r1
 31
-Z171 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv|
-R52
-Z172 n@t@b_mem64
-Z173 !s108 1417545946.242000
-Z174 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv|
+Z252 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv|
+R12
+Z253 n@t@b_mem64
+Z254 !s108 1416771777.166000
+Z255 !s107 C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_mem64.sv|
 !i10b 1
 !s85 0
 !s101 -O0
-vtestCompare
-R1
-Z175 IB255oVQ>mCiMB>MW=`hIR3
-Z176 V0m>TK;I:6cYol<a6lN=LN0
-Z177 !s105 testCompare_sv_unit
-S1
-R4
-Z178 w1417647673
-Z179 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv
-Z180 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv
-L0 11
-R8
-r1
-31
-Z181 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv|
-R52
-Z182 ntest@compare
-Z183 !s100 7XMfmV?lC?VL92eiPl@?h1
-Z184 !s108 1417647675.759000
-Z185 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testCompare.sv|
-!i10b 1
-!s85 0
-!s101 -O0
-vtestGrid
+vTB_playGame
 R1
 !i10b 1
-!s100 Yi:cMI2M];JkQ^4?S@JV>2
-IK6F=JY[fJ@S6RaBiO7:jm1
-Z186 ViFgWDm=WSmYb[4B[=@e;81
-Z187 !s105 testGrid_sv_unit
+!s100 ]b`8a;d5TPoUOkhLfj?6K2
+I2dOFjAUoDN0F3YOelJM?d0
+Z256 VFaDa3Xg9m4d<iWz0jOmRR0
+Z257 !s105 TB_playGame_sv_unit
 S1
-R4
-w1417681165
-Z188 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testGrid.sv
-Z189 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testGrid.sv
-L0 7
-R8
+R6
+w1417708292
+Z258 8C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_playGame.sv
+Z259 FC:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_playGame.sv
+R205
+R206
+L0 10
+R10
 r1
 !s85 0
 31
-!s108 1417681630.366000
-!s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testGrid.sv|
-Z190 !s90 -reportprogress|300|-sv|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/testGrid.sv|
+!s108 1417708303.075000
+!s107 task_buttonA.sv|task_arrowKeys.sv|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_playGame.sv|
+Z260 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/TB_playGame.sv|
 !s101 -O0
-R52
-Z191 ntest@grid
-vtimeCalc
+R12
+Z261 n@t@b_play@game
+vtestMem
 R1
-Z192 IE72Q9mcF9hDOe6<PbF1=71
-Z193 VBbg3[3=W:3WAXoI>20[DL2
+Z262 !s100 URC;4i<b0RSi4]KnQKC1U1
+Z263 I^CNE3[UH`S^m6YCRMH5R30
+Z264 VnbKBai4TG_3?@2FAIZJi]0
+Z265 !s105 testMem_sv_unit
 S1
-R4
-R5
-Z194 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/timeCalc.sv
-Z195 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/timeCalc.sv
-L0 5
-R8
+R59
+Z266 w1416771937
+Z267 8C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/testMem.sv
+Z268 FC:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/testMem.sv
+L0 15
+R10
 r1
 31
-R9
-Z196 ntime@calc
-Z197 !s100 ZPkUKN4E:<mX0<kokQZ4E2
-Z198 !s105 timeCalc_sv_unit
-Z199 !s108 1417301743.819000
-Z200 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/timeCalc.sv|
-Z201 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/timeCalc.sv|
-!i10b 1
-!s85 0
-!s101 -O0
-vtopfsm
-R1
-Z202 IWhLQ;UP5hhA>VYMDSm4DK3
-Z203 VPW1HV4;bY9d>S5N_]5YP=3
-S1
-R4
-R5
-Z204 8C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/topfsm.sv
-Z205 FC:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/topfsm.sv
-L0 5
-R8
-r1
-31
-R9
-Z206 !s100 CA;a7G1eeZ8V[>@F]0@EY1
-Z207 !s105 topfsm_sv_unit
-Z208 !s108 1417301743.991000
-Z209 !s107 C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/topfsm.sv|
-Z210 !s90 -reportprogress|300|-work|work|C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/topfsm.sv|
+Z269 !s90 -reportprogress|300|-sv|-work|work|C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/testMem.sv|
+R12
+Z270 ntest@mem
+Z271 !s108 1416772131.839000
+Z272 !s107 C:/Users/Kelvin/Documents/Github/174-repository/ECPE-174-Group-Project/VGA files/Proj File/testMem.sv|
 !i10b 1
 !s85 0
 !s101 -O0

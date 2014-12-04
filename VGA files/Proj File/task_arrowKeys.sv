@@ -38,8 +38,27 @@
 		@(posedge clock)
 			keys <= 0;
 		#5;
+	endtask
+
+	
+	// direct arrow keys	
+	task arrow2(int a);
+	
+		#5;
+		@(posedge clock)
+			keys <= 0;
+		#5;
 		
+		#5;
+		@(posedge clock)
+			keys <= a;
+		#5;
 		
+		#10;
+		@(posedge clock)
+			keys <= 0;
+		#5;
+	
 	endtask
 	
 	task changeState(int x);

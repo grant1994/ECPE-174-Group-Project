@@ -1,0 +1,25 @@
+vlog -sv -work work [pwd]/card1.sv
+vlog -sv -work work [pwd]/card2.sv
+vlog -sv -work work [pwd]/cards6x6.sv
+vlog -sv -work work [pwd]/selectedcard.sv
+vlog -sv -work work [pwd]/image.sv
+vlog -sv -work work [pwd]/dualPortMem.sv
+vlog -sv -work work [pwd]/clockdiv.sv
+vlog -sv -work work [pwd]/synch.v
+vlog -sv -work work [pwd]/hvsync_generator.v
+vlog -sv -work work [pwd]/ssegment.v
+vlog -sv -work work [pwd]/arrowKeys.sv
+vlog -sv -work work [pwd]/draw.sv
+vlog -sv -work work [pwd]/fsm.sv
+vlog -sv -work work [pwd]/compareCards.sv
+vlog -sv -work work [pwd]/gridLED.sv
+vlog -sv -work work [pwd]/playGame.sv
+vlog -sv -work work [pwd]/TB_playGame.sv
+vsim TB_playGame
+
+add wave -unsigned *
+
+view structure
+view signals
+
+run 1000 us

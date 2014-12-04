@@ -18,7 +18,7 @@ module compareCards(
 	output reg[4:0] data1,data2,
 	output logic cardOneTwo=1'b0,
 	output integer pairsFound,
-	output logic GO,
+	output logic GO,FP, // GAMEOVER AND FOUND PAIR
 	output reg [5:0] card1Loc, card2Loc, selectedCard
 );
 	reg[4:0] dataOut;
@@ -37,7 +37,7 @@ module compareCards(
 		pairsFound=0;
 		GO=0;
 	end
-	
+	assign FP = foundPair;
 	//flip flop assigning card values (data1/data2)/memory locations(cardmem1/cardmem2)
 	//This flip flop should be able to get the 2nd card's value and test to card 1 value 
 	always_ff@(posedge clock)
@@ -74,11 +74,18 @@ module compareCards(
 			card2Loc<=cardmem2;
 			foundPair<=0;
 		end
-		if(data1!=data2)
+		
+		/*if(data1!=data2)
 			foundPair<=1;
+			*/
+			
+		if(foundPair == 0)
+			foundPair <= 1;
 			
 		if(pairsFound==18)
 			GO<=1;
+			
+			
 	end
 
 	//keep track of memory location

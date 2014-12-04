@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="VGA">
-		<CBX_INST_ENTRY INSTANCE_NAME="|playGame|draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_tl61.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|playGame|draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_vmi1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|playGame|draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0" CBX_FILE_NAME="altsyncram_tl61.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

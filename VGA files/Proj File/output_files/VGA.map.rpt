@@ -1,6 +1,6 @@
 Analysis & Synthesis report for VGA
-Thu Dec 04 00:59:06 2014
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Thu Dec 04 11:41:40 2014
+Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
 ---------------------
@@ -19,67 +19,74 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
  11. Removed Registers Triggering Further Register Optimizations
  12. General Register Statistics
  13. Inverted Register Statistics
- 14. Registers Packed Into Inferred Megafunctions
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_vmi1:auto_generated
- 17. Source assignments for draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0|altsyncram_tl61:auto_generated
- 18. Parameter Settings for User Entity Instance: arrowKeys:arrowMod
- 19. Parameter Settings for User Entity Instance: draw:drawMod
- 20. Parameter Settings for User Entity Instance: ssegment:segMod2
- 21. Parameter Settings for User Entity Instance: ssegment:segMod3
- 22. Parameter Settings for User Entity Instance: draw:dw
- 23. Parameter Settings for Inferred Entity Instance: draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0
- 24. Parameter Settings for Inferred Entity Instance: draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0
- 25. altsyncram Parameter Settings by Entity Instance
- 26. Port Connectivity Checks: "draw:dw"
- 27. Port Connectivity Checks: "ssegment:segMod3"
- 28. Port Connectivity Checks: "ssegment:segMod2"
- 29. Port Connectivity Checks: "draw:drawMod|cards6x6:cd6x6"
- 30. Port Connectivity Checks: "draw:drawMod|dualPortMem:dpm"
- 31. Port Connectivity Checks: "draw:drawMod"
- 32. Port Connectivity Checks: "compareCards:compMod|mem64:mr64"
- 33. Port Connectivity Checks: "compareCards:compMod"
- 34. Port Connectivity Checks: "arrowKeys:arrowMod"
- 35. Elapsed Time Per Partition
- 36. Analysis & Synthesis Messages
- 37. Analysis & Synthesis Suppressed Messages
+ 14. Registers Added for RAM Pass-Through Logic
+ 15. Registers Packed Into Inferred Megafunctions
+ 16. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 17. Source assignments for draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_9ql1:auto_generated
+ 18. Source assignments for draw:dw|image:im|cards6x6:cd6x6|altsyncram:ram_rtl_0|altsyncram_cf71:auto_generated
+ 19. Source assignments for draw:dw|image:im|selectedcard:sc|altsyncram:ram_rtl_0|altsyncram_hr71:auto_generated
+ 20. Parameter Settings for User Entity Instance: arrowKeys:arrowMod
+ 21. Parameter Settings for User Entity Instance: ssegment:segMod2
+ 22. Parameter Settings for User Entity Instance: ssegment:segMod3
+ 23. Parameter Settings for User Entity Instance: draw:dw
+ 24. Parameter Settings for Inferred Entity Instance: draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0
+ 25. Parameter Settings for Inferred Entity Instance: draw:dw|image:im|cards6x6:cd6x6|altsyncram:ram_rtl_0
+ 26. Parameter Settings for Inferred Entity Instance: draw:dw|image:im|selectedcard:sc|altsyncram:ram_rtl_0
+ 27. altsyncram Parameter Settings by Entity Instance
+ 28. Port Connectivity Checks: "draw:dw|image:im|card2:cr2"
+ 29. Port Connectivity Checks: "draw:dw|image:im|card1:cr1"
+ 30. Port Connectivity Checks: "draw:dw|image:im|selectedcard:sc"
+ 31. Port Connectivity Checks: "draw:dw|image:im|cards6x6:cd6x6"
+ 32. Port Connectivity Checks: "draw:dw|dualPortMem:dpm"
+ 33. Port Connectivity Checks: "draw:dw"
+ 34. Port Connectivity Checks: "ssegment:segMod3"
+ 35. Port Connectivity Checks: "ssegment:segMod2"
+ 36. Port Connectivity Checks: "gridLED:ledMod"
+ 37. Port Connectivity Checks: "compareCards:compMod|mem64:mr64"
+ 38. Port Connectivity Checks: "compareCards:compMod"
+ 39. Port Connectivity Checks: "arrowKeys:arrowMod"
+ 40. Post-Synthesis Netlist Statistics for Top Partition
+ 41. Elapsed Time Per Partition
+ 42. Analysis & Synthesis Messages
+ 43. Analysis & Synthesis Suppressed Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
 
 
 
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 04 00:59:06 2014      ;
-; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Thu Dec 04 11:41:40 2014      ;
+; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; VGA                                        ;
 ; Top-level Entity Name              ; playGame                                   ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 486                                        ;
-;     Total combinational functions  ; 448                                        ;
-;     Dedicated logic registers      ; 243                                        ;
-; Total registers                    ; 243                                        ;
-; Total pins                         ; 92                                         ;
+; Total logic elements               ; 520                                        ;
+;     Total combinational functions  ; 444                                        ;
+;     Dedicated logic registers      ; 262                                        ;
+; Total registers                    ; 262                                        ;
+; Total pins                         ; 96                                         ;
 ; Total virtual pins                 ; 0                                          ;
-; Total memory bits                  ; 442,368                                    ;
+; Total memory bits                  ; 443,904                                    ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
 ; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
@@ -90,7 +97,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP4CE30F29C7       ;                    ;
+; Device                                                                     ; EP4CE22F17C6       ;                    ;
 ; Top-level entity name                                                      ; playGame           ; VGA                ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
@@ -172,62 +179,64 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                              ;
-+------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path         ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                         ; Library ;
-+------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
-; arrowKeys.sv                             ; yes             ; User SystemVerilog HDL File                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv                             ;         ;
-; draw.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/draw.sv                                  ;         ;
-; mem64.sv                                 ; yes             ; User SystemVerilog HDL File                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv                                 ;         ;
-; compareCards.sv                          ; yes             ; User SystemVerilog HDL File                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv                          ;         ;
-; playGame.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/playGame.sv                              ;         ;
-; synch.v                                  ; yes             ; User Verilog HDL File                                 ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/synch.v                                  ;         ;
-; ssegment.v                               ; yes             ; User Verilog HDL File                                 ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/ssegment.v                               ;         ;
-; gridLED.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv                               ;         ;
-; puzzle1.txt                              ; yes             ; Auto-Found File                                       ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/puzzle1.txt                              ;         ;
-; fsm.sv                                   ; yes             ; Auto-Found SystemVerilog HDL File                     ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv                                   ;         ;
-; dualportmem.sv                           ; yes             ; Auto-Found SystemVerilog HDL File                     ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/dualportmem.sv                           ;         ;
-; box.txt                                  ; yes             ; Auto-Found File                                       ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/box.txt                                  ;         ;
-; cards6x6.sv                              ; yes             ; Auto-Found SystemVerilog HDL File                     ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/cards6x6.sv                              ;         ;
-; cards6x6.txt                             ; yes             ; Auto-Found File                                       ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/cards6x6.txt                             ;         ;
-; clockdiv.sv                              ; yes             ; Auto-Found SystemVerilog HDL File                     ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv                              ;         ;
-; hvsync_generator.v                       ; yes             ; Auto-Found Verilog HDL File                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/hvsync_generator.v                       ;         ;
-; altsyncram.tdf                           ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf                                                        ;         ;
-; stratix_ram_block.inc                    ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                 ;         ;
-; lpm_mux.inc                              ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc                                                           ;         ;
-; lpm_decode.inc                           ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc                                                        ;         ;
-; aglobal131.inc                           ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc                                                        ;         ;
-; a_rdenreg.inc                            ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                         ;         ;
-; altrom.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/altrom.inc                                                            ;         ;
-; altram.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/altram.inc                                                            ;         ;
-; altdpram.inc                             ; yes             ; Megafunction                                          ; c:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc                                                          ;         ;
-; db/altsyncram_vmi1.tdf                   ; yes             ; Auto-Generated Megafunction                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/altsyncram_vmi1.tdf                   ;         ;
-; db/vga.ram0_dualportmem_2281280c.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/vga.ram0_dualportmem_2281280c.hdl.mif ;         ;
-; db/decode_bua.tdf                        ; yes             ; Auto-Generated Megafunction                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/decode_bua.tdf                        ;         ;
-; db/mux_oob.tdf                           ; yes             ; Auto-Generated Megafunction                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/mux_oob.tdf                           ;         ;
-; db/altsyncram_tl61.tdf                   ; yes             ; Auto-Generated Megafunction                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/altsyncram_tl61.tdf                   ;         ;
-; db/vga.ram0_cards6x6_8fa761c7.hdl.mif    ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/vga.ram0_cards6x6_8fa761c7.hdl.mif    ;         ;
-; db/decode_c8a.tdf                        ; yes             ; Auto-Generated Megafunction                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/decode_c8a.tdf                        ;         ;
-; db/mux_umb.tdf                           ; yes             ; Auto-Generated Megafunction                           ; C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/db/mux_umb.tdf                           ;         ;
-+------------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                     ;
++-------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path          ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                               ; Library ;
++-------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; clockdiv.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/clockdiv.sv                               ;         ;
+; gridLED.sv                                ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/gridLED.sv                                ;         ;
+; compareCards.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/compareCards.sv                           ;         ;
+; fsm.sv                                    ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/fsm.sv                                    ;         ;
+; arrowKeys.sv                              ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/arrowKeys.sv                              ;         ;
+; ssegment.v                                ; yes             ; User Verilog HDL File                                 ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/ssegment.v                                ;         ;
+; synch.v                                   ; yes             ; User Verilog HDL File                                 ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/synch.v                                   ;         ;
+; playGame.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/playGame.sv                               ;         ;
+; image.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/image.sv                                  ;         ;
+; draw.sv                                   ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/draw.sv                                   ;         ;
+; dualPortMem.sv                            ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/dualPortMem.sv                            ;         ;
+; hvsync_generator.v                        ; yes             ; User Verilog HDL File                                 ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/hvsync_generator.v                        ;         ;
+; selectedcard.sv                           ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/selectedcard.sv                           ;         ;
+; card1.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card1.sv                                  ;         ;
+; card2.sv                                  ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card2.sv                                  ;         ;
+; cards6x6.sv                               ; yes             ; User SystemVerilog HDL File                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/cards6x6.sv                               ;         ;
+; selectedcard.txt                          ; yes             ; Auto-Found File                                       ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/selectedcard.txt                          ;         ;
+; box.txt                                   ; yes             ; Auto-Found File                                       ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/box.txt                                   ;         ;
+; card2.txt                                 ; yes             ; Auto-Found File                                       ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card2.txt                                 ;         ;
+; cards6x6.txt                              ; yes             ; Auto-Found File                                       ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/cards6x6.txt                              ;         ;
+; card1.txt                                 ; yes             ; Auto-Found File                                       ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/card1.txt                                 ;         ;
+; mem64.sv                                  ; yes             ; Auto-Found SystemVerilog HDL File                     ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/mem64.sv                                  ;         ;
+; puzzle1.txt                               ; yes             ; Auto-Found File                                       ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/puzzle1.txt                               ;         ;
+; altsyncram.tdf                            ; yes             ; Megafunction                                          ; c:/altera/14.0/quartus/libraries/megafunctions/altsyncram.tdf                                                                              ;         ;
+; stratix_ram_block.inc                     ; yes             ; Megafunction                                          ; c:/altera/14.0/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                       ;         ;
+; lpm_mux.inc                               ; yes             ; Megafunction                                          ; c:/altera/14.0/quartus/libraries/megafunctions/lpm_mux.inc                                                                                 ;         ;
+; lpm_decode.inc                            ; yes             ; Megafunction                                          ; c:/altera/14.0/quartus/libraries/megafunctions/lpm_decode.inc                                                                              ;         ;
+; aglobal140.inc                            ; yes             ; Megafunction                                          ; c:/altera/14.0/quartus/libraries/megafunctions/aglobal140.inc                                                                              ;         ;
+; a_rdenreg.inc                             ; yes             ; Megafunction                                          ; c:/altera/14.0/quartus/libraries/megafunctions/a_rdenreg.inc                                                                               ;         ;
+; altrom.inc                                ; yes             ; Megafunction                                          ; c:/altera/14.0/quartus/libraries/megafunctions/altrom.inc                                                                                  ;         ;
+; altram.inc                                ; yes             ; Megafunction                                          ; c:/altera/14.0/quartus/libraries/megafunctions/altram.inc                                                                                  ;         ;
+; altdpram.inc                              ; yes             ; Megafunction                                          ; c:/altera/14.0/quartus/libraries/megafunctions/altdpram.inc                                                                                ;         ;
+; db/altsyncram_9ql1.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/db/altsyncram_9ql1.tdf                    ;         ;
+; db/vga.ram0_dualportmem_2281280c.hdl.mif  ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/db/vga.ram0_dualportmem_2281280c.hdl.mif  ;         ;
+; db/decode_bua.tdf                         ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/db/decode_bua.tdf                         ;         ;
+; db/mux_oob.tdf                            ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/db/mux_oob.tdf                            ;         ;
+; db/altsyncram_cf71.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/db/altsyncram_cf71.tdf                    ;         ;
+; db/vga.ram0_cards6x6_8fa761c7.hdl.mif     ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/db/vga.ram0_cards6x6_8fa761c7.hdl.mif     ;         ;
+; db/mux_umb.tdf                            ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/db/mux_umb.tdf                            ;         ;
+; db/altsyncram_hr71.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/db/altsyncram_hr71.tdf                    ;         ;
+; db/vga.ram0_selectedcard_77ee06cc.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/db/vga.ram0_selectedcard_77ee06cc.hdl.mif ;         ;
++-------------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -235,69 +244,69 @@ applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 486         ;
+; Estimated Total logic elements              ; 520         ;
 ;                                             ;             ;
-; Total combinational functions               ; 448         ;
+; Total combinational functions               ; 444         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 226         ;
-;     -- 3 input functions                    ; 40          ;
-;     -- <=2 input functions                  ; 182         ;
+;     -- 4 input functions                    ; 176         ;
+;     -- 3 input functions                    ; 77          ;
+;     -- <=2 input functions                  ; 191         ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 294         ;
-;     -- arithmetic mode                      ; 154         ;
+;     -- normal mode                          ; 313         ;
+;     -- arithmetic mode                      ; 131         ;
 ;                                             ;             ;
-; Total registers                             ; 243         ;
-;     -- Dedicated logic registers            ; 243         ;
+; Total registers                             ; 262         ;
+;     -- Dedicated logic registers            ; 262         ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 92          ;
-; Total memory bits                           ; 442368      ;
+; I/O pins                                    ; 96          ;
+; Total memory bits                           ; 443904      ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ; Maximum fan-out node                        ; clock~input ;
-; Maximum fan-out                             ; 272         ;
-; Total fan-out                               ; 3637        ;
-; Average fan-out                             ; 3.91        ;
+; Maximum fan-out                             ; 294         ;
+; Total fan-out                               ; 3516        ;
+; Average fan-out                             ; 3.68        ;
 +---------------------------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                      ; Library Name ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------+--------------+
-; |playGame                                    ; 448 (13)          ; 243 (3)      ; 442368      ; 0            ; 0       ; 0         ; 92   ; 0            ; |playGame                                                                                                ; work         ;
-;    |arrowKeys:arrowMod|                      ; 57 (57)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|arrowKeys:arrowMod                                                                             ; work         ;
-;    |clockdiv:cd|                             ; 45 (45)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|clockdiv:cd                                                                                    ; work         ;
-;    |compareCards:compMod|                    ; 83 (63)           ; 68 (63)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|compareCards:compMod                                                                           ; work         ;
-;       |mem64:mr64|                           ; 20 (20)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|compareCards:compMod|mem64:mr64                                                                ; work         ;
-;    |draw:drawMod|                            ; 75 (75)           ; 48 (48)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:drawMod                                                                                   ; work         ;
-;    |draw:dw|                                 ; 75 (22)           ; 6 (1)        ; 442368      ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw                                                                                        ; work         ;
-;       |cards6x6:cd6x6|                       ; 3 (0)             ; 1 (0)        ; 49152       ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|cards6x6:cd6x6                                                                         ; work         ;
-;          |altsyncram:ram_rtl_0|              ; 3 (0)             ; 1 (0)        ; 49152       ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0                                                    ; work         ;
-;             |altsyncram_tl61:auto_generated| ; 3 (0)             ; 1 (1)        ; 49152       ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0|altsyncram_tl61:auto_generated                     ; work         ;
-;                |mux_umb:mux2|                ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0|altsyncram_tl61:auto_generated|mux_umb:mux2        ; work         ;
-;       |dualPortMem:dpm|                      ; 50 (0)            ; 4 (0)        ; 393216      ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|dualPortMem:dpm                                                                        ; work         ;
-;          |altsyncram:ram_rtl_0|              ; 50 (0)            ; 4 (0)        ; 393216      ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0                                                   ; work         ;
-;             |altsyncram_vmi1:auto_generated| ; 50 (0)            ; 4 (4)        ; 393216      ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_vmi1:auto_generated                    ; work         ;
-;                |decode_bua:decode2|          ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_vmi1:auto_generated|decode_bua:decode2 ; work         ;
-;                |mux_oob:mux3|                ; 31 (31)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_vmi1:auto_generated|mux_oob:mux3       ; work         ;
-;    |fsm:fsmMod|                              ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|fsm:fsmMod                                                                                     ; work         ;
-;    |gridLED:ledMod|                          ; 62 (62)           ; 48 (48)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|gridLED:ledMod                                                                                 ; work         ;
-;    |hvsync_generator:syncgen|                ; 31 (31)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|hvsync_generator:syncgen                                                                       ; work         ;
-;    |synch:syncMod|                           ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|synch:syncMod                                                                                  ; work         ;
-+----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------+--------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                   ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                      ; Library Name ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------+--------------+
+; |playGame                                       ; 444 (10)          ; 262 (3)      ; 443904      ; 0            ; 0       ; 0         ; 96   ; 0            ; |playGame                                                                                                ; work         ;
+;    |arrowKeys:arrowMod|                         ; 53 (53)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|arrowKeys:arrowMod                                                                             ; work         ;
+;    |clockdiv:cd|                                ; 55 (55)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|clockdiv:cd                                                                                    ; work         ;
+;    |draw:dw|                                    ; 245 (68)          ; 117 (35)     ; 443904      ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw                                                                                        ; work         ;
+;       |dualPortMem:dpm|                         ; 75 (18)           ; 48 (44)      ; 393216      ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|dualPortMem:dpm                                                                        ; work         ;
+;          |altsyncram:ram_rtl_0|                 ; 57 (0)            ; 4 (0)        ; 393216      ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0                                                   ; work         ;
+;             |altsyncram_9ql1:auto_generated|    ; 57 (0)            ; 4 (4)        ; 393216      ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_9ql1:auto_generated                    ; work         ;
+;                |decode_bua:decode2|             ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_9ql1:auto_generated|decode_bua:decode2 ; work         ;
+;                |mux_oob:mux3|                   ; 38 (38)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_9ql1:auto_generated|mux_oob:mux3       ; work         ;
+;       |image:im|                                ; 102 (102)         ; 34 (33)      ; 50688       ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|image:im                                                                               ; work         ;
+;          |cards6x6:cd6x6|                       ; 0 (0)             ; 1 (0)        ; 49152       ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|image:im|cards6x6:cd6x6                                                                ; work         ;
+;             |altsyncram:ram_rtl_0|              ; 0 (0)             ; 1 (0)        ; 49152       ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|image:im|cards6x6:cd6x6|altsyncram:ram_rtl_0                                           ; work         ;
+;                |altsyncram_cf71:auto_generated| ; 0 (0)             ; 1 (1)        ; 49152       ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|image:im|cards6x6:cd6x6|altsyncram:ram_rtl_0|altsyncram_cf71:auto_generated            ; work         ;
+;          |selectedcard:sc|                      ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|image:im|selectedcard:sc                                                               ; work         ;
+;             |altsyncram:ram_rtl_0|              ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|image:im|selectedcard:sc|altsyncram:ram_rtl_0                                          ; work         ;
+;                |altsyncram_hr71:auto_generated| ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|draw:dw|image:im|selectedcard:sc|altsyncram:ram_rtl_0|altsyncram_hr71:auto_generated           ; work         ;
+;    |gridLED:ledMod|                             ; 47 (47)           ; 70 (70)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|gridLED:ledMod                                                                                 ; work         ;
+;    |hvsync_generator:syncgen|                   ; 32 (32)           ; 22 (22)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|hvsync_generator:syncgen                                                                       ; work         ;
+;    |synch:syncMod|                              ; 2 (2)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |playGame|synch:syncMod                                                                                  ; work         ;
++-------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                 ;
-+----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------------------------+
-; Name                                                                                   ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                      ;
-+----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------------------------+
-; draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0|altsyncram_tl61:auto_generated|ALTSYNCRAM  ; AUTO ; ROM              ; 16384        ; 3            ; --           ; --           ; 49152  ; db/VGA.ram0_cards6x6_8fa761c7.hdl.mif    ;
-; draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_vmi1:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 131072       ; 3            ; 131072       ; 3            ; 393216 ; db/VGA.ram0_dualPortMem_2281280c.hdl.mif ;
-+----------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                           ;
++-------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-------------------------------------------+
+; Name                                                                                            ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF                                       ;
++-------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-------------------------------------------+
+; draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_9ql1:auto_generated|ALTSYNCRAM          ; AUTO ; Simple Dual Port ; 131072       ; 3            ; 131072       ; 3            ; 393216 ; db/VGA.ram0_dualPortMem_2281280c.hdl.mif  ;
+; draw:dw|image:im|cards6x6:cd6x6|altsyncram:ram_rtl_0|altsyncram_cf71:auto_generated|ALTSYNCRAM  ; AUTO ; ROM              ; 16384        ; 3            ; --           ; --           ; 49152  ; db/VGA.ram0_cards6x6_8fa761c7.hdl.mif     ;
+; draw:dw|image:im|selectedcard:sc|altsyncram:ram_rtl_0|altsyncram_hr71:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 512          ; 3            ; --           ; --           ; 1536   ; db/VGA.ram0_selectedcard_77ee06cc.hdl.mif ;
++-------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+-------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -313,91 +322,110 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------+----------------------+-------------------+-------------------+
 
 
-+--------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                         ;
-+----------------------------------------------+---------------------------------------------+
-; Register name                                ; Reason for Removal                          ;
-+----------------------------------------------+---------------------------------------------+
-; arrowKeys:arrowMod|currentMem[0]             ; Merged with gridLED:ledMod|cardmem1[0]      ;
-; arrowKeys:arrowMod|currentMem[1]             ; Merged with gridLED:ledMod|cardmem1[1]      ;
-; arrowKeys:arrowMod|currentMem[2]             ; Merged with gridLED:ledMod|cardmem1[2]      ;
-; arrowKeys:arrowMod|currentMem[3]             ; Merged with gridLED:ledMod|cardmem1[3]      ;
-; arrowKeys:arrowMod|currentMem[4]             ; Merged with gridLED:ledMod|cardmem1[4]      ;
-; arrowKeys:arrowMod|currentMem[5]             ; Merged with gridLED:ledMod|cardmem1[5]      ;
-; draw:dw|dpm_en                               ; Merged with draw:drawMod|dpm_en             ;
-; draw:dw|dpm_addr_A[0]                        ; Merged with draw:drawMod|dpm_addr_A[0]      ;
-; draw:dw|dpm_addr_A[1]                        ; Merged with draw:drawMod|dpm_addr_A[1]      ;
-; draw:dw|dpm_addr_A[2]                        ; Merged with draw:drawMod|dpm_addr_A[2]      ;
-; draw:dw|dpm_addr_A[3]                        ; Merged with draw:drawMod|dpm_addr_A[3]      ;
-; draw:dw|dpm_addr_A[4]                        ; Merged with draw:drawMod|dpm_addr_A[4]      ;
-; draw:dw|dpm_addr_A[5]                        ; Merged with draw:drawMod|dpm_addr_A[5]      ;
-; draw:dw|dpm_addr_A[6]                        ; Merged with draw:drawMod|dpm_addr_A[6]      ;
-; draw:dw|dpm_addr_A[7]                        ; Merged with draw:drawMod|dpm_addr_A[7]      ;
-; draw:dw|dpm_addr_A[8]                        ; Merged with draw:drawMod|dpm_addr_A[8]      ;
-; draw:dw|dpm_addr_A[9]                        ; Merged with draw:drawMod|dpm_addr_A[9]      ;
-; draw:dw|dpm_addr_A[10]                       ; Merged with draw:drawMod|dpm_addr_A[10]     ;
-; draw:dw|dpm_addr_A[11]                       ; Merged with draw:drawMod|dpm_addr_A[11]     ;
-; draw:dw|dpm_addr_A[12]                       ; Merged with draw:drawMod|dpm_addr_A[12]     ;
-; draw:dw|dpm_addr_A[13]                       ; Merged with draw:drawMod|dpm_addr_A[13]     ;
-; draw:dw|dpm_addr_A[14]                       ; Merged with draw:drawMod|dpm_addr_A[14]     ;
-; draw:dw|dpm_addr_A[15]                       ; Merged with draw:drawMod|dpm_addr_A[15]     ;
-; draw:dw|dpm_addr_A[16]                       ; Merged with draw:drawMod|dpm_addr_A[16]     ;
-; draw:dw|mem_col[7]                           ; Merged with draw:drawMod|mem_col[7]         ;
-; draw:dw|mem_col[6]                           ; Merged with draw:drawMod|mem_col[6]         ;
-; draw:dw|mem_col[5]                           ; Merged with draw:drawMod|mem_col[5]         ;
-; draw:dw|mem_col[4]                           ; Merged with draw:drawMod|mem_col[4]         ;
-; draw:dw|mem_col[3]                           ; Merged with draw:drawMod|mem_col[3]         ;
-; draw:dw|mem_col[2]                           ; Merged with draw:drawMod|mem_col[2]         ;
-; draw:dw|mem_col[1]                           ; Merged with draw:drawMod|mem_col[1]         ;
-; draw:dw|mem_col[0]                           ; Merged with draw:drawMod|mem_col[0]         ;
-; draw:dw|mem_row[7]                           ; Merged with draw:drawMod|mem_row[7]         ;
-; draw:dw|mem_row[6]                           ; Merged with draw:drawMod|mem_row[6]         ;
-; draw:dw|mem_row[5]                           ; Merged with draw:drawMod|mem_row[5]         ;
-; draw:dw|mem_row[4]                           ; Merged with draw:drawMod|mem_row[4]         ;
-; draw:dw|mem_row[3]                           ; Merged with draw:drawMod|mem_row[3]         ;
-; draw:dw|mem_row[2]                           ; Merged with draw:drawMod|mem_row[2]         ;
-; draw:dw|mem_row[1]                           ; Merged with draw:drawMod|mem_row[1]         ;
-; draw:dw|mem_row[0]                           ; Merged with draw:drawMod|mem_row[0]         ;
-; draw:dw|cd6x6_addr_B[0]                      ; Merged with draw:drawMod|cd6x6_addr_B[0]    ;
-; draw:dw|cd6x6_addr_B[1]                      ; Merged with draw:drawMod|cd6x6_addr_B[1]    ;
-; draw:dw|cd6x6_addr_B[2]                      ; Merged with draw:drawMod|cd6x6_addr_B[2]    ;
-; draw:dw|cd6x6_addr_B[3]                      ; Merged with draw:drawMod|cd6x6_addr_B[3]    ;
-; draw:dw|cd6x6_addr_B[4]                      ; Merged with draw:drawMod|cd6x6_addr_B[4]    ;
-; draw:dw|cd6x6_addr_B[5]                      ; Merged with draw:drawMod|cd6x6_addr_B[5]    ;
-; draw:dw|cd6x6_addr_B[6]                      ; Merged with draw:drawMod|cd6x6_addr_B[6]    ;
-; draw:dw|cd6x6_addr_B[7]                      ; Merged with draw:drawMod|cd6x6_addr_B[7]    ;
-; draw:dw|cd6x6_addr_B[8]                      ; Merged with draw:drawMod|cd6x6_addr_B[8]    ;
-; draw:dw|cd6x6_addr_B[9]                      ; Merged with draw:drawMod|cd6x6_addr_B[9]    ;
-; draw:dw|cd6x6_addr_B[10]                     ; Merged with draw:drawMod|cd6x6_addr_B[10]   ;
-; draw:dw|cd6x6_addr_B[11]                     ; Merged with draw:drawMod|cd6x6_addr_B[11]   ;
-; draw:dw|cd6x6_addr_B[12]                     ; Merged with draw:drawMod|cd6x6_addr_B[12]   ;
-; draw:dw|cd6x6_addr_B[13]                     ; Merged with draw:drawMod|cd6x6_addr_B[13]   ;
-; draw:drawMod|dpm_re                          ; Stuck at GND due to stuck port data_in      ;
-; draw:drawMod|dualPortMem:dpm|dataOut_B[0..2] ; Stuck at GND due to stuck port clock_enable ;
-; gridLED:ledMod|foundLocs[0..35]              ; Stuck at VCC due to stuck port data_in      ;
-; compareCards:compMod|card1Loc[0..5]          ; Lost fanout                                 ;
-; compareCards:compMod|card2Loc[0..5]          ; Lost fanout                                 ;
-; fsm:fsmMod|presentState~2                    ; Lost fanout                                 ;
-; fsm:fsmMod|presentState~3                    ; Lost fanout                                 ;
-; fsm:fsmMod|presentState~4                    ; Lost fanout                                 ;
-; Total Number of Removed Registers = 109      ;                                             ;
-+----------------------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                          ;
++-----------------------------------------------+---------------------------------------------+
+; Register name                                 ; Reason for Removal                          ;
++-----------------------------------------------+---------------------------------------------+
+; draw:dw|image:im|Y[0]                         ; Stuck at VCC due to stuck port data_in      ;
+; draw:dw|image:im|Y[1]                         ; Stuck at GND due to stuck port data_in      ;
+; draw:dw|image:im|Y[2]                         ; Stuck at VCC due to stuck port data_in      ;
+; draw:dw|image:im|Y[3]                         ; Stuck at GND due to stuck port data_in      ;
+; draw:dw|image:im|Y[4,5]                       ; Stuck at VCC due to stuck port data_in      ;
+; draw:dw|image:im|Y[6,7]                       ; Stuck at GND due to stuck port data_in      ;
+; draw:dw|image:im|X[7]                         ; Stuck at GND due to stuck port data_in      ;
+; gridLED:ledMod|card2LED[0..35]                ; Stuck at GND due to stuck port data_in      ;
+; gridLED:ledMod|card1LED[0..35]                ; Stuck at GND due to stuck port data_in      ;
+; draw:dw|image:im|X[5]                         ; Merged with draw:dw|image:im|X[0]           ;
+; draw:dw|image:im|X[4,6]                       ; Merged with draw:dw|image:im|X[1]           ;
+; draw:dw|image:im|X[3]                         ; Merged with draw:dw|image:im|X[2]           ;
+; gridLED:ledMod|counter[1..4]                  ; Merged with gridLED:ledMod|counter[0]       ;
+; gridLED:ledMod|foundLocs[1..35]               ; Merged with gridLED:ledMod|foundLocs[0]     ;
+; gridLED:ledMod|counter[0]                     ; Lost fanout                                 ;
+; gridLED:ledMod|clockdiv:cd1|count[0..11]      ; Lost fanout                                 ;
+; gridLED:ledMod|clockdiv:cd1|clkstate          ; Lost fanout                                 ;
+; gridLED:ledMod|clockdiv:cd1|count[12..31]     ; Lost fanout                                 ;
+; draw:dw|image:im|keys2[3]                     ; Merged with arrowKeys:arrowMod|keys2[3]     ;
+; draw:dw|image:im|keys2[2]                     ; Merged with arrowKeys:arrowMod|keys2[2]     ;
+; draw:dw|image:im|keys2[1]                     ; Merged with arrowKeys:arrowMod|keys2[1]     ;
+; draw:dw|image:im|keys2[0]                     ; Merged with arrowKeys:arrowMod|keys2[0]     ;
+; draw:dw|image:im|keys1[3]                     ; Merged with arrowKeys:arrowMod|keys1[3]     ;
+; draw:dw|image:im|keys1[2]                     ; Merged with arrowKeys:arrowMod|keys1[2]     ;
+; draw:dw|image:im|keys1[1]                     ; Merged with arrowKeys:arrowMod|keys1[1]     ;
+; draw:dw|image:im|keys1[0]                     ; Merged with arrowKeys:arrowMod|keys1[0]     ;
+; draw:dw|image:im|update[2,3]                  ; Stuck at GND due to stuck port data_in      ;
+; gridLED:ledMod|foundLocs[0]                   ; Stuck at GND due to stuck port data_in      ;
+; draw:dw|image:im|readenable[2,3]              ; Stuck at GND due to stuck port data_in      ;
+; draw:dw|image:im|card2:cr2|dataOut[0..2]      ; Stuck at GND due to stuck port clock_enable ;
+; draw:dw|image:im|card1:cr1|dataOut[0..2]      ; Stuck at GND due to stuck port clock_enable ;
+; draw:dw|image:im|cr1_addr[0..7]               ; Stuck at GND due to stuck port data_in      ;
+; draw:dw|image:im|cr2_addr[0..8]               ; Stuck at GND due to stuck port data_in      ;
+; draw:dw|image:im|cr1_addr[8]                  ; Stuck at GND due to stuck port data_in      ;
+; gridLED:ledMod|memPosition[1]                 ; Merged with draw:dw|image:im|X[0]           ;
+; gridLED:ledMod|memPosition[2]                 ; Merged with draw:dw|image:im|X[2]           ;
+; fsm:fsmMod|presentState~2                     ; Lost fanout                                 ;
+; fsm:fsmMod|presentState~3                     ; Lost fanout                                 ;
+; fsm:fsmMod|presentState~4                     ; Lost fanout                                 ;
+; compareCards:compMod|GO                       ; Lost fanout                                 ;
+; compareCards:compMod|pairsFound[0..31]        ; Lost fanout                                 ;
+; compareCards:compMod|data1[0..4]              ; Lost fanout                                 ;
+; compareCards:compMod|data2[0..4]              ; Lost fanout                                 ;
+; compareCards:compMod|foundPair                ; Lost fanout                                 ;
+; compareCards:compMod|cardOneTwo               ; Lost fanout                                 ;
+; compareCards:compMod|mem64:mr64|dataOut[0..4] ; Lost fanout                                 ;
+; compareCards:compMod|cardmem1[0..5]           ; Lost fanout                                 ;
+; compareCards:compMod|cardmem2[0..5]           ; Lost fanout                                 ;
+; fsm:fsmMod|presentState.idle                  ; Lost fanout                                 ;
+; fsm:fsmMod|presentState.menu                  ; Lost fanout                                 ;
+; fsm:fsmMod|presentState.rungame               ; Lost fanout                                 ;
+; fsm:fsmMod|presentState.gameover              ; Lost fanout                                 ;
+; clockdiv:cd|count[0]                          ; Merged with draw:dw|dpm_addr_A[0]           ;
+; Total Number of Removed Registers = 267       ;                                             ;
++-----------------------------------------------+---------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                    ;
-+------------------------------+---------------------------+---------------------------------------------------------------------+
-; Register name                ; Reason for Removal        ; Registers Removed due to This Register                              ;
-+------------------------------+---------------------------+---------------------------------------------------------------------+
-; gridLED:ledMod|foundLocs[35] ; Stuck at VCC              ; compareCards:compMod|card1Loc[5], compareCards:compMod|card1Loc[4], ;
-;                              ; due to stuck port data_in ; compareCards:compMod|card1Loc[3], compareCards:compMod|card1Loc[2], ;
-;                              ;                           ; compareCards:compMod|card1Loc[1], compareCards:compMod|card2Loc[5], ;
-;                              ;                           ; compareCards:compMod|card2Loc[4], compareCards:compMod|card2Loc[3], ;
-;                              ;                           ; compareCards:compMod|card2Loc[2]                                    ;
-; draw:drawMod|dpm_re          ; Stuck at GND              ; draw:drawMod|dualPortMem:dpm|dataOut_B[0],                          ;
-;                              ; due to stuck port data_in ; draw:drawMod|dualPortMem:dpm|dataOut_B[1],                          ;
-;                              ;                           ; draw:drawMod|dualPortMem:dpm|dataOut_B[2]                           ;
-+------------------------------+---------------------------+---------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                       ;
++---------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+; Register name                         ; Reason for Removal        ; Registers Removed due to This Register                                        ;
++---------------------------------------+---------------------------+-------------------------------------------------------------------------------+
+; fsm:fsmMod|presentState~2             ; Lost Fanouts              ; compareCards:compMod|GO, compareCards:compMod|pairsFound[0],                  ;
+;                                       ;                           ; compareCards:compMod|pairsFound[1], compareCards:compMod|pairsFound[2],       ;
+;                                       ;                           ; compareCards:compMod|pairsFound[3], compareCards:compMod|pairsFound[4],       ;
+;                                       ;                           ; compareCards:compMod|pairsFound[5], compareCards:compMod|pairsFound[6],       ;
+;                                       ;                           ; compareCards:compMod|pairsFound[7], compareCards:compMod|pairsFound[8],       ;
+;                                       ;                           ; compareCards:compMod|data1[4], compareCards:compMod|data1[3],                 ;
+;                                       ;                           ; compareCards:compMod|data1[2], compareCards:compMod|data1[1],                 ;
+;                                       ;                           ; compareCards:compMod|data1[0], compareCards:compMod|data2[4],                 ;
+;                                       ;                           ; compareCards:compMod|data2[3], compareCards:compMod|data2[2],                 ;
+;                                       ;                           ; compareCards:compMod|foundPair, compareCards:compMod|cardOneTwo,              ;
+;                                       ;                           ; compareCards:compMod|mem64:mr64|dataOut[4],                                   ;
+;                                       ;                           ; compareCards:compMod|mem64:mr64|dataOut[3],                                   ;
+;                                       ;                           ; compareCards:compMod|mem64:mr64|dataOut[2],                                   ;
+;                                       ;                           ; compareCards:compMod|mem64:mr64|dataOut[1],                                   ;
+;                                       ;                           ; compareCards:compMod|mem64:mr64|dataOut[0], compareCards:compMod|cardmem1[5], ;
+;                                       ;                           ; compareCards:compMod|cardmem1[4], compareCards:compMod|cardmem1[3],           ;
+;                                       ;                           ; compareCards:compMod|cardmem1[2], compareCards:compMod|cardmem1[1],           ;
+;                                       ;                           ; compareCards:compMod|cardmem1[0], compareCards:compMod|cardmem2[5],           ;
+;                                       ;                           ; fsm:fsmMod|presentState.idle, fsm:fsmMod|presentState.menu,                   ;
+;                                       ;                           ; fsm:fsmMod|presentState.rungame, fsm:fsmMod|presentState.gameover             ;
+; draw:dw|image:im|update[2]            ; Stuck at GND              ; draw:dw|image:im|readenable[2], draw:dw|image:im|card1:cr1|dataOut[0],        ;
+;                                       ; due to stuck port data_in ; draw:dw|image:im|card1:cr1|dataOut[1], draw:dw|image:im|card1:cr1|dataOut[2], ;
+;                                       ;                           ; draw:dw|image:im|cr1_addr[7], draw:dw|image:im|cr1_addr[6],                   ;
+;                                       ;                           ; draw:dw|image:im|cr1_addr[2], draw:dw|image:im|cr1_addr[1],                   ;
+;                                       ;                           ; draw:dw|image:im|cr1_addr[0], draw:dw|image:im|cr1_addr[8]                    ;
+; draw:dw|image:im|update[3]            ; Stuck at GND              ; draw:dw|image:im|readenable[3], draw:dw|image:im|card2:cr2|dataOut[0],        ;
+;                                       ; due to stuck port data_in ; draw:dw|image:im|card2:cr2|dataOut[1], draw:dw|image:im|card2:cr2|dataOut[2], ;
+;                                       ;                           ; draw:dw|image:im|cr2_addr[8], draw:dw|image:im|cr2_addr[7],                   ;
+;                                       ;                           ; draw:dw|image:im|cr2_addr[6], draw:dw|image:im|cr2_addr[2],                   ;
+;                                       ;                           ; draw:dw|image:im|cr2_addr[1], draw:dw|image:im|cr2_addr[0]                    ;
+; gridLED:ledMod|card2LED[0]            ; Stuck at GND              ; gridLED:ledMod|counter[0], gridLED:ledMod|clockdiv:cd1|clkstate,              ;
+;                                       ; due to stuck port data_in ; gridLED:ledMod|clockdiv:cd1|count[12], gridLED:ledMod|clockdiv:cd1|count[13], ;
+;                                       ;                           ; gridLED:ledMod|clockdiv:cd1|count[15], gridLED:ledMod|foundLocs[0]            ;
+; gridLED:ledMod|clockdiv:cd1|count[11] ; Lost Fanouts              ; gridLED:ledMod|clockdiv:cd1|count[17], gridLED:ledMod|clockdiv:cd1|count[18], ;
+;                                       ;                           ; gridLED:ledMod|clockdiv:cd1|count[19], gridLED:ledMod|clockdiv:cd1|count[20], ;
+;                                       ;                           ; gridLED:ledMod|clockdiv:cd1|count[21], gridLED:ledMod|clockdiv:cd1|count[23]  ;
++---------------------------------------+---------------------------+-------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -405,52 +433,121 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 243   ;
-; Number of registers using Synchronous Clear  ; 30    ;
+; Total registers                              ; 262   ;
+; Number of registers using Synchronous Clear  ; 16    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 87    ;
+; Number of registers using Clock Enable       ; 46    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; draw:drawMod|dpm_en                    ; 6       ;
-; synch:syncMod|int_a                    ; 1       ;
-; compareCards:compMod|foundPair         ; 3       ;
-; Total number of inverted registers = 3 ;         ;
-+----------------------------------------+---------+
++--------------------------------------------------------+
+; Inverted Register Statistics                           ;
++----------------------------------------------+---------+
+; Inverted Register                            ; Fan out ;
++----------------------------------------------+---------+
+; gridLED:ledMod|memPosition[0]                ; 1       ;
+; draw:dw|image:im|X[2]                        ; 2       ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[36] ; 1       ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[35] ; 1       ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[38] ; 1       ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[37] ; 1       ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[40] ; 1       ;
+; draw:dw|image:im|update[0]                   ; 2       ;
+; draw:dw|enable                               ; 9       ;
+; draw:dw|image:im|update[1]                   ; 2       ;
+; draw:dw|image:im|sc_addr[0]                  ; 3       ;
+; draw:dw|image:im|sc_addr[1]                  ; 3       ;
+; draw:dw|image:im|sc_addr[2]                  ; 3       ;
+; draw:dw|image:im|sc_addr[3]                  ; 3       ;
+; draw:dw|image:im|sc_addr[6]                  ; 4       ;
+; draw:dw|image:im|sc_addr[7]                  ; 3       ;
+; draw:dw|image:im|sc_addr[4]                  ; 3       ;
+; draw:dw|image:im|sc_addr[5]                  ; 3       ;
+; draw:dw|image:im|sc_addr[8]                  ; 4       ;
+; synch:syncMod|int_a                          ; 1       ;
+; Total number of inverted registers = 20      ;         ;
++----------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------+
-; Registers Packed Into Inferred Megafunctions                                       ;
-+-----------------------------------------+-----------------------------------+------+
-; Register Name                           ; Megafunction                      ; Type ;
-+-----------------------------------------+-----------------------------------+------+
-; draw:dw|dualPortMem:dpm|dataOut_B[0..2] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ; RAM  ;
-; draw:dw|cards6x6:cd6x6|dataOut_B[0..2]  ; draw:dw|cards6x6:cd6x6|ram_rtl_0  ; RAM  ;
-+-----------------------------------------+-----------------------------------+------+
++----------------------------------------------------------------------------------+
+; Registers Added for RAM Pass-Through Logic                                       ;
++----------------------------------------------+-----------------------------------+
+; Register Name                                ; RAM Name                          ;
++----------------------------------------------+-----------------------------------+
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[0]  ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[1]  ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[2]  ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[3]  ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[4]  ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[5]  ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[6]  ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[7]  ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[8]  ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[9]  ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[10] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[11] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[12] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[13] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[14] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[15] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[16] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[17] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[18] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[19] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[20] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[21] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[22] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[23] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[24] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[25] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[26] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[27] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[28] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[29] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[30] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[31] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[32] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[33] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[34] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[35] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[36] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[37] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[38] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[39] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
+; draw:dw|dualPortMem:dpm|ram_rtl_0_bypass[40] ; draw:dw|dualPortMem:dpm|ram_rtl_0 ;
++----------------------------------------------+-----------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |playGame|draw:drawMod|mem_row[7]      ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |playGame|draw:drawMod|mem_col[7]      ;
-; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |playGame|draw:drawMod|cd6x6_addr_B[6] ;
-; 21:1               ; 5 bits    ; 70 LEs        ; 20 LEs               ; 50 LEs                 ; No         ; |playGame|arrowKeys:arrowMod|mem6x6[5] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Registers Packed Into Inferred Megafunctions                                                        ;
++-------------------------------------------------+--------------------------------------------+------+
+; Register Name                                   ; Megafunction                               ; Type ;
++-------------------------------------------------+--------------------------------------------+------+
+; draw:dw|dpm_addr_B[0..16]                       ; draw:dw|dualPortMem:dpm|ram_rtl_0          ; RAM  ;
+; draw:dw|image:im|cards6x6:cd6x6|dataOut_B[0..2] ; draw:dw|image:im|cards6x6:cd6x6|ram_rtl_0  ; RAM  ;
+; draw:dw|image:im|selectedcard:sc|dataOut[0..2]  ; draw:dw|image:im|selectedcard:sc|ram_rtl_0 ; RAM  ;
++-------------------------------------------------+--------------------------------------------+------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |playGame|draw:dw|image:im|cd6x6_addr_B[3] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |playGame|draw:dw|mem_row[2]               ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |playGame|draw:dw|mem_col[7]               ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |playGame|draw:dw|image:im|image[1]        ;
+; 20:1               ; 5 bits    ; 65 LEs        ; 10 LEs               ; 55 LEs                 ; Yes        ; |playGame|arrowKeys:arrowMod|currentMem[1] ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |playGame|draw:dw|image:im|sc_addr[0]      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------+
-; Source assignments for draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_vmi1:auto_generated ;
+; Source assignments for draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0|altsyncram_9ql1:auto_generated ;
 +---------------------------------+--------------------+------+--------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                   ;
 +---------------------------------+--------------------+------+--------------------------------------+
@@ -458,13 +555,22 @@ Encoding Type:  One-Hot
 +---------------------------------+--------------------+------+--------------------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Source assignments for draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0|altsyncram_tl61:auto_generated ;
-+---------------------------------+--------------------+------+-------------------------------------+
-; Assignment                      ; Value              ; From ; To                                  ;
-+---------------------------------+--------------------+------+-------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                   ;
-+---------------------------------+--------------------+------+-------------------------------------+
++------------------------------------------------------------------------------------------------------------+
+; Source assignments for draw:dw|image:im|cards6x6:cd6x6|altsyncram:ram_rtl_0|altsyncram_cf71:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                           ;
++---------------------------------+--------------------+------+----------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                            ;
++---------------------------------+--------------------+------+----------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Source assignments for draw:dw|image:im|selectedcard:sc|altsyncram:ram_rtl_0|altsyncram_hr71:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                            ;
++---------------------------------+--------------------+------+-----------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                             ;
++---------------------------------+--------------------+------+-----------------------------------------------+
 
 
 +-----------------------------------------------------------------+
@@ -474,21 +580,6 @@ Encoding Type:  One-Hot
 +----------------+-------+----------------------------------------+
 ; MAXCOL         ; 6     ; Signed Integer                         ;
 +----------------+-------+----------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: draw:drawMod ;
-+----------------+-------+----------------------------------+
-; Parameter Name ; Value ; Type                             ;
-+----------------+-------+----------------------------------+
-; MAX_COL        ; 256   ; Signed Integer                   ;
-; GAP            ; 5     ; Signed Integer                   ;
-; C_LENGTH       ; 16    ; Signed Integer                   ;
-; C_HEIGHT       ; 20    ; Signed Integer                   ;
-; START_POS_X    ; 68    ; Signed Integer                   ;
-; START_POS_Y    ; 45    ; Signed Integer                   ;
-+----------------+-------+----------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -572,7 +663,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; INDATA_REG_B                       ; CLOCK1                                   ; Untyped        ;
 ; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                   ; Untyped        ;
 ; RDCONTROL_REG_B                    ; CLOCK1                                   ; Untyped        ;
-; ADDRESS_REG_B                      ; CLOCK1                                   ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK0                                   ; Untyped        ;
 ; OUTDATA_REG_B                      ; UNREGISTERED                             ; Untyped        ;
 ; BYTEENA_REG_B                      ; CLOCK1                                   ; Untyped        ;
 ; INDATA_ACLR_B                      ; NONE                                     ; Untyped        ;
@@ -585,7 +676,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTH_BYTEENA_B                    ; 1                                        ; Untyped        ;
 ; RAM_BLOCK_TYPE                     ; AUTO                                     ; Untyped        ;
 ; BYTE_SIZE                          ; 8                                        ; Untyped        ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                 ; Untyped        ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                     ; Untyped        ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                     ; Untyped        ;
 ; INIT_FILE                          ; db/VGA.ram0_dualPortMem_2281280c.hdl.mif ; Untyped        ;
@@ -601,101 +692,230 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                    ; Untyped        ;
 ; WIDTH_ECCSTATUS                    ; 3                                        ; Untyped        ;
 ; DEVICE_FAMILY                      ; Cyclone IV E                             ; Untyped        ;
-; CBXI_PARAMETER                     ; altsyncram_vmi1                          ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_9ql1                          ; Untyped        ;
 +------------------------------------+------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0 ;
-+------------------------------------+---------------------------------------+-----------------+
-; Parameter Name                     ; Value                                 ; Type            ;
-+------------------------------------+---------------------------------------+-----------------+
-; BYTE_SIZE_BLOCK                    ; 8                                     ; Untyped         ;
-; AUTO_CARRY_CHAINS                  ; ON                                    ; AUTO_CARRY      ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                   ; IGNORE_CARRY    ;
-; AUTO_CASCADE_CHAINS                ; ON                                    ; AUTO_CASCADE    ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                   ; IGNORE_CASCADE  ;
-; WIDTH_BYTEENA                      ; 1                                     ; Untyped         ;
-; OPERATION_MODE                     ; ROM                                   ; Untyped         ;
-; WIDTH_A                            ; 3                                     ; Untyped         ;
-; WIDTHAD_A                          ; 14                                    ; Untyped         ;
-; NUMWORDS_A                         ; 16384                                 ; Untyped         ;
-; OUTDATA_REG_A                      ; UNREGISTERED                          ; Untyped         ;
-; ADDRESS_ACLR_A                     ; NONE                                  ; Untyped         ;
-; OUTDATA_ACLR_A                     ; NONE                                  ; Untyped         ;
-; WRCONTROL_ACLR_A                   ; NONE                                  ; Untyped         ;
-; INDATA_ACLR_A                      ; NONE                                  ; Untyped         ;
-; BYTEENA_ACLR_A                     ; NONE                                  ; Untyped         ;
-; WIDTH_B                            ; 1                                     ; Untyped         ;
-; WIDTHAD_B                          ; 1                                     ; Untyped         ;
-; NUMWORDS_B                         ; 1                                     ; Untyped         ;
-; INDATA_REG_B                       ; CLOCK1                                ; Untyped         ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                ; Untyped         ;
-; RDCONTROL_REG_B                    ; CLOCK1                                ; Untyped         ;
-; ADDRESS_REG_B                      ; CLOCK1                                ; Untyped         ;
-; OUTDATA_REG_B                      ; UNREGISTERED                          ; Untyped         ;
-; BYTEENA_REG_B                      ; CLOCK1                                ; Untyped         ;
-; INDATA_ACLR_B                      ; NONE                                  ; Untyped         ;
-; WRCONTROL_ACLR_B                   ; NONE                                  ; Untyped         ;
-; ADDRESS_ACLR_B                     ; NONE                                  ; Untyped         ;
-; OUTDATA_ACLR_B                     ; NONE                                  ; Untyped         ;
-; RDCONTROL_ACLR_B                   ; NONE                                  ; Untyped         ;
-; BYTEENA_ACLR_B                     ; NONE                                  ; Untyped         ;
-; WIDTH_BYTEENA_A                    ; 1                                     ; Untyped         ;
-; WIDTH_BYTEENA_B                    ; 1                                     ; Untyped         ;
-; RAM_BLOCK_TYPE                     ; AUTO                                  ; Untyped         ;
-; BYTE_SIZE                          ; 8                                     ; Untyped         ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                             ; Untyped         ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                  ; Untyped         ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                  ; Untyped         ;
-; INIT_FILE                          ; db/VGA.ram0_cards6x6_8fa761c7.hdl.mif ; Untyped         ;
-; INIT_FILE_LAYOUT                   ; PORT_A                                ; Untyped         ;
-; MAXIMUM_DEPTH                      ; 0                                     ; Untyped         ;
-; CLOCK_ENABLE_INPUT_A               ; NORMAL                                ; Untyped         ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                                ; Untyped         ;
-; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                ; Untyped         ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                ; Untyped         ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                       ; Untyped         ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                       ; Untyped         ;
-; ENABLE_ECC                         ; FALSE                                 ; Untyped         ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                 ; Untyped         ;
-; WIDTH_ECCSTATUS                    ; 3                                     ; Untyped         ;
-; DEVICE_FAMILY                      ; Cyclone IV E                          ; Untyped         ;
-; CBXI_PARAMETER                     ; altsyncram_tl61                       ; Untyped         ;
-+------------------------------------+---------------------------------------+-----------------+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: draw:dw|image:im|cards6x6:cd6x6|altsyncram:ram_rtl_0 ;
++------------------------------------+---------------------------------------+--------------------------+
+; Parameter Name                     ; Value                                 ; Type                     ;
++------------------------------------+---------------------------------------+--------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                     ; Untyped                  ;
+; AUTO_CARRY_CHAINS                  ; ON                                    ; AUTO_CARRY               ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                   ; IGNORE_CARRY             ;
+; AUTO_CASCADE_CHAINS                ; ON                                    ; AUTO_CASCADE             ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                   ; IGNORE_CASCADE           ;
+; WIDTH_BYTEENA                      ; 1                                     ; Untyped                  ;
+; OPERATION_MODE                     ; ROM                                   ; Untyped                  ;
+; WIDTH_A                            ; 3                                     ; Untyped                  ;
+; WIDTHAD_A                          ; 14                                    ; Untyped                  ;
+; NUMWORDS_A                         ; 16384                                 ; Untyped                  ;
+; OUTDATA_REG_A                      ; UNREGISTERED                          ; Untyped                  ;
+; ADDRESS_ACLR_A                     ; NONE                                  ; Untyped                  ;
+; OUTDATA_ACLR_A                     ; NONE                                  ; Untyped                  ;
+; WRCONTROL_ACLR_A                   ; NONE                                  ; Untyped                  ;
+; INDATA_ACLR_A                      ; NONE                                  ; Untyped                  ;
+; BYTEENA_ACLR_A                     ; NONE                                  ; Untyped                  ;
+; WIDTH_B                            ; 1                                     ; Untyped                  ;
+; WIDTHAD_B                          ; 1                                     ; Untyped                  ;
+; NUMWORDS_B                         ; 1                                     ; Untyped                  ;
+; INDATA_REG_B                       ; CLOCK1                                ; Untyped                  ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                ; Untyped                  ;
+; RDCONTROL_REG_B                    ; CLOCK1                                ; Untyped                  ;
+; ADDRESS_REG_B                      ; CLOCK1                                ; Untyped                  ;
+; OUTDATA_REG_B                      ; UNREGISTERED                          ; Untyped                  ;
+; BYTEENA_REG_B                      ; CLOCK1                                ; Untyped                  ;
+; INDATA_ACLR_B                      ; NONE                                  ; Untyped                  ;
+; WRCONTROL_ACLR_B                   ; NONE                                  ; Untyped                  ;
+; ADDRESS_ACLR_B                     ; NONE                                  ; Untyped                  ;
+; OUTDATA_ACLR_B                     ; NONE                                  ; Untyped                  ;
+; RDCONTROL_ACLR_B                   ; NONE                                  ; Untyped                  ;
+; BYTEENA_ACLR_B                     ; NONE                                  ; Untyped                  ;
+; WIDTH_BYTEENA_A                    ; 1                                     ; Untyped                  ;
+; WIDTH_BYTEENA_B                    ; 1                                     ; Untyped                  ;
+; RAM_BLOCK_TYPE                     ; AUTO                                  ; Untyped                  ;
+; BYTE_SIZE                          ; 8                                     ; Untyped                  ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                             ; Untyped                  ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                  ; Untyped                  ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                  ; Untyped                  ;
+; INIT_FILE                          ; db/VGA.ram0_cards6x6_8fa761c7.hdl.mif ; Untyped                  ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                ; Untyped                  ;
+; MAXIMUM_DEPTH                      ; 0                                     ; Untyped                  ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                ; Untyped                  ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                ; Untyped                  ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                ; Untyped                  ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                ; Untyped                  ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                       ; Untyped                  ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                       ; Untyped                  ;
+; ENABLE_ECC                         ; FALSE                                 ; Untyped                  ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                 ; Untyped                  ;
+; WIDTH_ECCSTATUS                    ; 3                                     ; Untyped                  ;
+; DEVICE_FAMILY                      ; Cyclone IV E                          ; Untyped                  ;
+; CBXI_PARAMETER                     ; altsyncram_cf71                       ; Untyped                  ;
++------------------------------------+---------------------------------------+--------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                         ;
-+-------------------------------------------+----------------------------------------------+
-; Name                                      ; Value                                        ;
-+-------------------------------------------+----------------------------------------------+
-; Number of entity instances                ; 2                                            ;
-; Entity Instance                           ; draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0 ;
-;     -- OPERATION_MODE                     ; DUAL_PORT                                    ;
-;     -- WIDTH_A                            ; 3                                            ;
-;     -- NUMWORDS_A                         ; 131072                                       ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                 ;
-;     -- WIDTH_B                            ; 3                                            ;
-;     -- NUMWORDS_B                         ; 131072                                       ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                       ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                 ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                         ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ;
-; Entity Instance                           ; draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0  ;
-;     -- OPERATION_MODE                     ; ROM                                          ;
-;     -- WIDTH_A                            ; 3                                            ;
-;     -- NUMWORDS_A                         ; 16384                                        ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                 ;
-;     -- WIDTH_B                            ; 1                                            ;
-;     -- NUMWORDS_B                         ; 1                                            ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                       ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                 ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                         ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ;
-+-------------------------------------------+----------------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: draw:dw|image:im|selectedcard:sc|altsyncram:ram_rtl_0 ;
++------------------------------------+-------------------------------------------+-----------------------+
+; Parameter Name                     ; Value                                     ; Type                  ;
++------------------------------------+-------------------------------------------+-----------------------+
+; BYTE_SIZE_BLOCK                    ; 8                                         ; Untyped               ;
+; AUTO_CARRY_CHAINS                  ; ON                                        ; AUTO_CARRY            ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                       ; IGNORE_CARRY          ;
+; AUTO_CASCADE_CHAINS                ; ON                                        ; AUTO_CASCADE          ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                       ; IGNORE_CASCADE        ;
+; WIDTH_BYTEENA                      ; 1                                         ; Untyped               ;
+; OPERATION_MODE                     ; ROM                                       ; Untyped               ;
+; WIDTH_A                            ; 3                                         ; Untyped               ;
+; WIDTHAD_A                          ; 9                                         ; Untyped               ;
+; NUMWORDS_A                         ; 512                                       ; Untyped               ;
+; OUTDATA_REG_A                      ; UNREGISTERED                              ; Untyped               ;
+; ADDRESS_ACLR_A                     ; NONE                                      ; Untyped               ;
+; OUTDATA_ACLR_A                     ; NONE                                      ; Untyped               ;
+; WRCONTROL_ACLR_A                   ; NONE                                      ; Untyped               ;
+; INDATA_ACLR_A                      ; NONE                                      ; Untyped               ;
+; BYTEENA_ACLR_A                     ; NONE                                      ; Untyped               ;
+; WIDTH_B                            ; 1                                         ; Untyped               ;
+; WIDTHAD_B                          ; 1                                         ; Untyped               ;
+; NUMWORDS_B                         ; 1                                         ; Untyped               ;
+; INDATA_REG_B                       ; CLOCK1                                    ; Untyped               ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                    ; Untyped               ;
+; RDCONTROL_REG_B                    ; CLOCK1                                    ; Untyped               ;
+; ADDRESS_REG_B                      ; CLOCK1                                    ; Untyped               ;
+; OUTDATA_REG_B                      ; UNREGISTERED                              ; Untyped               ;
+; BYTEENA_REG_B                      ; CLOCK1                                    ; Untyped               ;
+; INDATA_ACLR_B                      ; NONE                                      ; Untyped               ;
+; WRCONTROL_ACLR_B                   ; NONE                                      ; Untyped               ;
+; ADDRESS_ACLR_B                     ; NONE                                      ; Untyped               ;
+; OUTDATA_ACLR_B                     ; NONE                                      ; Untyped               ;
+; RDCONTROL_ACLR_B                   ; NONE                                      ; Untyped               ;
+; BYTEENA_ACLR_B                     ; NONE                                      ; Untyped               ;
+; WIDTH_BYTEENA_A                    ; 1                                         ; Untyped               ;
+; WIDTH_BYTEENA_B                    ; 1                                         ; Untyped               ;
+; RAM_BLOCK_TYPE                     ; AUTO                                      ; Untyped               ;
+; BYTE_SIZE                          ; 8                                         ; Untyped               ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                 ; Untyped               ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                      ; Untyped               ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                      ; Untyped               ;
+; INIT_FILE                          ; db/VGA.ram0_selectedcard_77ee06cc.hdl.mif ; Untyped               ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                    ; Untyped               ;
+; MAXIMUM_DEPTH                      ; 0                                         ; Untyped               ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL                                    ; Untyped               ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                    ; Untyped               ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL                                    ; Untyped               ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                    ; Untyped               ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                           ; Untyped               ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                           ; Untyped               ;
+; ENABLE_ECC                         ; FALSE                                     ; Untyped               ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                     ; Untyped               ;
+; WIDTH_ECCSTATUS                    ; 3                                         ; Untyped               ;
+; DEVICE_FAMILY                      ; Cyclone IV E                              ; Untyped               ;
+; CBXI_PARAMETER                     ; altsyncram_hr71                           ; Untyped               ;
++------------------------------------+-------------------------------------------+-----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                  ;
++-------------------------------------------+-------------------------------------------------------+
+; Name                                      ; Value                                                 ;
++-------------------------------------------+-------------------------------------------------------+
+; Number of entity instances                ; 3                                                     ;
+; Entity Instance                           ; draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0          ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                             ;
+;     -- WIDTH_A                            ; 3                                                     ;
+;     -- NUMWORDS_A                         ; 131072                                                ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                          ;
+;     -- WIDTH_B                            ; 3                                                     ;
+;     -- NUMWORDS_B                         ; 131072                                                ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                          ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                  ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                              ;
+; Entity Instance                           ; draw:dw|image:im|cards6x6:cd6x6|altsyncram:ram_rtl_0  ;
+;     -- OPERATION_MODE                     ; ROM                                                   ;
+;     -- WIDTH_A                            ; 3                                                     ;
+;     -- NUMWORDS_A                         ; 16384                                                 ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                          ;
+;     -- WIDTH_B                            ; 1                                                     ;
+;     -- NUMWORDS_B                         ; 1                                                     ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                          ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                  ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                             ;
+; Entity Instance                           ; draw:dw|image:im|selectedcard:sc|altsyncram:ram_rtl_0 ;
+;     -- OPERATION_MODE                     ; ROM                                                   ;
+;     -- WIDTH_A                            ; 3                                                     ;
+;     -- NUMWORDS_A                         ; 512                                                   ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                          ;
+;     -- WIDTH_B                            ; 1                                                     ;
+;     -- NUMWORDS_B                         ; 1                                                     ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                          ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                  ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                             ;
++-------------------------------------------+-------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "draw:dw|image:im|card2:cr2"                                                                                                                   ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; WE     ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; wAddr  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; dataIn ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "draw:dw|image:im|card1:cr1"                                                                                                                   ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; WE     ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; wAddr  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; dataIn ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "draw:dw|image:im|selectedcard:sc"                                                                                                             ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                                                                                      ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; WE     ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; wAddr  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; dataIn ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "draw:dw|image:im|cards6x6:cd6x6"                                                                                                                  ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; WE_A      ; Input  ; Info     ; Explicitly unconnected                                                                                                                       ;
+; WE_B      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; dataIn_A  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; dataIn_B  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; dataOut_A ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "draw:dw|dualPortMem:dpm"                                                                                                                          ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                                                                      ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; WE_B      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; dataIn_B  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; dataOut_A ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -703,12 +923,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port       ; Type  ; Severity ; Details                                                                                                                                            ;
 +------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; inputState ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "inputState[3..3]" will be connected to GND. ;
 ; horReg     ; Input ; Warning  ; Input port expression (10 bits) is smaller than the input port (11 bits) it drives.  Extra input bit(s) "horReg[10..10]" will be connected to GND. ;
 ; verReg     ; Input ; Warning  ; Input port expression (9 bits) is smaller than the input port (10 bits) it drives.  Extra input bit(s) "verReg[9..9]" will be connected to GND.    ;
 ; clock2     ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.       ;
-; A          ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.       ;
-; keys       ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.       ;
-; inputState ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.       ;
 +------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -730,39 +948,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "draw:drawMod|cards6x6:cd6x6"                                                                                                                      ;
-+-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                                                                                      ;
-+-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; WE_B      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; dataIn_A  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; dataIn_B  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; dataOut_A ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-+-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "draw:drawMod|dualPortMem:dpm"                                                                                                                     ;
-+-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port      ; Type   ; Severity ; Details                                                                                                                                      ;
-+-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; WE_B      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; dataIn_B  ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-; dataOut_A ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
-+-----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "draw:drawMod"                                                                                                                                           ;
-+------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port       ; Type  ; Severity ; Details                                                                                                                                            ;
-+------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-; inputState ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "inputState[3..3]" will be connected to GND. ;
-; clock2     ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.       ;
-; horReg     ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.       ;
-; verReg     ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.       ;
-+------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "gridLED:ledMod"                                                                                                                              ;
++-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                      ;
++-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; A     ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; data1 ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; data2 ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++-------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -777,25 +971,61 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "compareCards:compMod"                                                                                          ;
-+------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                                                  ;
-+------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; data1      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; data2      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; cardOneTwo ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-; pairsFound ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+----------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "compareCards:compMod"                                                                                                                                                                       ;
++---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                                                                                                                            ;
++---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; inputState    ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (3 bits) it drives.  The 29 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; inputState[2] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; inputState[1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; inputState[0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; data1         ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; data2         ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; cardOneTwo    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; pairsFound    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "arrowKeys:arrowMod"                                                                  ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; level ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arrowKeys:arrowMod"                                                                                                                                                                         ;
++---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                                                                                                                            ;
++---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; inputState    ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (3 bits) it drives.  The 29 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; inputState[2] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; inputState[1] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; inputState[0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; level         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 96                          ;
+; cycloneiii_ff         ; 262                         ;
+;     ENA               ; 38                          ;
+;     ENA SCLR          ; 8                           ;
+;     SCLR              ; 8                           ;
+;     plain             ; 208                         ;
+; cycloneiii_lcell_comb ; 448                         ;
+;     arith             ; 131                         ;
+;         2 data inputs ; 121                         ;
+;         3 data inputs ; 10                          ;
+;     normal            ; 317                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 38                          ;
+;         2 data inputs ; 34                          ;
+;         3 data inputs ; 67                          ;
+;         4 data inputs ; 176                         ;
+; cycloneiii_ram_block  ; 57                          ;
+;                       ;                             ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.05                        ;
++-----------------------+-----------------------------+
 
 
 +-------------------------------+
@@ -812,94 +1042,151 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Thu Dec 04 00:59:02 2014
+    Info: Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
+    Info: Processing started: Thu Dec 04 11:41:36 2014
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
-Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file arrowkeys.sv
-    Info (12023): Found entity 1: arrowKeys
-Info (12021): Found 1 design units, including 1 entities, in source file draw.sv
-    Info (12023): Found entity 1: draw
-Info (12021): Found 1 design units, including 1 entities, in source file mem64.sv
-    Info (12023): Found entity 1: mem64
-Info (12021): Found 1 design units, including 1 entities, in source file comparecards.sv
-    Info (12023): Found entity 1: compareCards
-Info (12021): Found 1 design units, including 1 entities, in source file testcompare.sv
-    Info (12023): Found entity 1: testCompare
-Info (12021): Found 1 design units, including 1 entities, in source file playgametest.sv
-    Info (12023): Found entity 1: playGameTets
-Info (12021): Found 1 design units, including 1 entities, in source file playgame.sv
-    Info (12023): Found entity 1: playGame
-Info (12021): Found 1 design units, including 1 entities, in source file synch.v
-    Info (12023): Found entity 1: synch
-Info (12021): Found 1 design units, including 1 entities, in source file ssegment.v
-    Info (12023): Found entity 1: ssegment
-Info (12021): Found 1 design units, including 1 entities, in source file ledmem.v
-    Info (12023): Found entity 1: LEDmem
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file clockdiv.sv
+    Info (12023): Found entity 1: clockdiv
 Info (12021): Found 1 design units, including 1 entities, in source file gridled.sv
     Info (12023): Found entity 1: gridLED
-Info (12021): Found 1 design units, including 1 entities, in source file testgrid.sv
-    Info (12023): Found entity 1: testGrid
-Warning (10236): Verilog HDL Implicit Net warning at playGame.sv(65): created implicit net for "horMax"
-Warning (10236): Verilog HDL Implicit Net warning at playGame.sv(66): created implicit net for "verMax"
-Warning (10236): Verilog HDL Implicit Net warning at playGame.sv(68): created implicit net for "clockOut"
-Info (12127): Elaborating entity "playGame" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at playGame.sv(65): object "horMax" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at playGame.sv(66): object "verMax" assigned a value but never read
-Warning (10858): Verilog HDL warning at playGame.sv(49): object horReg used but never assigned
-Warning (10858): Verilog HDL warning at playGame.sv(50): object verReg used but never assigned
-Warning (10036): Verilog HDL or VHDL warning at playGame.sv(61): object "border" assigned a value but never read
-Warning (10034): Output port "seg1" at playGame.sv(14) has no driver
-Warning (10034): Output port "seg2" at playGame.sv(14) has no driver
-Info (12128): Elaborating entity "synch" for hierarchy "synch:syncMod"
-Warning (12125): Using design file fsm.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+Info (12021): Found 1 design units, including 1 entities, in source file comparecards.sv
+    Info (12023): Found entity 1: compareCards
+Info (12021): Found 1 design units, including 1 entities, in source file fsm.sv
     Info (12023): Found entity 1: fsm
+Info (12021): Found 1 design units, including 1 entities, in source file arrowkeys.sv
+    Info (12023): Found entity 1: arrowKeys
+Info (12021): Found 1 design units, including 1 entities, in source file ssegment.v
+    Info (12023): Found entity 1: ssegment
+Info (12021): Found 1 design units, including 1 entities, in source file synch.v
+    Info (12023): Found entity 1: synch
+Info (12021): Found 1 design units, including 1 entities, in source file playgame.sv
+    Info (12023): Found entity 1: playGame
+Info (12021): Found 1 design units, including 1 entities, in source file image.sv
+    Info (12023): Found entity 1: image
+Info (12021): Found 1 design units, including 1 entities, in source file draw.sv
+    Info (12023): Found entity 1: draw
+Info (12021): Found 1 design units, including 1 entities, in source file circle.sv
+    Info (12023): Found entity 1: circle
+Info (12021): Found 1 design units, including 1 entities, in source file dualportmem.sv
+    Info (12023): Found entity 1: dualPortMem
+Info (12021): Found 1 design units, including 1 entities, in source file hvsync_generator.v
+    Info (12023): Found entity 1: hvsync_generator
+Info (12021): Found 1 design units, including 1 entities, in source file selectedcard.sv
+    Info (12023): Found entity 1: selectedcard
+Info (12021): Found 1 design units, including 1 entities, in source file unselectedcard.sv
+    Info (12023): Found entity 1: unselectedcard
+Info (12021): Found 1 design units, including 1 entities, in source file card1.sv
+    Info (12023): Found entity 1: card1
+Info (12021): Found 1 design units, including 1 entities, in source file card2.sv
+    Info (12023): Found entity 1: card2
+Info (12021): Found 1 design units, including 1 entities, in source file card3.sv
+    Info (12023): Found entity 1: card3
+Info (12021): Found 1 design units, including 1 entities, in source file card4.sv
+    Info (12023): Found entity 1: card4
+Info (12021): Found 1 design units, including 1 entities, in source file card5.sv
+    Info (12023): Found entity 1: card5
+Info (12021): Found 1 design units, including 1 entities, in source file card6.sv
+    Info (12023): Found entity 1: card6
+Info (12021): Found 1 design units, including 1 entities, in source file card7.sv
+    Info (12023): Found entity 1: card7
+Info (12021): Found 1 design units, including 1 entities, in source file card8.sv
+    Info (12023): Found entity 1: card8
+Info (12021): Found 1 design units, including 1 entities, in source file card9.sv
+    Info (12023): Found entity 1: card9
+Info (12021): Found 1 design units, including 1 entities, in source file card10.sv
+    Info (12023): Found entity 1: card10
+Info (12021): Found 1 design units, including 1 entities, in source file card11.sv
+    Info (12023): Found entity 1: card11
+Info (12021): Found 1 design units, including 1 entities, in source file card12.sv
+    Info (12023): Found entity 1: card12
+Info (12021): Found 1 design units, including 1 entities, in source file card13.sv
+    Info (12023): Found entity 1: card13
+Info (12021): Found 1 design units, including 1 entities, in source file card14.sv
+    Info (12023): Found entity 1: card14
+Info (12021): Found 1 design units, including 1 entities, in source file card15.sv
+    Info (12023): Found entity 1: card15
+Info (12021): Found 1 design units, including 1 entities, in source file card16.sv
+    Info (12023): Found entity 1: card16
+Info (12021): Found 1 design units, including 1 entities, in source file card17.sv
+    Info (12023): Found entity 1: card17
+Info (12021): Found 1 design units, including 1 entities, in source file card18.sv
+    Info (12023): Found entity 1: card18
+Info (12021): Found 1 design units, including 1 entities, in source file cards6x6.sv
+    Info (12023): Found entity 1: cards6x6
+Warning (10236): Verilog HDL Implicit Net warning at playGame.sv(67): created implicit net for "horMax"
+Warning (10236): Verilog HDL Implicit Net warning at playGame.sv(68): created implicit net for "verMax"
+Warning (10236): Verilog HDL Implicit Net warning at playGame.sv(71): created implicit net for "clockOut"
+Info (12127): Elaborating entity "playGame" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at playGame.sv(67): object "horMax" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at playGame.sv(68): object "verMax" assigned a value but never read
+Warning (10858): Verilog HDL warning at playGame.sv(51): object horReg used but never assigned
+Warning (10858): Verilog HDL warning at playGame.sv(52): object verReg used but never assigned
+Warning (10036): Verilog HDL or VHDL warning at playGame.sv(63): object "border" assigned a value but never read
+Warning (10034): Output port "gameState" at playGame.sv(13) has no driver
+Warning (10034): Output port "seg1" at playGame.sv(15) has no driver
+Warning (10034): Output port "seg2" at playGame.sv(15) has no driver
+Info (12128): Elaborating entity "synch" for hierarchy "synch:syncMod"
 Info (12128): Elaborating entity "fsm" for hierarchy "fsm:fsmMod"
 Info (12128): Elaborating entity "arrowKeys" for hierarchy "arrowKeys:arrowMod"
-Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(61): truncated value with size 32 to match size of target (6)
-Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(68): truncated value with size 32 to match size of target (6)
-Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(75): truncated value with size 32 to match size of target (6)
-Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(82): truncated value with size 32 to match size of target (6)
-Info (10264): Verilog HDL Case Statement information at arrowKeys.sv(55): all case item expressions in this case statement are onehot
-Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(102): truncated value with size 32 to match size of target (2)
-Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(106): truncated value with size 32 to match size of target (2)
-Info (10264): Verilog HDL Case Statement information at arrowKeys.sv(99): all case item expressions in this case statement are onehot
+Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(73): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(80): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(87): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(94): truncated value with size 32 to match size of target (6)
+Info (10264): Verilog HDL Case Statement information at arrowKeys.sv(67): all case item expressions in this case statement are onehot
+Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(114): truncated value with size 32 to match size of target (2)
+Warning (10230): Verilog HDL assignment warning at arrowKeys.sv(118): truncated value with size 32 to match size of target (2)
+Info (10264): Verilog HDL Case Statement information at arrowKeys.sv(111): all case item expressions in this case statement are onehot
 Info (12128): Elaborating entity "compareCards" for hierarchy "compareCards:compMod"
+Warning (10034): Output port "FP" at compareCards.sv(21) has no driver
+Warning (12125): Using design file mem64.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mem64
 Info (12128): Elaborating entity "mem64" for hierarchy "compareCards:compMod|mem64:mr64"
-Info (12128): Elaborating entity "draw" for hierarchy "draw:drawMod"
-Warning (10036): Verilog HDL or VHDL warning at draw.sv(24): object "update" assigned a value but never read
-Warning (10036): Verilog HDL or VHDL warning at draw.sv(30): object "counter" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at draw.sv(36): truncated value with size 32 to match size of target (9)
-Warning (10230): Verilog HDL assignment warning at draw.sv(69): truncated value with size 32 to match size of target (17)
-Warning (10230): Verilog HDL assignment warning at draw.sv(71): truncated value with size 32 to match size of target (8)
-Warning (10230): Verilog HDL assignment warning at draw.sv(99): truncated value with size 32 to match size of target (8)
-Warning (10230): Verilog HDL assignment warning at draw.sv(107): truncated value with size 32 to match size of target (14)
-Warning (10230): Verilog HDL assignment warning at draw.sv(132): truncated value with size 32 to match size of target (17)
-Warning (12125): Using design file dualportmem.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: dualPortMem
-Info (12128): Elaborating entity "dualPortMem" for hierarchy "draw:drawMod|dualPortMem:dpm"
-Warning (10850): Verilog HDL warning at dualportmem.sv(20): number of words (783) in memory file does not match the number of elements in the address range [0:131071]
-Warning (12125): Using design file cards6x6.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: cards6x6
-Info (12128): Elaborating entity "cards6x6" for hierarchy "draw:drawMod|cards6x6:cd6x6"
-Warning (10850): Verilog HDL warning at cards6x6.sv(20): number of words (14985) in memory file does not match the number of elements in the address range [0:16383]
 Info (12128): Elaborating entity "gridLED" for hierarchy "gridLED:ledMod"
-Warning (10855): Verilog HDL warning at gridLED.sv(19): initial value for variable LEDs should be constant
-Warning (10855): Verilog HDL warning at gridLED.sv(19): initial value for variable foundLocs should be constant
+Warning (10230): Verilog HDL assignment warning at gridLED.sv(39): truncated value with size 32 to match size of target (5)
+Info (12128): Elaborating entity "clockdiv" for hierarchy "gridLED:ledMod|clockdiv:cd1"
 Info (12128): Elaborating entity "ssegment" for hierarchy "ssegment:segMod2"
-Warning (12125): Using design file clockdiv.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: clockdiv
-Info (12128): Elaborating entity "clockdiv" for hierarchy "clockdiv:cd"
-Warning (12125): Using design file hvsync_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: hvsync_generator
+Info (12128): Elaborating entity "draw" for hierarchy "draw:dw"
+Warning (10036): Verilog HDL or VHDL warning at draw.sv(25): object "cd6x6_update" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at draw.sv(25): object "selected_update" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at draw.sv(28): object "dpm_en" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at draw.sv(28): object "cd6x6_en" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at draw.sv(28): object "foo" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at draw.sv(28): object "cd6x6_re" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at draw.sv(29): object "update" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at draw.sv(37): object "rAddr" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at draw.sv(37): object "sc_addr" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at draw.sv(38): object "counter" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at draw.sv(44): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at draw.sv(84): truncated value with size 32 to match size of target (17)
+Warning (10230): Verilog HDL assignment warning at draw.sv(86): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at draw.sv(105): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at draw.sv(123): truncated value with size 32 to match size of target (17)
+Info (12128): Elaborating entity "dualPortMem" for hierarchy "draw:dw|dualPortMem:dpm"
+Warning (10850): Verilog HDL warning at dualPortMem.sv(20): number of words (61440) in memory file does not match the number of elements in the address range [0:131071]
+Info (12128): Elaborating entity "image" for hierarchy "draw:dw|image:im"
+Warning (10230): Verilog HDL assignment warning at image.sv(33): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at image.sv(108): truncated value with size 32 to match size of target (14)
+Warning (10230): Verilog HDL assignment warning at image.sv(127): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at image.sv(146): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at image.sv(164): truncated value with size 32 to match size of target (9)
+Warning (10030): Net "readenable[20..4]" at image.sv(17) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "cards6x6" for hierarchy "draw:dw|image:im|cards6x6:cd6x6"
+Warning (10850): Verilog HDL warning at cards6x6.sv(20): number of words (14985) in memory file does not match the number of elements in the address range [0:16383]
+Info (12128): Elaborating entity "selectedcard" for hierarchy "draw:dw|image:im|selectedcard:sc"
+Warning (10850): Verilog HDL warning at selectedcard.sv(22): number of words (320) in memory file does not match the number of elements in the address range [0:511]
+Info (12128): Elaborating entity "card1" for hierarchy "draw:dw|image:im|card1:cr1"
+Warning (10850): Verilog HDL warning at card1.sv(22): number of words (320) in memory file does not match the number of elements in the address range [0:511]
+Info (12128): Elaborating entity "card2" for hierarchy "draw:dw|image:im|card2:cr2"
+Warning (10850): Verilog HDL warning at card2.sv(22): number of words (320) in memory file does not match the number of elements in the address range [0:511]
 Info (12128): Elaborating entity "hvsync_generator" for hierarchy "hvsync_generator:syncgen"
 Warning (10230): Verilog HDL assignment warning at hvsync_generator.v(17): truncated value with size 32 to match size of target (10)
 Warning (10230): Verilog HDL assignment warning at hvsync_generator.v(20): truncated value with size 32 to match size of target (9)
-Warning (276027): Inferred dual-clock RAM node "draw:dw|dualPortMem:dpm|ram_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
-Info (276014): Found 2 instances of uninferred RAM logic
-    Info (276007): RAM logic "draw:dw|cards6x6:cd6x6|ram" is uninferred due to asynchronous read logic
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/db/VGA.ram0_dualPortMem_2281280c.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (276020): Inferred RAM node "draw:dw|dualPortMem:dpm|ram_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
+Info (276014): Found 1 instances of uninferred RAM logic
     Info (276004): RAM logic "compareCards:compMod|mem64:mr64|ram" is uninferred due to inappropriate RAM size
-Info (19000): Inferred 2 megafunctions from design logic
+Info (19000): Inferred 3 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "draw:dw|dualPortMem:dpm|ram_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
         Info (286033): Parameter WIDTH_A set to 3
@@ -912,11 +1199,12 @@ Info (19000): Inferred 2 megafunctions from design logic
         Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
         Info (286033): Parameter ADDRESS_ACLR_B set to NONE
         Info (286033): Parameter OUTDATA_ACLR_B set to NONE
-        Info (286033): Parameter ADDRESS_REG_B set to CLOCK1
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
         Info (286033): Parameter INIT_FILE set to db/VGA.ram0_dualPortMem_2281280c.hdl.mif
-    Info (276029): Inferred altsyncram megafunction from the following design logic: "draw:dw|cards6x6:cd6x6|ram_rtl_0" 
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "draw:dw|image:im|cards6x6:cd6x6|ram_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to ROM
         Info (286033): Parameter WIDTH_A set to 3
         Info (286033): Parameter WIDTHAD_A set to 14
@@ -927,6 +1215,17 @@ Info (19000): Inferred 2 megafunctions from design logic
         Info (286033): Parameter INDATA_ACLR_A set to NONE
         Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
         Info (286033): Parameter INIT_FILE set to db/VGA.ram0_cards6x6_8fa761c7.hdl.mif
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "draw:dw|image:im|selectedcard:sc|ram_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to ROM
+        Info (286033): Parameter WIDTH_A set to 3
+        Info (286033): Parameter WIDTHAD_A set to 9
+        Info (286033): Parameter NUMWORDS_A set to 512
+        Info (286033): Parameter OUTDATA_REG_A set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_A set to NONE
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter INIT_FILE set to db/VGA.ram0_selectedcard_77ee06cc.hdl.mif
 Info (12130): Elaborated megafunction instantiation "draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0"
 Info (12133): Instantiated megafunction "draw:dw|dualPortMem:dpm|altsyncram:ram_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
@@ -940,18 +1239,19 @@ Info (12133): Instantiated megafunction "draw:dw|dualPortMem:dpm|altsyncram:ram_
     Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
     Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
     Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
-    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK1"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "INIT_FILE" = "db/VGA.ram0_dualPortMem_2281280c.hdl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_vmi1.tdf
-    Info (12023): Found entity 1: altsyncram_vmi1
+    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9ql1.tdf
+    Info (12023): Found entity 1: altsyncram_9ql1
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_bua.tdf
     Info (12023): Found entity 1: decode_bua
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_oob.tdf
     Info (12023): Found entity 1: mux_oob
-Info (12130): Elaborated megafunction instantiation "draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0"
-Info (12133): Instantiated megafunction "draw:dw|cards6x6:cd6x6|altsyncram:ram_rtl_0" with the following parameter:
+Info (12130): Elaborated megafunction instantiation "draw:dw|image:im|cards6x6:cd6x6|altsyncram:ram_rtl_0"
+Info (12133): Instantiated megafunction "draw:dw|image:im|cards6x6:cd6x6|altsyncram:ram_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
     Info (12134): Parameter "WIDTH_A" = "3"
     Info (12134): Parameter "WIDTHAD_A" = "14"
@@ -962,17 +1262,33 @@ Info (12133): Instantiated megafunction "draw:dw|cards6x6:cd6x6|altsyncram:ram_r
     Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "INIT_FILE" = "db/VGA.ram0_cards6x6_8fa761c7.hdl.mif"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_tl61.tdf
-    Info (12023): Found entity 1: altsyncram_tl61
-Info (12021): Found 1 design units, including 1 entities, in source file db/decode_c8a.tdf
-    Info (12023): Found entity 1: decode_c8a
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cf71.tdf
+    Info (12023): Found entity 1: altsyncram_cf71
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_umb.tdf
     Info (12023): Found entity 1: mux_umb
-Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12130): Elaborated megafunction instantiation "draw:dw|image:im|selectedcard:sc|altsyncram:ram_rtl_0"
+Info (12133): Instantiated megafunction "draw:dw|image:im|selectedcard:sc|altsyncram:ram_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "ROM"
+    Info (12134): Parameter "WIDTH_A" = "3"
+    Info (12134): Parameter "WIDTHAD_A" = "9"
+    Info (12134): Parameter "NUMWORDS_A" = "512"
+    Info (12134): Parameter "OUTDATA_REG_A" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "INIT_FILE" = "db/VGA.ram0_selectedcard_77ee06cc.hdl.mif"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hr71.tdf
+    Info (12023): Found entity 1: altsyncram_hr71
+Warning (12241): 12 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "rgb[0]" is stuck at GND
-    Warning (13410): Pin "rgb[1]" is stuck at GND
-    Warning (13410): Pin "rgb[2]" is stuck at GND
+    Warning (13410): Pin "gameState[0]" is stuck at GND
+    Warning (13410): Pin "gameState[1]" is stuck at GND
+    Warning (13410): Pin "gameState[2]" is stuck at GND
+    Warning (13410): Pin "keysVoltage[0]" is stuck at VCC
+    Warning (13410): Pin "keysVoltage[1]" is stuck at VCC
+    Warning (13410): Pin "keysVoltage[2]" is stuck at VCC
+    Warning (13410): Pin "keysVoltage[3]" is stuck at VCC
     Warning (13410): Pin "seg1[0]" is stuck at GND
     Warning (13410): Pin "seg1[1]" is stuck at GND
     Warning (13410): Pin "seg1[2]" is stuck at GND
@@ -1016,18 +1332,18 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "seg6[5]" is stuck at GND
     Warning (13410): Pin "seg6[6]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 15 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/output_files/VGA.map.smsg
+Info (17049): 103 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/output_files/VGA.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 639 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 686 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 86 output pins
-    Info (21061): Implemented 493 logic cells
-    Info (21064): Implemented 54 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 83 warnings
-    Info: Peak virtual memory: 528 megabytes
-    Info: Processing ended: Thu Dec 04 00:59:06 2014
+    Info (21059): Implemented 90 output pins
+    Info (21061): Implemented 533 logic cells
+    Info (21064): Implemented 57 RAM segments
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 102 warnings
+    Info: Peak virtual memory: 587 megabytes
+    Info: Processing ended: Thu Dec 04 11:41:40 2014
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
@@ -1035,6 +1351,6 @@ Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 83 warnin
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/joey/Desktop/174Project/ECPE-174-Group-Project/VGA files/Proj File/output_files/VGA.map.smsg.
+The suppressed messages can be found in C:/Users/Kelvin/Documents/gitimworking/174-repository/ECPE-174-Group-Project/VGA files/Proj File/output_files/VGA.map.smsg.
 
 

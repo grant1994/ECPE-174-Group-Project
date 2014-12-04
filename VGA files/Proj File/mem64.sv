@@ -17,9 +17,7 @@ module mem64( input logic WE,RE,clock,
 					input logic [4:0] dataIn,
 					output logic [4:0] dataOut) ;
 					
-	//int foo = 100;
 
-	
 	
 	logic [4:0] ram[63:0];
 	

@@ -10,6 +10,6 @@ task buttonA();
 	#10;
 	@(posedge clock)
 	A <= 0;
-	#5;
+	#10;
 	
 endtask

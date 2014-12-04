@@ -1,8 +1,8 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="9a1cb8cf1b8d06cc9bed"/>
+    <hash md5_digest_80b="227d034f0e3f1f52c22c"/>
   </project>
   <file_info>
-    <file device="EP4CE30F29C7" path="VGA.sof" usercode="0xFFFFFFFF"/>
+    <file device="EP4CE22F17C6" path="VGA.sof" usercode="0xFFFFFFFF"/>
   </file_info>
 </sld_project_info>

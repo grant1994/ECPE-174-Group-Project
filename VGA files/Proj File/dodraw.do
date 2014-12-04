@@ -4,9 +4,9 @@ vlog -sv -work work [pwd]/circle.sv
 vlog -sv -work work [pwd]/dualPortMem.sv
 vsim TB_draw
 
-add wave *
+add wave -unsigned *
 
 view structure
 view signals
 
-run 4000 ns
+run 100 us

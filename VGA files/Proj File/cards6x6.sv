@@ -38,7 +38,7 @@ module cards6x6( 	input logic WE_A,WE_B,clock,RE_B,
 			ram[addr_B] <= dataIn_B;
 		end
 		
-		//if(RE_B)
+		if(RE_B)
 			dataOut_B <= ram[addr_B];
 	end
 

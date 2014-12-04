@@ -9,8 +9,7 @@
 /*
 		fifo control module - controls the fifo
 */
-module fifoControl (input logic clock,reset,
-						  input logic button,RW, 
+module fifoControl (input logic clock, 
 						  output logic WE,RE,fl,em,
 						  output logic syncB, // signal for test bench
 						  output logic[5:0] writePtrOut,readPtrOut);
@@ -18,7 +17,7 @@ module fifoControl (input logic clock,reset,
 	logic E,F;
 	logic b1,button2;
 	logic[5:0] writePtr,readPtr,tempW,tempR;
-	typedef enum logic[2:0]{idle,write,read,empty,full}stateType;
+	typedef enum logic[2:0]{idle,write,read}stateType;
 	stateType currentState,nextState;
 	
 	
@@ -184,10 +183,6 @@ module fifoControl (input logic clock,reset,
 						WE <= 0;
 						RE <= 0;
 					end
-			
-			/*empty:
-			
-			full:*/
 			
 			default:
 				begin 

@@ -18,13 +18,15 @@ module testCompare();
 	logic card;
 	integer pairsFound;
 	logic[5:0] cardmem1;
-	logic[5:0] cardmem2;
+	logic[5:0] cardmem2,selectedCard;
+	
 	
 	compareCards compMod(.clock(clock),.A(A),.inputState(inputState),.mem6x6(mem6x6),.GO(GO),.pairsFound(pairsFound),.data1(data1),.data2(data2),.cardOneTwo(card));
 	always #50 clock=~clock;
 	
 	assign cardmem1 = compMod.cardmem1;
 	assign cardmem2 = compMod.cardmem2;
+	assign selectedCard = compMod.selectedCard;
 	
 	task pushButton1();
 		mem6x6=$urandom_range(0,35);

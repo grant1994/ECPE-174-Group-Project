@@ -10,36 +10,45 @@
 module TB_arrowKeys();
   
 	logic clock = 1'b0;
-
-	logic[3:0] keys;
-	logic[5:0] mem;
+	
+	logic[3:0] inputState,keys;
+	logic A;
+	logic[1:0] level;
+	logic[5:0] mem,nextMem;
    int randKeys;
 	
-	arrowKeys ak(.clock(clock),.keys(keys),.mem6x6(mem));
+	arrowKeys ak(.clock(clock),.keys(keys),.mem6x6(mem),.A(A),.level(level),.inputState(inputState));
 	
-	always #5 clock <= ~clock;
-	/*always @(posedge clock)
-	begin 
-		assert(keys[0] == 1)$display("@ %0dns, pressed up arrow key memory is now %0d",$time,mem);
+	assign nextMem = ak.nextMem;
 	
-		assert(keys[1] == 1)$display("@ %0dns, pressed down arrow key memory is now %0d",$time,mem);
-		
-		assert(keys[2] == 1)$display("@ %0dns, pressed left arrow key memory is now %0d",$time,mem);
-		
-		assert(keys[3] == 1)$display("@ %0dns, pressed right arrow key memory is now %0d",$time,mem);
-		
-	end*/
+	always #1 clock <= ~clock;
+	
 	
 	initial
 	begin
 		$monitor("@ %0dns, %0d key has been pressed memory is %0d . ",$time,ak.keys2,mem);
 		$srandom(13);
+		
+		$display("Selecting difficulty...");
+		changeState(1);
 		for(int i = 0; i < 25; i++)
 			arrow();
+		buttonA();	
+		
+		$display("Game running...");
+		changeState(2);
+		for(int i = 0; i < 25; i++)
+			begin 
+				arrow(); 
+				#10;;
+			end
 		
 		#100;	
+		
+		
 		$stop;	
 	end
 	
   `include "task_arrowKeys.sv";
+  `include "task_buttonA.sv";
 endmodule

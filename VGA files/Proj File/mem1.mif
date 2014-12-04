@@ -1,0 +1,14 @@
+
+DEPTH = 131072;               -- The size of memory in words
+WIDTH = 3;                    -- The size of data in bits
+ADDRESS_RADIX = HEX;          -- The radix for address values
+DATA_RADIX = BIN;             -- The radix for data values
+
+CONTENT                       -- start of (address : data pairs)
+BEGIN
+
+[5..F] : 010;                -- memory address : data
+[105..10F] : 010;
+[CD..D7] : 010;
+[2C3..2CD] : 010;
+END;
