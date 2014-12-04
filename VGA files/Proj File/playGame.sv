@@ -12,7 +12,7 @@ module playGame
 	input logic [3:0] keys,
 	output logic [2:0] rgb,
 	output wire [6:0] seg1, seg2, seg3, seg4, seg5, seg6,
-	output logic LEDs[35:0],
+	output logic [35:0] LEDs,
 	output logic VGA_R,VGA_G,VGA_B,VGA_HSync,VGA_VSync
 );
 

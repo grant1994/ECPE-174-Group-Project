@@ -14,4 +14,4 @@ add wave *
 view structure
 view signals
 
-run 5000 ns
+run 8000 ns

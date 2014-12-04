@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
--- DATE "12/04/2014 00:33:41"
+-- DATE "12/04/2014 00:59:38"
 
 -- 
 -- Device: Altera EP4CE30F29C7 Package FBGA780
@@ -38,19 +38,19 @@ ENTITY 	playGame IS
 	clock : IN std_logic;
 	A : IN std_logic;
 	keys : IN std_logic_vector(3 DOWNTO 0);
-	rgb : BUFFER std_logic_vector(2 DOWNTO 0);
-	seg1 : BUFFER std_logic_vector(6 DOWNTO 0);
-	seg2 : BUFFER std_logic_vector(6 DOWNTO 0);
-	seg3 : BUFFER std_logic_vector(6 DOWNTO 0);
-	seg4 : BUFFER std_logic_vector(6 DOWNTO 0);
-	seg5 : BUFFER std_logic_vector(6 DOWNTO 0);
-	seg6 : BUFFER std_logic_vector(6 DOWNTO 0);
-	LEDs : BUFFER std_logic_vector(35 DOWNTO 0);
-	VGA_R : BUFFER std_logic;
-	VGA_G : BUFFER std_logic;
-	VGA_B : BUFFER std_logic;
-	VGA_HSync : BUFFER std_logic;
-	VGA_VSync : BUFFER std_logic
+	rgb : OUT std_logic_vector(2 DOWNTO 0);
+	seg1 : OUT std_logic_vector(6 DOWNTO 0);
+	seg2 : OUT std_logic_vector(6 DOWNTO 0);
+	seg3 : OUT std_logic_vector(6 DOWNTO 0);
+	seg4 : OUT std_logic_vector(6 DOWNTO 0);
+	seg5 : OUT std_logic_vector(6 DOWNTO 0);
+	seg6 : OUT std_logic_vector(6 DOWNTO 0);
+	LEDs : OUT std_logic_vector(35 DOWNTO 0);
+	VGA_R : OUT std_logic;
+	VGA_G : OUT std_logic;
+	VGA_B : OUT std_logic;
+	VGA_HSync : OUT std_logic;
+	VGA_VSync : OUT std_logic
 	);
 END playGame;
 

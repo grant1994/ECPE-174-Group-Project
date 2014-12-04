@@ -7,17 +7,17 @@ module gridLED
 (
 	input clock,
 	input [5:0] mem6x6, card1, card2, selectedCard,
-	output logic LEDs[35:0]
+	output logic [35:0] LEDs
 );
 
-logic foundLocs[35:0];
+logic [35:0] foundLocs;
 logic [5:0] cardmem1;
 logic [5:0] cardmem2;
 integer i;
 
 	initial
 	begin
-		for(i=0;i<35;i=i+1)
+		for(i=0;i<36;i=i+1)
 		begin
 			LEDs[i]<=1'b0;
 			foundLocs[i]<=1'b0;
@@ -29,9 +29,11 @@ integer i;
 		cardmem1<=mem6x6;
 		cardmem2<=cardmem1;
 		
+		LEDs<=foundLocs;
 		LEDs[cardmem2]<=1'b1;
+		LEDs[selectedCard]<=1'b1;
 		
-		if(cardmem1!=cardmem2 && !foundLocs[cardmem2] && cardmem2!=selectedCard)
+		if(cardmem1!=cardmem2 && !foundLocs[cardmem2])
 			LEDs[cardmem2]<=1'b0;
 			
 		foundLocs[card1]=1'b1;
