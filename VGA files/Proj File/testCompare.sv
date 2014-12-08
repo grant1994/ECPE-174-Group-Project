@@ -12,7 +12,7 @@ module testCompare();
 	logic clock = 1'b0;
 	logic A=0;
 	logic [2:0] inputState=2;
-	logic[5:0] mem6x6=0;
+	logic[5:0] mem6x6=0, card1, card2, select;
 	logic [4:0] data1,data2;
 	logic GO;
 	logic card;
@@ -21,7 +21,8 @@ module testCompare();
 	logic[5:0] cardmem2,selectedCard;
 	
 	
-	compareCards compMod(.clock(clock),.A(A),.inputState(inputState),.mem6x6(mem6x6),.GO(GO),.pairsFound(pairsFound),.data1(data1),.data2(data2),.cardOneTwo(card));
+	compareCards compMod(.clock(clock),.A(A),.inputState(inputState),.mem6x6(mem6x6),.GO(GO),.pairsFound(pairsFound),.data1(data1),.data2(data2),.cardOneTwo(card)
+	,.card1Loc(card1),.card2Loc(card2),.selectedCard(select));
 	always #50 clock=~clock;
 	
 	assign cardmem1 = compMod.cardmem1;
